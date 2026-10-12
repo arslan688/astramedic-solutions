@@ -1,0 +1,313 @@
+/* STREAMING_CHUNK: Establishing base layout spacing for homepage sections */
+.home-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: var(--color-secondary);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 25px;
+}
+
+/* STREAMING_CHUNK: Engineering the universal carousel structure */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* STREAMING_CHUNK: Styling the Hero Banner specific elements */
+.hero-carousel-section .carousel-slide {
+    height: 80vh;
+    min-height: 500px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(2, 87, 144, 0.9) 0%, rgba(2, 116, 190, 0.6) 100%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: #FFFFFF;
+    max-width: 800px;
+}
+
+.hero-content .h1 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero-content .h3 {
+    color: #E0F2FE;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+/* STREAMING_CHUNK: Designing interactive carousel navigation controls */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-primary);
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #FFFFFF;
+    transform: scale(1.2);
+}
+
+/* STREAMING_CHUNK: Formatting split-layout structural blocks */
+.split-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.split-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.split-layout .content-col,
+.split-layout .image-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.rounded-img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* STREAMING_CHUNK: Building the Shop CSS Grid layout */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.grid-card {
+    background: var(--color-bg-site);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-wrapper {
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--color-bg-section-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.card-content .btn-primary {
+    width: 100%;
+}
+
+/* STREAMING_CHUNK: Customizing the Reviews Carousel specifics */
+.review-carousel-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 60px; /* Space for dots */
+}
+
+.review-slide {
+    padding: 20px;
+}
+
+.review-card {
+    background-color: var(--color-bg-site);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.stars {
+    color: #FFB800;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.reviewer-name {
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.review-nav {
+    background-color: var(--color-bg-site);
+    color: var(--color-primary);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.review-nav:hover {
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+.review-dots .dot {
+    background-color: rgba(2, 116, 190, 0.2);
+}
+
+.review-dots .dot.active {
+    background-color: var(--color-primary);
+}
+
+/* STREAMING_CHUNK: Responsive adjustments */
+@media (max-width: 767px) {
+    .home-section { padding: 50px 0; }
+    
+    .hero-carousel-section .carousel-slide {
+        height: auto;
+        padding: 100px 0;
+    }
+    
+    .hero-text { font-size: 16px; }
+    
+    .split-layout { gap: 30px; }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .review-card { padding: 30px 20px; }
+}

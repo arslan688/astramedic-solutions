@@ -1,0 +1,184 @@
+/* STREAMING_CHUNK: Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* STREAMING_CHUNK: Defining root variables */
+:root {
+    /* Colors */
+    --color-primary: #0274BE;
+    --color-secondary: #025790;
+    --color-text-dark: #3A3A3A;
+    --color-bg-site: #FFFFFF;
+    --color-bg-section-light: #F8F9FA;
+    
+    /* Button Colors */
+    --color-btn-default: #025790;
+    --color-btn-hover: #0274BE;
+
+    /* Typography */
+    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Manrope', sans-serif;
+    
+    --font-size-base: 16px;
+    --font-weight-base: 400;
+    
+    --font-size-h1: 52px;
+    --font-size-h2: 34px;
+    --font-size-h3: 24px;
+    --font-size-h4: 20px;
+    --font-size-h5: 17px;
+    --font-size-h6: 15px; /* Inferred standard scaling */
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --container-narrow-max-width: 750px;
+}
+
+/* STREAMING_CHUNK: Applying global resets */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+/* STREAMING_CHUNK: Setting base body styles */
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-site);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+/* STREAMING_CHUNK: Constructing layout containers */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-narrow {
+    width: 100%;
+    max-width: var(--container-narrow-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* STREAMING_CHUNK: Establishing typography utilities */
+h1, .h1, 
+h2, .h2, 
+h3, .h3, 
+h4, .h4, 
+h5, .h5, 
+h6, .h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1, .h1 { font-size: var(--font-size-h1); }
+h2, .h2 { font-size: var(--font-size-h2); }
+h3, .h3 { font-size: var(--font-size-h3); }
+h4, .h4 { font-size: var(--font-size-h4); }
+h5, .h5 { font-size: var(--font-size-h5); }
+h6, .h6 { font-size: var(--font-size-h6); }
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* STREAMING_CHUNK: Building UI components */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 17px 34px;
+    background-color: var(--color-btn-default);
+    color: #FFFFFF;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: var(--color-btn-hover);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* STREAMING_CHUNK: Setting background utilities */
+.bg-light {
+    background-color: var(--color-bg-section-light);
+}
+
+.bg-white {
+    background-color: var(--color-bg-site);
+}
+
+/* STREAMING_CHUNK: Configuring media queries */
+/* Mobile Devices */
+@media (max-width: 767px) {
+    body {
+        font-size: 15px; /* Slight reduction for mobile legibility */
+    }
+    
+    h1, .h1 { font-size: calc(var(--font-size-h1) * 0.75); }
+    h2, .h2 { font-size: calc(var(--font-size-h2) * 0.8); }
+    h3, .h3 { font-size: calc(var(--font-size-h3) * 0.85); }
+    
+    .container, .container-narrow {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) {
+    /* Specific overrides for tablet and up can be placed here */
+}
+
+/* Semi-Wider Laptops */
+@media (min-width: 992px) {
+    /* Specific overrides for desktop layouts go here */
+}
+
+/* Wider Desktops */
+@media (min-width: 1200px) {
+    /* Specific overrides for large screens go here */
+}
