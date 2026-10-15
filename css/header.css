@@ -23,15 +23,8 @@
 }
 
 .logo-img {
-    max-height: 50px;
+    max-height: 100px;
     width: auto;
-}
-
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-h4);
-    font-weight: 800;
-    color: var(--color-primary);
 }
 
 /* STREAMING_CHUNK: Formatting standard desktop navigation links */

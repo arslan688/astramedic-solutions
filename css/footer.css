@@ -1,138 +1,462 @@
-/* STREAMING_CHUNK: Styling the footer structural container */
+/* STREAMING_CHUNK: Defining fallback variables and styling the footer structural container */
+:root {
+--color-bg-dark: #000000;
+}
+
 .site-footer {
-    background-color: var(--color-bg-section-light);
-    color: var(--color-text-dark);
-    padding-top: 60px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+background-color: var(--color-bg-dark);
+color: #FFFFFF;
+padding-top: 60px;
 }
 
 /* STREAMING_CHUNK: Configuring the grid layout for footer columns */
 .footer-top {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    padding-bottom: 40px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 40px;
+padding-bottom: 40px;
 }
 
 /* STREAMING_CHUNK: Formatting footer branding and description */
-.footer-logo {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.footer-logo-img {
-    max-height: 40px;
-    width: auto;
-}
-
-.footer-logo-text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-h4);
-    font-weight: 800;
-    color: var(--color-primary);
+.footer-heading-text {
+font-family: var(--font-heading);
+font-size: var(--font-size-h4);
+font-weight: 800;
+color: #FFFFFF;
 }
 
 .footer-description {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 0;
+font-size: 15px;
+line-height: 1.6;
+margin-bottom: 0;
+color: rgba(255, 255, 255, 0.8);
 }
 
 /* STREAMING_CHUNK: Styling typography for footer headings */
 .footer-heading {
-    font-size: var(--font-size-h5);
-    color: var(--color-secondary);
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 10px;
+font-size: var(--font-size-h5);
+color: #FFFFFF;
+margin-bottom: 25px;
+position: relative;
+padding-bottom: 10px;
 }
 
 .footer-heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 3px;
-    background-color: var(--color-primary);
-    border-radius: 2px;
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+width: 40px;
+height: 3px;
+background-color: var(--color-primary);
+border-radius: 2px;
 }
 
 /* STREAMING_CHUNK: Designing footer navigation and link lists */
 .footer-nav,
 .footer-contact-info {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .footer-nav li,
 .footer-contact-info li {
-    margin-bottom: 12px;
+margin-bottom: 12px;
 }
 
 .footer-contact-info li {
-    font-size: 15px;
-    line-height: 1.6;
+font-size: 15px;
+line-height: 1.6;
+color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-contact-info strong {
-    color: var(--color-secondary);
-    display: block;
-    margin-bottom: 3px;
+color: #FFFFFF;
+display: block;
+margin-bottom: 3px;
 }
 
 /* STREAMING_CHUNK: Applying interactive hover states for footer links */
 .footer-link {
-    color: var(--color-text-dark);
-    text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s ease, padding-left 0.3s ease;
-    display: inline-block;
+color: rgba(255, 255, 255, 0.8);
+text-decoration: none;
+font-size: 15px;
+transition: color 0.3s ease, padding-left 0.3s ease;
+display: inline-block;
 }
 
 .footer-nav .footer-link:hover,
 .footer-nav .footer-link:focus {
-    color: var(--color-primary);
-    padding-left: 5px;
+color: var(--color-primary);
+padding-left: 5px;
 }
 
 .footer-contact-info .footer-link:hover,
 .footer-contact-info .footer-link:focus {
-    color: var(--color-primary);
-    padding-left: 0;
+color: var(--color-primary);
+padding-left: 0;
 }
 
 /* STREAMING_CHUNK: Styling the bottom copyright bar */
 .footer-bottom {
-    background-color: var(--color-secondary);
+    background-color: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
-    text-align: center;
     padding: 20px 0;
     font-size: 14px;
 }
 
-.footer-bottom p {
-    margin: 0;
-    opacity: 0.9;
+/* Flexbox setup for Big Screens (One Row) */
+.footer-flex-container {
+    display: flex;
+    justify-content: space-between; /* Pushes text to the left, links to the right */
+    align-items: center;
+    max-width: 1200px; /* Optional: adjusts to your site's container width */
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+.footer-bottom p.copyright-text {
+    margin: 0;
+    opacity: 0.7;
+    text-align: left;
+}
+
+/* Social Links Row Layout */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px; /* Spacing between logos */
+}
+
+/* Base Icon Styling & Hover Effects */
+.social-icon {
+    font-size: 22px; /* Scale of the logos */
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Subtle hover lift */
+    filter: brightness(1.2); /* Makes the official color pop more on hover */
+}
+
+/* Official Brand Colors */
+.social-icon.facebook { color: #1877F2; }
+.social-icon.instagram { color: #E4405F; }
+.social-icon.youtube { color: #FF0000; }
+.social-icon.linkedin { color: #0077B5; }
+.social-icon.whatsapp { color: #25D366; }
+
+/* Official TikTok Neon Look */
+.social-icon.tiktok { 
+    color: #FFFFFF; 
+    filter: drop-shadow(1.5px 1.5px 0px #25F4EE) drop-shadow(-1.5px -1.5px 0px #FE0979);
+}
+.social-icon.tiktok:hover {
+    filter: drop-shadow(1.5px 1.5px 0px #25F4EE) drop-shadow(-1.5px -1.5px 0px #FE0979) brightness(1.2);
+}
+
+/* AstraMedic Solutions WhatsApp Widget */
+.wa-widget-container {
+  --wa-green: #25D366;
+  --wa-dark-green: #128C7E;
+
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  left: auto !important;
+  width: 60px !important;
+  height: 60px !important;
+  z-index: 999999 !important;
+  font-family: inherit;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease,
+              visibility .3s ease;
+}
+
+.wa-widget-container.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.wa-widget-container *,
+.wa-widget-container *::before,
+.wa-widget-container *::after {
+  box-sizing: border-box;
+}
+
+.wa-widget-container .wa-floating-btn {
+  width: 60px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  background: var(--wa-green) !important;
+  color: #fff !important;
+  font-size: 29px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,.22);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.wa-widget-container .wa-floating-btn:hover {
+  background: var(--wa-dark-green) !important;
+  transform: scale(1.06);
+}
+
+.wa-widget-container .wa-icon-close {
+  font-size: 35px;
+  line-height: 1;
+}
+
+.wa-widget-container .wa-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index: 3;
+  min-width: 21px;
+  height: 21px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: #ff3b30;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: opacity .2s ease;
+}
+
+.wa-widget-container .wa-popup-box {
+  position: absolute;
+  right: 0;
+  bottom: 76px;
+  width: 350px;
+  max-width: calc(100vw - 32px);
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.18);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px) scale(.98);
+  transform-origin: bottom right;
+  transition: opacity .25s ease, transform .25s ease,
+              visibility .25s ease;
+}
+
+.wa-widget-container .wa-popup-box.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.wa-widget-container .wa-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #075E54;
+  color: #fff;
+}
+
+.wa-widget-container .wa-avatar {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #128C7E;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.wa-widget-container .wa-online-status {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  width: 11px;
+  height: 11px;
+  background: #25D366;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.wa-widget-container .wa-header-text h4 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wa-widget-container .wa-header-text p {
+  margin: 0;
+  color: #e4f5ef;
+  font-size: 12px;
+}
+
+.wa-widget-container .wa-popup-body {
+  min-height: 150px;
+  padding: 18px 14px;
+  background: #f7f8f5;
+  background-image: radial-gradient(#e4e8e3 .7px, transparent .7px);
+  background-size: 12px 12px;
+}
+
+.wa-widget-container .wa-chat-bubble {
+  position: relative;
+  max-width: 95%;
+  padding: 12px;
+  border-radius: 10px 10px 10px 2px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+
+.wa-widget-container .wa-bot-name {
+  margin: 0 0 6px;
+  color: #128C7E;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.wa-widget-container .wa-message-text {
+  margin: 0;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.wa-widget-container .wa-chat-time {
+  display: block;
+  margin-top: 6px;
+  color: #888;
+  font-size: 10px;
+  text-align: right;
+}
+
+.wa-widget-container .wa-popup-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f4f4f4;
+}
+
+.wa-widget-container .wa-popup-footer input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  margin: 0;
+  padding: 0 13px;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  box-shadow: none;
+}
+
+.wa-widget-container .wa-popup-footer input:focus {
+  border-color: #128C7E;
+}
+
+.wa-widget-container .wa-popup-footer button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #128C7E;
+  color: #fff;
+  cursor: pointer;
+}
+
+.wa-widget-container .wa-popup-footer button:hover {
+  background: #075E54;
+}
+
+.wa-widget-container .wa-send-fallback {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-widget-container,
+  .wa-widget-container * {
+    transition: none !important;
+  }
+}
+
 
 /* STREAMING_CHUNK: Responsive adjustments for mobile devices */
 @media (max-width: 767px) {
-    .site-footer {
-        padding-top: 40px;
+.site-footer {
+padding-top: 40px;
+text-align: center;
+}
+
+.footer-logo {
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-heading {
+    margin-bottom: 15px;
+}
+
+.footer-flex-container {
+        flex-direction: column;
+        gap: 15px; 
+        text-align: center;
     }
-    
-    .footer-top {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-bottom: 30px;
-    }
-    
-    .footer-heading {
-        margin-bottom: 15px;
-    }
+
+.footer-bottom p.copyright-text {
+    text-align: center; 
+}
+.wa-widget-container {
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
+  .wa-widget-container .wa-popup-box {
+    position: fixed;
+    right: 16px;
+    bottom: 88px;
+    width: 350px;
+    max-width: calc(100vw - 32px);
+  }
+
 }

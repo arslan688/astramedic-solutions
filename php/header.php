@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <!--  -------------------------------Head Tag Elements needs to be chnaged like  
+        ---------------------------------GTM And Other things to be check-----------   
+        ------------------------------------------------------------------------------ 
+        ------------------------------------------------------------------------------ 
+        ------------------------------------------------------------------------------ 
+        ------------------------------------------------------------------------------ 
+        ------------------------------------------------------------------------------ 
+    -->
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -19,7 +27,7 @@
     <?php
     $site_name = "AstraMedic Solutions";
     $title = isset($page_title) ? $page_title . " | " . $site_name : $site_name;
-    $desc = isset($meta_description) ? $meta_description : "AstraMedic Solutions combine medical expertise, advanced technology, and professional consultancy to build solutions that support both healthcare providers and patients.";
+    $desc = isset($meta_description) ? $meta_description : "AstraMedic Solutions is a multi-dimensional service provider dedicated to transforming the healthcare, design, and digital landscapes in Pakistan.";
     $og_img = isset($og_image) ? $og_image : "/images/astramedic-default-og.jpg";
     $og_u = isset($og_url) ? $og_url : "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     ?>
@@ -31,13 +39,15 @@
     <meta property="og:url" content="<?php echo htmlspecialchars($og_u); ?>">
     <meta property="og:type" content="website">
 
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/png" href="/images/astramedic-solutions-logo-favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <!-- FontAwesome Icon Kit -->
+    <script src="https://kit.fontawesome.com/2ef3355b6b.js" crossorigin="anonymous"></script>
 
     <!-- Core and Component Styles -->
     <link rel="stylesheet" href="/css/universal.css">
@@ -52,6 +62,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header class="site-header">
         <div class="container">
@@ -59,8 +73,7 @@
 
                 <!-- Logo Section -->
                 <a href="/" class="logo-link">
-                    <img src="/images/AstraMedic-Solutions-logo.png" alt="AstraMedic Solutions Logo" class="logo-img">
-                    <span class="logo-text"></span>
+                    <img src="/images/astramedic-solutions-logo.png" alt="AstraMedic Solutions Logo" class="logo-img">
                 </a>
 
                 <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
@@ -72,7 +85,7 @@
                 <nav class="main-nav">
                     <ul class="nav-menu">
                         <li><a href="/" class="nav-link">Home</a></li>
-                        <li><a href="/consultants.php" class="nav-link">Consultants</a></li>
+                        <li><a href="/healthcare-licensing-and-consultants.php" class="nav-link">Consultants</a></li>
                         <li><a href="https://shop.astramedicsolutions.com" class="nav-link" target="_blank"
                                 rel="noopener noreferrer">Shop</a></li>
 
@@ -81,8 +94,10 @@
                             <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true"
                                 aria-expanded="false">Digital Solutions</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/digital-marketing.php" class="dropdown-link">Digital Marketing</a></li>
-                                <li><a href="/web-development.php" class="dropdown-link">Web Development</a></li>
+                                <li><a href="/healthcare-digital-marketing.php" class="dropdown-link">Digital
+                                        Marketing</a></li>
+                                <li><a href="/healthcare-web-development.php" class="dropdown-link">Web Development</a>
+                                </li>
                                 <li><a href="/healthcare-softwares.php" class="dropdown-link">Healthcare Softwares</a>
                                 </li>
                             </ul>

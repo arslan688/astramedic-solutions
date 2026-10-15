@@ -1,0 +1,262 @@
+/* STREAMING_CHUNK: Page Header & Global Utilities */
+.page-web-development {
+padding-bottom: 0;
+}
+
+.page-header {
+padding: 80px 0;
+}
+
+.intro-text {
+max-width: 800px;
+margin: 0 auto;
+font-size: 18px;
+opacity: 0.9;
+}
+
+.section-header {
+margin-bottom: 50px;
+}
+
+.text-primary {
+color: var(--color-primary);
+}
+
+.text-white {
+color: #FFFFFF !important;
+}
+
+.text-white-muted {
+color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.shadow {
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.mt-3 {
+margin-top: 1rem;
+}
+
+/* STREAMING_CHUNK: Modern Pricing Grid with Strict Explicit Columns */
+.wd-pricing-section {
+padding: 80px 0;
+}
+
+.wd-pricing-grid {
+display: grid;
+/* STRICT RULE: Explicit column count, no auto-fit/auto-fill */
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+align-items: center;
+}
+
+.pricing-card {
+background: #ffffff;
+border-radius: 16px;
+padding: 50px 30px;
+border: 1px solid rgba(0, 0, 0, 0.03);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+display: flex;
+flex-direction: column;
+position: relative;
+overflow: hidden;
+transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.pricing-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.featured-package {
+background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+border: none;
+transform: scale(1.05);
+box-shadow: 0 20px 40px rgba(2, 116, 190, 0.2);
+z-index: 2;
+}
+
+.featured-package::before {
+content: "Popular";
+position: absolute;
+top: 24px;
+right: -35px;
+background: #ffffff;
+color: var(--color-primary);
+font-size: 12px;
+font-weight: 800;
+padding: 6px 40px;
+transform: rotate(45deg);
+text-transform: uppercase;
+letter-spacing: 1px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.pricing-title {
+text-align: center;
+margin-bottom: 20px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+font-size: 18px;
+}
+
+.pricing-amount {
+text-align: center;
+color: var(--color-primary);
+margin-bottom: 30px;
+padding-bottom: 30px;
+border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.featured-package .pricing-amount {
+border-bottom-color: rgba(255,255,255,0.15);
+}
+
+.price-original {
+font-size: 18px;
+text-decoration: line-through;
+color: #999;
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+}
+
+.price-current .currency {
+font-size: 24px;
+font-weight: 700;
+vertical-align: top;
+position: relative;
+top: 8px;
+margin-right: 2px;
+}
+
+.price-current .price {
+font-size: 56px;
+font-weight: 800;
+font-family: var(--font-heading);
+line-height: 1;
+}
+
+.pricing-features {
+list-style: none;
+margin-bottom: 40px;
+flex-grow: 1;
+padding: 0;
+}
+
+.pricing-features li {
+margin-bottom: 18px;
+font-size: 15px;
+display: flex;
+align-items: flex-start;
+gap: 12px;
+color: var(--color-text-dark);
+}
+
+.featured-package .pricing-features li {
+color: #ffffff;
+}
+
+.pricing-features li i {
+color: var(--color-primary);
+margin-top: 4px;
+background: rgba(2, 116, 190, 0.1);
+width: 24px;
+height: 24px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+font-size: 12px;
+flex-shrink: 0;
+}
+
+.featured-package .pricing-features li i {
+color: var(--color-primary);
+background: #FFFFFF;
+}
+
+.btn-light {
+background-color: #FFFFFF;
+color: var(--color-primary);
+}
+
+.btn-light:hover,
+.btn-light:focus {
+background-color: #F8F9FA;
+color: var(--color-secondary);
+}
+
+/* STREAMING_CHUNK: Projects Grid with Strict Explicit Columns */
+.wd-projects-section {
+padding: 80px 0;
+}
+
+.wd-projects-grid {
+display: grid;
+/* STRICT RULE: Explicit column count, no auto-fit/auto-fill */
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.project-card {
+background-color: var(--color-bg-section-light);
+border-radius: 12px;
+padding: 40px 30px;
+text-align: center;
+border: 1px solid rgba(0, 0, 0, 0.05);
+transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+transform: translateY(-5px);
+}
+
+.project-icon {
+font-size: 40px;
+color: var(--color-primary);
+margin-bottom: 20px;
+}
+
+.wd-contact-section {
+padding: 80px 0;
+}
+
+/* STREAMING_CHUNK: Responsive Architecture with Explicit Column Overrides */
+@media (max-width: 991px) {
+.wd-pricing-grid {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.wd-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.featured-package {
+    transform: scale(1);
+}
+
+
+}
+
+@media (max-width: 767px) {
+.page-header,
+.wd-pricing-section,
+.wd-projects-section,
+.wd-contact-section {
+padding: 50px 0;
+}
+
+.wd-projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.pricing-card {
+    padding: 40px 20px;
+}
+
+
+}
