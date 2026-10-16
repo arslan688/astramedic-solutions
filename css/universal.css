@@ -4,8 +4,10 @@
 /* STREAMING_CHUNK: Defining root variables */
 :root {
     /* Colors */
-    --color-primary: #0274BE;
-    --color-secondary: #025790;
+    /* --color-primary: #0274BE; */
+    --color-primary: #00285C;
+    /* --color-secondary: #025790; */
+    --color-secondary: #001D43;
     --color-text-dark: #3A3A3A;
     --color-bg-site: #FFFFFF;
     --color-bg-dark: #090D0F;
@@ -80,6 +82,7 @@ a:hover {
     max-width: var(--container-max-width);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
