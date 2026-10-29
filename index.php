@@ -3,44 +3,180 @@
 <link rel="stylesheet" href="/css/index.css">
 
 <main class="page-home">
-    
+
     <section class="hero-carousel-section">
-        <div class="carousel-container" id="heroCarousel">
-            <div class="carousel-track">
-                
-                <!-- Slide 1 -->
-                <div class="carousel-slide active">
-                    <div class="hero-overlay"></div>
-                    <img src="/images/hero-bg-1.jpg" alt="AstraMedic Healthcare Excellence" class="hero-bg">
-                    <div class="container hero-content">
-                        <h1 class="h1">AstraMedic Solutions</h1>
-                        <h2 class="h3">Your Trusted Partner in Healthcare Excellence</h2>
-                        <p class="hero-text">Healthcare is evolving and AstraMedic Solutions is proud to be part of that transformation. We combine medical expertise, advanced technology, and professional consultancy to build solutions that support both healthcare providers and patients.</p>
-                        <a href="/about.php" class="btn-primary">Learn More</a>
-                    </div>
-                </div>
+        <div class="hero-carousel" id="heroCarousel" aria-roledescription="carousel"
+            aria-label="AstraMedic Solutions services">
 
-                <!-- Slide 2 -->
-                <div class="carousel-slide">
+            <div class="hero-carousel-track">
+
+                <!-- Slide 1: AstraMedic Solutions -->
+                <article class="hero-carousel-slide is-active" aria-hidden="false">
+
                     <div class="hero-overlay"></div>
-                    <img src="/images/hero-bg-2.jpg" alt="AstraMedic Integrated Services" class="hero-bg">
-                    <div class="container hero-content">
-                        <h1 class="h1">Empowering Healthcare</h1>
-                        <h2 class="h3">Medical Supplies, Licensing, Digital Solutions, and Consultations</h2>
-                        <p class="hero-text">With a vision to bridge gaps in global healthcare systems, AstraMedic Solutions empowers professionals, strengthens healthcare infrastructure, and delivers compassionate care wherever it is needed.</p>
-                        <a href="/consultants.php" class="btn-primary">Explore Services</a>
+
+                    <img src="/images/AstraMedic-Solutions_Hero-Image.webp"
+                        alt="AstraMedic Solutions healthcare services" class="hero-bg" fetchpriority="high">
+
+                    <div class="hero-content">
+                        <span class="hero-eyebrow">YOUR HEALTHCARE PARTNER</span>
+
+                        <h1 class="hero-title">
+                            AstraMedic Solutions
+                        </h1>
+
+                        <h2 class="hero-subtitle">
+                            Your Trusted Partner in Healthcare Excellence
+                        </h2>
+
+                        <p class="hero-text">
+                            Healthcare is evolving, and AstraMedic Solutions is proud
+                            to be part of that transformation. We combine medical
+                            expertise, advanced technology, and professional
+                            consultancy to build solutions that support healthcare
+                            providers and patients.
+                        </p>
+
+                        <a href="/about.php" class="hero-btn hero-btn-primary">
+                            Learn More <span aria-hidden="true">↗</span>
+                        </a>
                     </div>
-                </div>
+                </article>
+
+                <!-- Slide 2: AstraMedic Consultants -->
+                <article class="hero-carousel-slide" aria-hidden="true">
+
+                    <div class="hero-overlay"></div>
+
+                    <img src="/images/Astramedic-cosultant-banner.png"
+                        alt="AstraMedic Consultants international licensing services" class="hero-bg" loading="lazy">
+
+                    <div class="hero-content">
+                        <span class="hero-eyebrow">INTERNATIONAL HEALTHCARE CAREERS</span>
+
+                        <h2 class="hero-title">
+                            AstraMedic Consultants
+                        </h2>
+
+                        <h3 class="hero-subtitle">
+                            Empowering Healthcare Professionals Worldwide
+                        </h3>
+
+                        <p class="hero-text">
+                            We guide doctors, nurses, and allied health professionals
+                            through licensing, credential verification, and
+                            international registration pathways, including HCPC
+                            (UK), CORU (Ireland), PBNZ (New Zealand), DHA (Dubai),
+                            DOH (Abu Dhabi), MOH (UAE), Qatar, and Saudi Arabia.
+                            Our team supports you throughout your professional
+                            registration journey.
+                        </p>
+
+                        <a href="/consultants.php" class="hero-btn hero-btn-primary">
+                            Explore Services <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Slide 3: AstraMedic Shop -->
+                <article class="hero-carousel-slide" aria-hidden="true">
+
+                    <div class="hero-overlay"></div>
+
+                    <img src="/images/AstraMedic-Shop-Barner.webp"
+                        alt="Medical equipment and healthcare products from AstraMedic Shop" class="hero-bg"
+                        loading="lazy">
+
+                    <div class="hero-content">
+                        <span class="hero-eyebrow">HEALTHCARE PRODUCTS IN PAKISTAN</span>
+
+                        <h2 class="hero-title">
+                            AstraMedic Shop
+                        </h2>
+
+                        <h3 class="hero-subtitle">
+                            Medical Equipment and Healthcare Solutions
+                        </h3>
+
+                        <p class="hero-text">
+                            Explore hospital furniture, surgical disposables,
+                            physiotherapy equipment, rehabilitation devices, and
+                            healthcare essentials for clinics, hospitals, healthcare
+                            professionals, and homecare users across Pakistan.
+                        </p>
+
+                        <a href="https://shop.astramedicsolutions.com" class="hero-btn hero-btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            Visit the Shop <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Slide 4: AstraMedic Digital Solutions -->
+                <article class="hero-carousel-slide" aria-hidden="true">
+
+                    <div class="hero-overlay"></div>
+
+                    <img src="/images/AstraMedic-Digital-Solutions-Banner.webp"
+                        alt="AstraMedic Digital Solutions for healthcare organizations" class="hero-bg" loading="lazy">
+
+                    <div class="hero-content">
+                        <span class="hero-eyebrow">DIGITAL GROWTH FOR HEALTHCARE</span>
+
+                        <h2 class="hero-title">
+                            AstraMedic Digital Solutions
+                        </h2>
+
+                        <h3 class="hero-subtitle">
+                            Digital Marketing and IT Solutions for Healthcare
+                        </h3>
+
+                        <p class="hero-text">
+                            We develop tailored digital marketing strategies,
+                            responsive and SEO-friendly websites, and healthcare
+                            technology solutions, including Hospital Information
+                            Management System (HIMS) portals, to help healthcare
+                            organizations strengthen their digital presence and
+                            streamline operations.
+                        </p>
+
+                        <a href="/digital-solutions.php" class="hero-btn hero-btn-primary">
+                            Discover More <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
 
             </div>
-            
-            <!-- Carousel Controls -->
-            <button class="carousel-btn prev-btn" aria-label="Previous Slide">❮</button>
-            <button class="carousel-btn next-btn" aria-label="Next Slide">❯</button>
-            <div class="carousel-indicators">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
+
+            <!-- Previous / Next Controls -->
+            <div class="hero-carousel-navigation">
+
+                <button type="button" class="hero-carousel-arrow hero-prev" aria-label="Previous slide">
+                    <span aria-hidden="true">&#10094;</span>
+                </button>
+
+                <div class="hero-carousel-indicators" aria-label="Choose a slide">
+
+                    <button type="button" class="hero-dot is-active" data-index="0" aria-label="Go to slide 1"
+                        aria-current="true"></button>
+
+                    <button type="button" class="hero-dot" data-index="1" aria-label="Go to slide 2"></button>
+
+                    <button type="button" class="hero-dot" data-index="2" aria-label="Go to slide 3"></button>
+
+                    <button type="button" class="hero-dot" data-index="3" aria-label="Go to slide 4"></button>
+                </div>
+
+                <button type="button" class="hero-carousel-arrow hero-next" aria-label="Next slide">
+                    <span aria-hidden="true">&#10095;</span>
+                </button>
+
             </div>
+
+            <div class="hero-carousel-progress" aria-hidden="true">
+                <span class="hero-progress-bar"></span>
+            </div>
+
         </div>
     </section>
 
@@ -49,13 +185,21 @@
             <div class="split-layout">
                 <div class="content-col">
                     <h2 class="h2 section-title">HealthCare Consultants</h2>
-                    <h3 class="h5 section-subtitle">Expert Guidance for International Healthcare Licensing and Migration.</h3>
-                    <p>At AstraMedic Consultants, we specialize in healthcare licensing solutions for professionals worldwide. Whether you’re a doctor, nurse, or allied health professional, we provide expert guidance in obtaining internationally recognized licenses such as HCPC (UK), CORU (Ireland), Physiotherapy Board of New Zealand (PBNZ), DHA (Dubai), HAAD/DOH (Abu Dhabi), MOH (UAE), QCHP (Qatar), and SCFHS (Saudi Arabia).</p>
-                    <p>Our experienced team ensures a smooth, transparent, and hassle-free process, supporting you at every step of your licensing journey and helping you achieve global professional registration with confidence.</p>
-                    <a href="/consultants.php" class="btn-primary mt-4">Get Your License</a>
+                    <h3 class="h5 section-subtitle">Expert Guidance for International Healthcare Licensing and
+                        Migration.</h3>
+                    <p>At AstraMedic Consultants, we specialize in healthcare licensing solutions for professionals
+                        worldwide. Whether you’re a doctor, nurse, or allied health professional, we provide expert
+                        guidance in obtaining internationally recognized licenses such as HCPC (UK), CORU (Ireland),
+                        Physiotherapy Board of New Zealand (PBNZ), DHA (Dubai), HAAD/DOH (Abu Dhabi), MOH (UAE), QCHP
+                        (Qatar), and SCFHS (Saudi Arabia).</p>
+                    <p>Our experienced team ensures a smooth, transparent, and hassle-free process, supporting you at
+                        every step of your licensing journey and helping you achieve global professional registration
+                        with confidence.</p>
+                    <a href="/consultants.php" class="btn-primary">Get Your License</a>
                 </div>
                 <div class="image-col">
-                    <img src="/images/healthcare-licensing-immigration.jpg" alt="Healthcare Licensing and immigration" class="rounded-img shadow">
+                    <img src="/images/Healthcare-Licensing-and-immigration.jpg"
+                        alt="Healthcare Licensing and immigration" class="rounded-img shadow">
                 </div>
             </div>
         </div>
@@ -64,14 +208,16 @@
     <section class="home-section split-section bg-light">
         <div class="container">
             <div class="split-layout reverse">
-                <div class="image-col">
-                    <img src="/images/astramedic-digital-marketing-solutions.jpg" alt="AstraMedic Digital Marketing Solutions" class="rounded-img shadow">
-                </div>
                 <div class="content-col">
                     <h2 class="h2 section-title">Digital Healthcare Solutions</h2>
                     <h3 class="h5 section-subtitle">Digital Marketing - Web Development</h3>
-                    <p>AstraMedic Digital Solutions enhances healthcare organizations’ online presence with specialized digital marketing, web development, and SEO services.</p>
-                    <a href="/digital-marketing.php" class="btn-primary mt-4">Get Your Service</a>
+                    <p>AstraMedic Digital Solutions enhances healthcare organizations’ online presence with specialized
+                        digital marketing, web development, and SEO services.</p>
+                    <a href="/digital-marketing.php" class="btn-primary">Get Your Service</a>
+                </div>
+                <div class="image-col">
+                    <img src="/images/AstraMedic-Digital-Solutions-Design.jpg"
+                        alt="AstraMedic Digital Marketing Solutions" class="rounded-img shadow">
                 </div>
             </div>
         </div>
@@ -83,50 +229,64 @@
                 <h2 class="h2 section-title">AstraMedic Shop</h2>
                 <p class="section-subtitle">All hospital and physiotherapy related Equipments.</p>
             </div>
-            
+
             <div class="service-grid">
-                
+
                 <div class="grid-card">
                     <div class="card-img-wrapper">
-                        <img src="/images/medical-equipment.jpg" alt="Medical Equipment">
+                        <img src="/images/Medical-Equipments-AstraMedic-Shop.jpg" alt="Medical Equipment">
                     </div>
                     <div class="card-content">
                         <h3 class="h4">Medical Equipment</h3>
-                        <p>We are trading range Medical Devices like X-ray machines, ultrasound machines, and blood pressure monitors, glucometers as well as life-saving devices such as ventilators and defibrillators. We also deal in hospital Furniture i.e. beds, stretchers, chairs, and examination tables etc.</p>
-                        <a href="https://shop.astramedicsolutions.com" class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
+                        <p>We are trading range Medical Devices like X-ray machines, ultrasound machines, and blood
+                            pressure monitors, glucometers as well as life-saving devices such as ventilators and
+                            defibrillators. We also deal in hospital Furniture i.e. beds, stretchers, chairs, and
+                            examination tables etc.</p>
+                        <a href="https://shop.astramedicsolutions.com/product-category/medical/" class="btn-primary"
+                            target="_blank" rel="noopener noreferrer">shop now</a>
                     </div>
                 </div>
 
                 <div class="grid-card">
                     <div class="card-img-wrapper">
-                        <img src="/images/surgical-disposables.jpg" alt="Surgical Disposables">
+                        <img src="/images/Surgical-Disposables-AstraMedic-Shop.jpg" alt="Surgical Disposables">
                     </div>
                     <div class="card-content">
                         <h3 class="h4">Surgical Disposables</h3>
-                        <p>High-quality products designed for use in operating rooms and sterile environments. We are trading disposable medical supplies, including surgical masks, gloves, gowns, drapes, syringes, needles, catheters, bandages, and other essential items used in medical procedures.</p>
-                        <a href="https://shop.astramedicsolutions.com" class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
+                        <p>High-quality products designed for use in operating rooms and sterile environments. We are
+                            trading disposable medical supplies, including surgical masks, gloves, gowns, drapes,
+                            syringes, needles, catheters, bandages, and other essential items used in medical
+                            procedures.</p>
+                        <a href="https://shop.astramedicsolutions.com/product-category/surgical/" class="btn-primary"
+                            target="_blank" rel="noopener noreferrer">shop now</a>
                     </div>
                 </div>
 
                 <div class="grid-card">
                     <div class="card-img-wrapper">
-                        <img src="/images/physiotherapy-equipment.jpg" alt="Physiotherapy Equipment">
+                        <img src="/images/Physiotherapy-Equipments-AstraMedic-Shop.jpg" alt="Physiotherapy Equipment">
                     </div>
                     <div class="card-content">
                         <h3 class="h4">Physiotherapy Equipment</h3>
-                        <p>We offer a wide variety of high-quality equipment, including electrotherapy devices, ultrasound machines, rehabilitation tools, massage tables, and more. Many of our products feature adjustable settings to provide personalized treatment and optimal results.</p>
-                        <a href="https://shop.astramedicsolutions.com" class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
+                        <p>We offer a wide variety of high-quality equipment, including electrotherapy devices,
+                            ultrasound machines, rehabilitation tools, massage tables, and more. Many of our products
+                            feature adjustable settings to provide personalized treatment and optimal results.</p>
+                        <a href="https://shop.astramedicsolutions.com/product-category/physiotherapy/"
+                            class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
                     </div>
                 </div>
 
                 <div class="grid-card">
                     <div class="card-img-wrapper">
-                        <img src="/images/special-education-toys.jpg" alt="Special Education Toys">
+                        <img src="/images/Special-Education-Toys-AstraMedic-Shop.jpg" alt="Special Education Toys">
                     </div>
                     <div class="card-content">
                         <h3 class="h4">Special Education Toys</h3>
-                        <p>Empower every child’s unique learning journey with our Special Education Toys. Carefully selected to boost cognitive skills, sensory development, and motor coordination, these purposeful tools make therapy and playtime both engaging and effective.</p>
-                        <a href="https://shop.astramedicsolutions.com" class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
+                        <p>Empower every child’s unique learning journey with our Special Education Toys. Carefully
+                            selected to boost cognitive skills, sensory development, and motor coordination, these
+                            purposeful tools make therapy and playtime both engaging and effective.</p>
+                        <a href="https://shop.astramedicsolutions.com/product-category/special-education-toys/"
+                            class="btn-primary" target="_blank" rel="noopener noreferrer">shop now</a>
                     </div>
                 </div>
 
@@ -134,53 +294,7 @@
         </div>
     </section>
 
-    <section class="home-section reviews-section bg-light">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="h2 section-title">Our Clients Reviews</h2>
-            </div>
-            
-            <div class="carousel-container review-carousel-wrapper" id="reviewCarousel">
-                <div class="carousel-track review-track">
-                    
-                    <div class="carousel-slide review-slide active">
-                        <div class="review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"...I deeply appreciate the exceptional service and seamless support by AstraMedic during my..."</p>
-                            <h4 class="h5 reviewer-name">Shahbaz Hassan</h4>
-                        </div>
-                    </div>
-
-                    <div class="carousel-slide review-slide">
-                        <div class="review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"I recently utilized the services of this medical equipment, I have never seen such kind of service, brilliant work. Highly recommended"</p>
-                            <h4 class="h5 reviewer-name">Uzma</h4>
-                        </div>
-                    </div>
-
-                    <div class="carousel-slide review-slide">
-                        <div class="review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Very outstanding work, they give a top priority to their client and guide them in choosing the best equipment for their needs, plus their rate is very reasonable"</p>
-                            <h4 class="h5 reviewer-name">Faisal Baqar</h4>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Review Carousel Controls -->
-                <button class="carousel-btn prev-btn review-nav" aria-label="Previous Review">❮</button>
-                <button class="carousel-btn next-btn review-nav" aria-label="Next Review">❯</button>
-                <div class="carousel-indicators review-dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+    <div id="featurable-8177a540-6015-43fd-86ca-9a191522978a" data-featurable-async ></div><script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
 
 </main>
 

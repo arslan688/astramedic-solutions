@@ -10,7 +10,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="page-header bg-white text-center">
         <div class="container">
             <h1 class="h1 text-primary">Web Development Services</h1>
-            <p class="intro-text mt-3">A well-designed website makes it easy for patients to find and contact you. We
+            <p class="intro-text">A well-designed website makes it easy for patients to find and contact you. We
                 build responsive, fast, and user-friendly websites that include service details, appointment booking
                 options, and clear navigation. Each site is optimized for search engines from the start. We develop
                 websites that are fast, mobile-friendly, and optimized for SEO.</p>
@@ -51,15 +51,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
                 <!-- Business Website Package (Featured) -->
                 <div class="pricing-card featured-package shadow">
-                    <h3 class="h4 pricing-title text-white">Business Website</h3>
-                    <div class="pricing-amount text-white">
+                    <h3 class="h4 pricing-title">Business Website</h3>
+                    <div class="pricing-amount">
                         <span class="price-original text-white-muted">Rs 44,999</span>
                         <div class="price-current">
                             <span class="currency">Rs</span>
                             <span class="price">32,999</span>
                         </div>
                     </div>
-                    <ul class="pricing-features text-white">
+                    <ul class="pricing-features">
                         <li><i class="fa-solid fa-file-lines"></i> 8 to 12 Pages</li>
                         <li><i class="fa-solid fa-user-tie"></i> Expert Consultation</li>
                         <li><i class="fa-solid fa-envelope"></i> Contact Forms</li>

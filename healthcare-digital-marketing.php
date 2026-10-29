@@ -11,7 +11,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="page-header bg-white text-center">
         <div class="container">
             <h1 class="h1 text-primary">Healthcare Digital Marketing Services</h1>
-            <p class="intro-text mt-3">Grow your healthcare brand online with strategies designed to attract patients, build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and stories for social media, and creates targeted and in-budget ads.</p>
+            <p class="intro-text">Grow your healthcare brand online with strategies designed to attract patients, build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and stories for social media, and creates targeted and in-budget ads.</p>
         </div>
     </section>
 
@@ -82,13 +82,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
                 <!-- Hospital Package (Featured) -->
                 <div class="pricing-card featured-package shadow">
-                    <h3 class="h4 pricing-title text-white">Hospital Package</h3>
-                    <div class="pricing-amount text-white">
+                    <h3 class="h4 pricing-title">Hospital Package</h3>
+                    <div class="pricing-amount">
                         <span class="currency">Rs</span>
                         <span class="price">32,000</span>
                         <div class="duration">/ month</div>
                     </div>
-                    <ul class="pricing-features text-white">
+                    <ul class="pricing-features">
                         <li><i class="fa-solid fa-check"></i> Platform setup (FB, Insta, GMB, Tiktok)</li>
                         <li><i class="fa-solid fa-check"></i> Design 5 posts and a reel weekly (FB & Insta)</li>
                         <li><i class="fa-solid fa-check"></i> Design & Post 2 posts for GMB</li>

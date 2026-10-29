@@ -26,10 +26,6 @@
     z-index: 2;
 }
 
-.text-white {
-    color: #FFFFFF !important;
-}
-
 .btn-light {
     background-color: #FFFFFF;
     color: var(--color-primary);

@@ -10,10 +10,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <!-- Section 1: Company Intro -->
     <section class="about-intro-section">
         <div class="container">
-            <h1 class="h1 text-center mb-5">About Us</h1>
+            <h1 class="h1 text-center">About Us</h1>
             <div class="intro-grid">
                 <div class="intro-text-col">
-                    <h2 class="h3 mb-3">Company Introduction</h2>
+                    <h2 class="h3">Company Introduction</h2>
                     <p>Welcome to AstraMedic Solutions! We’re a private, non-governmental, and non-political medical and
                         rehabilitation organization located near Peshawar Road in Rawalpindi, Pakistan. Have you ever
                         wondered what it feels like to receive healthcare that’s both modern and deeply personal? That’s
@@ -23,7 +23,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         gap between innovation and practical solutions, we have grown into a trusted name for delivering
                         quality products, expert services, and customer-focused experiences.</p>
 
-                    <h2 class="h3 mt-4 mb-3">Company Profile</h2>
+                    <h2 class="h3">Company Profile</h2>
                     <p>Headquartered in Islamabad and Rawalpindi, AstraMedic Solutions operates across multiple sectors
                         through specialized divisions. From advanced medical equipment supply and home health services
                         to interior design, immigration consultancy, and digital solutions, we cater to the evolving
@@ -40,10 +40,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <!-- Section 2: Mission & Vision -->
     <section class="mission-vision-section">
         <div class="container">
-            <h2 class="h2 text-center mb-5">Our Mission and Vision</h2>
+            <h2 class="h2 text-center">Our Mission and Vision</h2>
             <div class="mv-grid">
 
-                <div class="mv-card card-peach">
+                <div class="mv-card">
                     <div class="mv-icon">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
@@ -52,7 +52,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         growth, and create long-term value for our clients and communities.</p>
                 </div>
 
-                <div class="mv-card card-peach">
+                <div class="mv-card">
                     <div class="mv-icon">
                         <i class="fa-solid fa-eye"></i>
                     </div>
@@ -68,7 +68,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <!-- Section 3: Our Values -->
     <section class="values-section">
         <div class="container">
-            <h2 class="h2 text-center mb-5">Our Values</h2>
+            <h2 class="h2 text-center">Our Values</h2>
             <div class="values-grid">
 
                 <div class="value-card card-green">
@@ -102,7 +102,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <!-- Section 4: Our Projects -->
     <section class="projects-section">
         <div class="container">
-            <h2 class="h2 text-center mb-5">Our Projects</h2>
+            <h2 class="h2 text-center">Our Projects</h2>
             <div class="projects-grid">
 
                 <div class="project-card card-gray">
@@ -143,7 +143,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="container">
             <div class="ceo-grid">
                 <div class="ceo-text-col">
-                    <h2 class="h2 mb-4">CEO Message</h2>
+                    <h2 class="h2">CEO Message</h2>
                     <p>At AstraMedic Solutions, we are committed to transforming healthcare through innovation,
                         integrity, and excellence. Our mission is to provide top-tier medical solutions, healthcare
                         licensing & immigration support, and digital transformation tools that empower healthcare
@@ -157,9 +157,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         healthcare industry and will continue to innovate to meet the demands of an ever-changing world.
                     </p>
                     <p>Thank you for being a part of our journey. Together, we can shape a healthier future.</p>
-                    <div class="ceo-signature mt-4">
-                        <h3 class="h5 text-primary mb-1">Dr. Munazza Saeed</h3>
-                        <p class="mb-0">CEO, AstraMedic Solutions</p>
+                    <div class="ceo-signature">
+                        <h3 class="h5 text-primary">Dr. Munazza Saeed</h3>
+                        <p>CEO, AstraMedic Solutions</p>
                     </div>
                 </div>
                 <div class="ceo-img-col">
@@ -174,7 +174,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
     <section class="team-section">
         <div class="container">
-            <h2 class="h2 text-center mb-5">AstraMedic Team</h2>
+            <h2 class="h2 text-center">AstraMedic Team</h2>
 
             <div class="carousel-container relative-container">
                 <button class="carousel-btn prev-btn" aria-label="Previous Team Member">❮</button>

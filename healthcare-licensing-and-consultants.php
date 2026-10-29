@@ -10,15 +10,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="licensing-hero">
         <div class="container">
             <div class="hero-content-left">
-                <h1 class="h1 text-white">AstraMedic Consultants</h1>
-                <h2 class="h4 text-white mt-3">Empowering healthcare professionals worldwide with seamless licensing,
+                <h1 class="h1">AstraMedic Consultants</h1>
+                <h2 class="h4">Empowering healthcare professionals worldwide with seamless licensing,
                     verification, and global registration support.</h2>
-                <p class="mt-3 text-white">At AstraMedic Consultants, we specialize in healthcare licensing solutions
+                <p>At AstraMedic Consultants, we specialize in healthcare licensing solutions
                     for professionals worldwide. Whether you’re a doctor, nurse, or allied health professional, we
                     provide expert guidance in obtaining internationally recognized licenses such as HCPC (UK), CORU
                     (Ireland), Physiotherapy Board of New Zealand (PBNZ), DHA (Dubai), HAAD/DOH (Abu Dhabi), MOH (UAE),
                     QCHP (Qatar), and SCFHS (Saudi Arabia).</p>
-                <a href="#contact" class="btn-primary mt-4">Contact us Now</a>
+                <a href="#contact" class="btn-primary">Contact us Now</a>
             </div>
         </div>
     </section>
@@ -27,149 +27,217 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="container">
             <div class="stats-explicit-grid">
 
-                <div class="stat-block text-center">
-                    <div class="stat-number-wrapper">
-                        <span class="stat-num text-primary" data-target="25">0</span>
-                        <span class="stat-suffix text-primary">+</span>
-                    </div>
-                    <h3 class="h5">Numbers That Build Trust</h3>
-                    <p>Every stat represents a healthcare professional whose dream we turned into reality.</p>
+                <!-- 1. Center / Top Headline Segment -->
+                <div class="stat-block text-center main-headline">
+                    <h2 class="font-weight-bold">Numbers That Build Trust</h2>
+                    <p class="lead-text">Every stat represents a healthcare professional whose international licensing
+                        dream we turned into reality.</p>
                 </div>
 
-                <div class="stat-block text-center">
-                    <div class="stat-number-wrapper">
-                        <span class="stat-num text-primary" data-target="15">0</span>
-                    </div>
-                    <h3 class="h5">Approvals This Month</h3>
-                    <p>Ongoing successful cases processed efficiently and accurately.</p>
-                </div>
+                <!-- 2. Dual Column Stats Container -->
+                <div class="metrics-container">
 
-                <div class="stat-block text-center">
-                    <div class="stat-number-wrapper">
-                        <span class="stat-num text-primary" data-target="100">0</span>
-                        <span class="stat-suffix text-primary">+</span>
+                    <!-- Left Stats Stack: Ongoing Cases -->
+                    <div class="stat-block text-center metric-column reverse-layout">
+                        <h3 class="stat-label">Ongoing Cases</h3>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num text-primary" data-target="25">25</span>
+                            <span class="stat-suffix text-primary">+</span>
+                        </div>
                     </div>
-                    <h3 class="h5">Successful Verifications</h3>
-                    <p>Professionals guided securely through stringent global requirements.</p>
+
+                    <!-- Right Stats Stack: Approvals & Verifications Combined -->
+                    <div class="stat-block text-center metric-column right-stack">
+                        <!-- Top Sub-Metric -->
+                        <div class="metric-group top-metric">
+                            <h3 class="stat-label">Approvals This Month</h3>
+                            <div class="stat-number-wrapper">
+                                <span class="stat-num text-primary" data-target="15">15</span>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Sub-Metric -->
+                        <div class="metric-group bottom-metric">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-num text-primary" data-target="100">100</span>
+                                <span class="stat-suffix text-primary">+</span>
+                            </div>
+                            <h3 class="stat-label">Successful Verifications</h3>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="registration-cases-section bg-white">
+
+    <!-- ------------------Carousel -->
+    <section class="registration-cases-section">
         <div class="container">
+
             <div class="section-header text-center">
-                <h2 class="h2">Our Successful Registration Cases</h2>
-                <p>Our highest achievement is your professional success. Explore how we’ve empowered professionals
-                    worldwide.</p>
+                <h2>Our Successful Registration Cases</h2>
+                <p>
+                    Our highest achievement is your professional success.
+                    Explore how we’ve empowered professionals worldwide.
+                </p>
             </div>
 
-            <div class="carousel-container mt-4" id="casesCarousel">
+            <div class="cases-carousel" id="casesCarousel" aria-label="Successful registration cases">
+
                 <div class="carousel-track">
 
-                    <!-- Slide 1 -->
+                    <!-- SLIDE 1:-->
                     <div class="carousel-slide">
-                        <div class="cases-explicit-grid">
-                            <div class="case-card">
-                                <img src="/images/hcpc-registration-mockup.jpg"
-                                    alt="HCPC Registration Success Mobile Mockup" class="styled-image">
-                                <h3 class="h5 text-center mt-3">HCPC UK Approval</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/dha-dubai-mockup.jpg" alt="DHA Dubai Licensing Mobile Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">DHA Dubai Licensing</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/nz-physio-mockup.jpg" alt="New Zealand Physiotherapy Board Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">PBNZ Registration</h3>
-                            </div>
-                        </div>
+                        <!-- Card 1 -->
+                        <article class="case-card">
+
+                            <img src="/images/success-cases/hcpc-logo.jpg" class="case-logo" alt="HCPC logo">
+
+                            <h2>HCPC UK Approval</h2>
+
+                            <img src="/images/success-cases/hcpc-registration.jpg" class="case-proof-image"
+                                alt="HCPC registration success case">
+                        </article>
+                        <!-- Card 2 -->
+                        <article class="case-card">
+
+                            <img src="/images/success-cases/coru-logo.jpg" class="case-logo" alt="CORU logo">
+
+                            <h2>CORU Ireland Registration</h2>
+
+                            <img src="/images/success-cases/coru-successful-registration.jpg" class="case-proof-image"
+                                alt="CORU registration success case">
+                        </article>
+                        <!-- Card 3 -->
+                        <article class="case-card">
+                            <img src="/images/success-cases/dataflow-logo.jpg" class="case-logo" alt="DataFlow logo">
+
+                            <h2>DataFlow Verification</h2>
+
+                            <img src="/images/success-cases/dataflow-verification.jpg" class="case-proof-image"
+                                alt="DataFlow verification success case">
+                        </article>
+
                     </div>
 
-                    <!-- Slide 2 -->
+                    <!-- SLIDE 2: -->
                     <div class="carousel-slide">
-                        <div class="cases-explicit-grid">
-                            <div class="case-card">
-                                <img src="/images/coru-ireland-mockup.jpg"
-                                    alt="CORU Ireland Registration Success Mobile Mockup" class="styled-image">
-                                <h3 class="h5 text-center mt-3">CORU Ireland Registration</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/haad-abudhabi-mockup.jpg" alt="HAAD Abu Dhabi Licensing Mobile Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">HAAD/DOH Abu Dhabi</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/moh-uae-mockup.jpg" alt="MOH UAE Licensing Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">MOH UAE Approval</h3>
-                            </div>
-                        </div>
+                        <!-- card 4 -->
+                        <article class="case-card">
+
+                            <img src="/images/success-cases/coru-logo.jpg" class="case-logo" alt="CORU logo">
+
+                            <h2>CORU Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/CORU-Registration.jpg" class="case-proof-image"
+                                alt="CORU registration success case">
+                        </article>
+                        <!-- card 5 -->
+                        <article class="case-card">
+                            <img src="/images/success-cases/dhp-moph-logo.jpg" class="case-logo" alt="DHP MOPH logo">
+
+                            <h2>Qatar Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/DHP-MOPH-success-case.jpg" class="case-proof-image"
+                                alt="DHP MOPH licensing success case">
+                        </article>
+                        <!-- card 6 -->
+                        <article class="case-card">
+                            <img src="/images/success-cases/ahpra-logo.jpg" class="case-logo"
+                                alt="UAE Ministry of Health logo">
+
+                            <h2>Australia Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/ahpra-success-case.jpg" class="case-proof-image"
+                                alt="APHRA licensing success case">
+                        </article>
+
                     </div>
 
-                    <!-- Slide 3 -->
+                    <!-- SLIDE 3: -->
                     <div class="carousel-slide">
-                        <div class="cases-explicit-grid">
-                            <div class="case-card">
-                                <img src="/images/qchp-qatar-mockup.jpg" alt="QCHP Qatar Licensing Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">QCHP Qatar Licensing</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/scfhs-saudi-mockup.jpg" alt="SCFHS Saudi Arabia Mockup"
-                                    class="styled-image">
-                                <h3 class="h5 text-center mt-3">SCFHS Saudi Arabia</h3>
-                            </div>
-                            <div class="case-card">
-                                <img src="/images/dataflow-verification-mockup.jpg"
-                                    alt="DataFlow Verification Approval Mockup" class="styled-image">
-                                <h3 class="h5 text-center mt-3">DataFlow Verification</h3>
-                            </div>
-                        </div>
+                        <!-- card 7 -->
+                        <article class="case-card">
+
+                            <img src="/images/success-cases/hcpc-logo.jpg" class="case-logo" alt="HCPC logo">
+
+                            <h2>HCPC Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/HCPC-Successful-projec-case.jpg" class="case-proof-image"
+                                alt="HCPC registration success case">
+                        </article>
+                        <!-- card 8 -->
+                        <article class="case-card">
+
+                            <img src="/images/success-cases/coru-logo.jpg" class="case-logo" alt="CORU logo">
+
+                            <h2>CORU Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/Coru-Registration-project.jpg" class="case-proof-image"
+                                alt="CORU registration success case">
+                        </article>
+                        <!-- card 9 -->
+                        <article class="case-card">
+                            <img src="/images/success-cases/pbnz-logo.jpg" class="case-logo" alt="PBNZ logo">
+
+                            <h2>Physiotherapy Board of New Zealand Successful Registration Case</h2>
+
+                            <img src="/images/success-cases/PBNZ-success-case.jpg" class="case-proof-image"
+                                alt="PBNZ registration success case">
+                            <img src="/images/success-cases/APC-New-Zealand.jpg" class="case-proof-image"
+                                alt="APC New Zealand Certificate success case">
+                        </article>
+
                     </div>
 
                 </div>
 
-                <button class="carousel-btn prev-btn" aria-label="Previous Cases">❮</button>
-                <button class="carousel-btn next-btn" aria-label="Next Cases">❯</button>
-            </div>
+                <button class="carousel-btn prev-btn" type="button" aria-label="Previous registration cases">
+                    &#10094;
+                </button>
 
+                <button class="carousel-btn next-btn" type="button" aria-label="Next registration cases">
+                    &#10095;
+                </button>
+
+            </div>
         </div>
     </section>
+    <!-- ------------------Carousel End -->
 
-    <section class="zigzag-services-section bg-light">
+    <section class="services-section bg-light">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="section-header text-center">
                 <h2 class="h2">Our Services</h2>
             </div>
 
             <div class="zigzag-wrapper">
 
                 <!-- Service 1: Text Left, Image Right -->
-                <div class="zigzag-row">
-                    <div class="zigzag-text">
+                <div class="service-row">
+                    <div class="service-text">
                         <h3 class="h3 text-primary">DataFlow Verification & Gulf Exam Preparation</h3>
                         <p>We provide complete support for healthcare professionals applying to Gulf licensing
                             authorities, including DHA, DOH/HAAD, MOH (UAE), QCHP (Qatar), and SCFHS (Saudi Arabia). Our
                             services include DataFlow verification guidance, document review, and step-by-step
                             application support. We also offer focused exam preparation support.</p>
                     </div>
-                    <div class="zigzag-img">
+                    <div class="service-img">
                         <img src="/images/dataflow-gulf-exam.jpg" alt="DataFlow and Gulf Exam Preparation"
                             class="styled-image">
                     </div>
                 </div>
 
                 <!-- Service 2: Image Left, Text Right -->
-                <div class="zigzag-row">
-                    <div class="zigzag-img">
+                <div class="service-row">
+                    <div class="service-img">
                         <img src="/images/hcpc-coru-registration.jpg" alt="HCPC UK and CORU Ireland Registration"
                             class="styled-image">
                     </div>
-                    <div class="zigzag-text">
+                    <div class="service-text">
                         <h3 class="h3 text-primary">HCPC (UK) & CORU (Ireland) Licensing Support</h3>
                         <p>AstraMedic Consultants specializes in professional registration for the UK and Ireland
                             through HCPC (UK) and CORU (Ireland). We guide you through qualification assessment,
@@ -179,27 +247,27 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 </div>
 
                 <!-- Service 3: Text Left, Image Right -->
-                <div class="zigzag-row">
-                    <div class="zigzag-text">
+                <div class="service-row">
+                    <div class="service-text">
                         <h3 class="h3 text-primary">New Zealand & Australia Express Pathways</h3>
                         <p>We offer fast-track guidance for healthcare professionals applying to Physiotherapy Board of
                             New Zealand (PBNZ) and relevant Australian registration pathways (AHPRA). Our team helps
                             identify express or alternative routes based on your qualifications and international
                             recognition.</p>
                     </div>
-                    <div class="zigzag-img">
+                    <div class="service-img">
                         <img src="/images/nz-australia-pathways.jpg" alt="New Zealand and Australia Express Pathways"
                             class="styled-image">
                     </div>
                 </div>
 
                 <!-- Service 4: Image Left, Text Right -->
-                <div class="zigzag-row">
-                    <div class="zigzag-img">
+                <div class="service-row">
+                    <div class="service-img">
                         <img src="/images/ahpc-pakistan-registration.jpg" alt="AHPC Pakistan Registration Assistance"
                             class="styled-image">
                     </div>
-                    <div class="zigzag-text">
+                    <div class="service-text">
                         <h3 class="h3 text-primary">AHPC Registration Support (Pakistan)</h3>
                         <p>We offer dedicated assistance for registration with the Allied Health Professions Council
                             (AHPC) Pakistan. Our services include application guidance, document preparation, and
@@ -272,14 +340,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
     <section id="contact" class="cta-bottom-block">
         <div class="container text-center">
-            <h2 class="h2 text-white">Ready to Start Your Licensing Journey?</h2>
-            <p class="text-white mt-2 mb-4">Our experienced consultants are ready to answer your questions and guide
+            <h2 class="h2">Ready to Start Your Licensing Journey?</h2>
+            <p>Our experienced consultants are ready to answer your questions and guide
                 you.</p>
         </div>
     </section>
 
     <section class="form-integration-section bg-light">
-        <div class="container pt-5 pb-5 text-center">
+        <div class="container text-center">
             <link rel="stylesheet" href="/css/contact-form.css">
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
         </div>

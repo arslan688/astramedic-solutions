@@ -18,134 +18,571 @@
     text-align: center;
 }
 
-.mt-4 {
-    margin-top: 25px;
+/* =========================================
+   ASTRAMEDIC SOLUTIONS HERO CAROUSEL
+   ========================================= */
+
+.hero-carousel-section {
+    --hero-navy: #00285C;
+    --hero-blue: #00599B;
+    --hero-red: #D80000;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
-/* STREAMING_CHUNK: Engineering the universal carousel structure */
-.carousel-container {
+.hero-carousel-section *,
+.hero-carousel-section *::before,
+.hero-carousel-section *::after {
+    box-sizing: border-box;
+}
+
+#heroCarousel {
     position: relative;
+    isolation: isolate;
     width: 100%;
+    height: clamp(580px, 78vh, 760px);
+    min-height: 580px;
     overflow: hidden;
+    background: var(--hero-navy);
+    color: #FFFFFF;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    flex-shrink: 0;
+/* Track must occupy the full carousel */
+#heroCarousel .hero-carousel-track {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-/* STREAMING_CHUNK: Styling the Hero Banner specific elements */
-.hero-carousel-section .carousel-slide {
-    height: 80vh;
-    min-height: 500px;
-    max-height: 800px;
+/* Every slide starts as a full-size absolute layer */
+#heroCarousel .hero-carousel-slide {
+    position: absolute;
+    inset: 0;
+
     display: flex;
     align-items: center;
-}
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: 1;
+    padding: 65px 7% 100px;
+
+    overflow: hidden;
+    background: var(--hero-navy);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 0;
+
+    transition: opacity 0.55s ease,
+                visibility 0.55s ease;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(2, 87, 144, 0.9) 0%, rgba(2, 116, 190, 0.6) 100%);
+/* Active slide fills the entire hero */
+#heroCarousel .hero-carousel-slide.is-active {
+    inset: 0;
     z-index: 2;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
-.hero-content {
+/* ==========================================
+   BACKGROUND IMAGES
+   This is the key positioning fix
+   ========================================== */
+
+#heroCarousel .hero-bg {
+    position: absolute !important;
+    inset: 0;
+
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 7s ease;
+}
+
+#heroCarousel .hero-carousel-slide.is-active .hero-bg {
+    transform: scale(1.045);
+}
+
+/* Dark overlay sits above the image, below the text */
+#heroCarousel .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 25, 60, 0.94) 0%,
+        rgba(0, 40, 92, 0.84) 42%,
+        rgba(0, 40, 92, 0.42) 72%,
+        rgba(0, 25, 60, 0.16) 100%
+    );
+}
+
+/* ==========================================
+   ACTIVE SLIDE CONTENT
+   ========================================== */
+
+#heroCarousel .hero-content {
     position: relative;
     z-index: 3;
+
+    width: 50%;
+    max-width: 650px;
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+}
+
+/* Animate every active slide's content */
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > * {
+    animation: heroContentAnimate 0.85s ease-in-out both;
+}
+
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > :nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > :nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > :nth-child(3) {
+    animation-delay: 0.25s;
+}
+
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > :nth-child(4) {
+    animation-delay: 0.35s;
+}
+
+#heroCarousel .hero-carousel-slide.is-active
+.hero-content > :nth-child(5) {
+    animation-delay: 0.45s;
+}
+
+@keyframes heroContentAnimate {
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+        filter: blur(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+#heroCarousel .hero-eyebrow {
+    display: inline-block;
+    margin: 0 0 18px;
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+
+    background: rgba(0, 40, 92, 0.48);
     color: #FFFFFF;
-    max-width: 800px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
 }
 
-.hero-content .h1 {
+#heroCarousel .hero-title {
+    max-width: 100%;
+    margin: 0 0 18px;
+
     color: #FFFFFF;
-    margin-bottom: 20px;
+    font-size: clamp(2.3rem, 3.8vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.7px;
+
+    overflow-wrap: break-word;
 }
 
-.hero-content .h3 {
-    color: #E0F2FE;
-    font-weight: 400;
-    margin-bottom: 25px;
+#heroCarousel .hero-subtitle {
+    max-width: 100%;
+    margin: 0 0 18px;
+
+    color: #FFFFFF;
+    font-size: clamp(1.1rem, 1.8vw, 1.55rem);
+    font-weight: 600;
+    line-height: 1.45;
 }
 
-.hero-text {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 35px;
-    opacity: 0.9;
+#heroCarousel .hero-text {
+    max-width: 620px;
+    margin: 0 0 27px;
+
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.98rem;
+    line-height: 1.8;
 }
 
-/* STREAMING_CHUNK: Designing interactive carousel navigation controls */
-.carousel-btn {
-    position: absolute;
+/* CTA button */
+#heroCarousel .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    min-height: 48px;
+    padding: 13px 22px;
+
+    border: 1px solid var(--hero-red);
+    border-radius: 6px;
+
+    background: var(--hero-red);
+    color: #FFFFFF;
+
+    font-size: 0.93rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+#heroCarousel .hero-btn:hover {
+    background: #B80000;
+    border-color: #B80000;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   UPCOMING SLIDE PREVIEW CARDS
+   ========================================== */
+
+#heroCarousel .hero-carousel-slide.is-preview {
+    inset: auto;
     top: 50%;
+    right: 0;
+    left: auto;
+    bottom: auto;
+
+    display: block;
+    width: 155px;
+    height: 225px;
+    padding: 0;
+
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #FFF;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+
+    transition: right 0.55s ease,
+                transform 0.55s ease,
+                opacity 0.35s ease;
+}
+
+/* Preview layering */
+#heroCarousel .hero-carousel-slide.is-preview-1 {
+    right: calc(5% + 340px);
+    z-index: 4;
+}
+
+#heroCarousel .hero-carousel-slide.is-preview-2 {
+    right: calc(5% + 170px);
+    z-index: 5;
+}
+
+#heroCarousel .hero-carousel-slide.is-preview-3 {
+    right: 5%;
+    z-index: 6;
+}
+
+/* Preview pictures fill their entire cards */
+#heroCarousel .hero-carousel-slide.is-preview .hero-bg {
+    object-fit: cover;
+    transform: none;
+}
+
+/* Preview cards must not display the main slide's text */
+#heroCarousel .hero-carousel-slide.is-preview .hero-content {
+    display: none !important;
+}
+
+#heroCarousel .hero-carousel-slide.is-preview .hero-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 25, 60, 0.02),
+        rgba(0, 25, 60, 0.35)
+    );
+}
+
+/* ==========================================
+   NAVIGATION CONTROLS
+   ========================================== */
+
+#heroCarousel .hero-carousel-navigation {
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
     z-index: 10;
-    transition: background-color 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#heroCarousel .hero-carousel-arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.carousel-btn:hover {
-    background-color: var(--color-primary);
-}
+    width: 43px;
+    height: 43px;
+    padding: 0;
 
-.prev-btn { left: 20px; }
-.next-btn { right: 20px; }
-
-.carousel-indicators {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+
+    background: rgba(0, 40, 92, 0.8);
+    color: #FFFFFF;
+
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    transition: background 0.25s ease,
+                transform 0.25s ease;
 }
 
-.dot.active {
-    background-color: #FFFFFF;
-    transform: scale(1.2);
+#heroCarousel .hero-carousel-arrow:hover {
+    background: var(--hero-red);
+    transform: scale(1.06);
 }
 
+/* Slide indicators */
+#heroCarousel .hero-carousel-indicators {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#heroCarousel .hero-dot {
+    display: block;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+
+    transition: width 0.25s ease,
+                background 0.25s ease;
+}
+
+#heroCarousel .hero-dot.is-active {
+    width: 28px;
+    border-radius: 10px;
+    background: var(--hero-red);
+}
+
+/* Bottom progress indicator */
+#heroCarousel .hero-carousel-progress {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+
+    height: 3px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#heroCarousel .hero-progress-bar {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--hero-red);
+}
+
+#heroCarousel .hero-progress-bar.is-running {
+    animation: heroProgress 6s linear forwards;
+}
+
+@keyframes heroProgress {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 991px) {
+    #heroCarousel {
+        height: 660px;
+        min-height: 600px;
+    }
+
+    #heroCarousel .hero-carousel-slide {
+        padding: 55px 5% 95px;
+    }
+
+    #heroCarousel .hero-content,
+    #heroCarousel .hero-carousel-slide.is-active .hero-content {
+        width: 52%;
+        max-width: 52%;
+    }
+
+    #heroCarousel .hero-carousel-slide.is-preview {
+        width: 115px;
+        height: 170px;
+    }
+
+    #heroCarousel .hero-carousel-slide.is-preview-1 {
+        right: calc(4% + 250px);
+    }
+
+    #heroCarousel .hero-carousel-slide.is-preview-2 {
+        right: calc(4% + 125px);
+    }
+
+    #heroCarousel .hero-carousel-slide.is-preview-3 {
+        right: 4%;
+    }
+
+    #heroCarousel .hero-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    #heroCarousel .hero-text {
+        font-size: 0.91rem;
+        line-height: 1.7;
+    }
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+    #heroCarousel {
+        height: 720px;
+        min-height: 650px;
+    }
+
+    #heroCarousel .hero-carousel-slide {
+        padding: 40px 22px 95px;
+    }
+
+    #heroCarousel .hero-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 25, 60, 0.72) 0%,
+            rgba(0, 25, 60, 0.9) 48%,
+            rgba(0, 25, 60, 0.97) 100%
+        );
+    }
+
+    /* Hide the overlapping cards on small screens */
+    #heroCarousel .hero-carousel-slide.is-preview {
+        display: none !important;
+    }
+
+    #heroCarousel .hero-carousel-slide.is-active .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #heroCarousel .hero-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+
+    #heroCarousel .hero-title {
+        font-size: clamp(1.9rem, 8vw, 2.5rem);
+    }
+
+    #heroCarousel .hero-subtitle {
+        font-size: 1.08rem;
+    }
+
+    #heroCarousel .hero-text {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    #heroCarousel .hero-carousel-navigation {
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    #heroCarousel .hero-carousel-arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Accessibility */
+#heroCarousel .hero-btn:focus-visible,
+#heroCarousel .hero-carousel-arrow:focus-visible,
+#heroCarousel .hero-dot:focus-visible {
+    outline: 3px solid #FFFFFF;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #heroCarousel *,
+    #heroCarousel *::before,
+    #heroCarousel *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    #heroCarousel .hero-bg {
+        transform: none !important;
+    }
+
+    #heroCarousel .hero-carousel-slide.is-active .hero-content > * {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    #heroCarousel .hero-progress-bar.is-running {
+        width: 100%;
+    }
+}
 /* STREAMING_CHUNK: Formatting split-layout structural blocks */
 .split-layout {
     display: flex;
@@ -197,12 +634,11 @@ margin-top: 50px;
 }
 
 .card-img-wrapper {
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     background-color: var(--color-bg-section-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px; 
 }
 
 .card-img-wrapper img {
@@ -230,67 +666,7 @@ margin-top: 50px;
     width: 100%;
 }
 
-/* STREAMING_CHUNK: Customizing the Reviews Carousel specifics */
-.review-carousel-wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 60px; /* Space for dots */
-}
-
-.review-slide {
-    padding: 20px;
-}
-
-.review-card {
-    background-color: var(--color-bg-site);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.stars {
-    color: #FFB800;
-    font-size: 24px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.review-text {
-    font-size: 18px;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 25px;
-    line-height: 1.8;
-}
-
-.reviewer-name {
-    color: var(--color-primary);
-    margin: 0;
-}
-
-.review-nav {
-    background-color: var(--color-bg-site);
-    color: var(--color-primary);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.review-nav:hover {
-    background-color: var(--color-primary);
-    color: #FFF;
-}
-
-.review-dots .dot {
-    background-color: rgba(2, 116, 190, 0.2);
-}
-
-.review-dots .dot.active {
-    background-color: var(--color-primary);
-}
-
-/* STREAMING_CHUNK: Responsive adjustments */
+/* Responsive adjustments */
 @media (max-width: 991px) {
     .service-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -318,5 +694,4 @@ margin-top: 50px;
         font-size: 16px;
     }
     
-    .review-card { padding: 30px 20px; }
 }

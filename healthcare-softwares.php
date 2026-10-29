@@ -10,8 +10,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="page-header bg-white text-center">
         <div class="container">
             <h1 class="h1 text-primary">Healthcare Softwares & Portals</h1>
-            <h2 class="h4 mt-3">Empowering Healthcare with Custom Digital Management Solutions</h2>
-            <p class="intro-text mt-3">AstraMedic Solutions develops high-performance healthcare software and custom digital portals designed to transform the operational and clinical efficiency of clinics, diagnostic centers, aesthetic clinics, and medical facilities. Experience the power of a comprehensive Hospital Information Management System (HIMS) Portal.</p>
+            <h2 class="h4">Empowering Healthcare with Custom Digital Management Solutions</h2>
+            <p class="intro-text">AstraMedic Solutions develops high-performance healthcare software and custom digital portals designed to transform the operational and clinical efficiency of clinics, diagnostic centers, aesthetic clinics, and medical facilities. Experience the power of a comprehensive Hospital Information Management System (HIMS) Portal.</p>
         </div>
     </section>
 
@@ -128,7 +128,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section id="contact" class="hs-contact-section bg-light">
         <div class="container text-center">
             <h2 class="h2 section-header">Ready to take your healthcare organization to the next level?</h2>
-            <p class="intro-text mb-4">Contact AstraMedic Digital Solutions for a consultation.</p>
+            <p class="intro-text">Contact AstraMedic Digital Solutions for a consultation.</p>
             <link rel="stylesheet" href="/css/contact-form.css">
             <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
         </div>

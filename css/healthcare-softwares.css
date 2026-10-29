@@ -22,14 +22,6 @@
     color: var(--color-primary);
 }
 
-.mt-3 {
-    margin-top: 1rem;
-}
-
-.mb-4 {
-    margin-bottom: 2rem;
-}
-
 /* Modern Benefits Grid - Strict Explicit Columns */
 .hs-benefits-section {
     padding: 80px 0;

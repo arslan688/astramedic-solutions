@@ -42,7 +42,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
                 <div class="contact-form-col">
                     <div class="contact-form-wrapper bg-white shadow">
-                        <h2 class="h3 mb-4">Send Us a Message</h2>
+                        <h2 class="h3">Send Us a Message</h2>
                         <link rel="stylesheet" href="/css/contact-form.css">
                         <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
                     </div>

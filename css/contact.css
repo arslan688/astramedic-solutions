@@ -45,10 +45,6 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 color: var(--color-primary);
 }
 
-.mb-4 {
-margin-bottom: 24px;
-}
-
 .contact-list {
 list-style: none;
 padding: 0;

@@ -11,18 +11,18 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="hero-gradient-overlay"></div>
         <div class="container relative-z">
             <div class="hero-grid">
-                <div class="hero-content-left text-white">
-                    <h1 class="h1 text-white">Careers at AstraMedic Solutions</h1>
-                    <h2 class="h3 text-white mt-3">Build Your Future With Us</h2>
-                    <p class="mt-3">Join a modern healthcare and digital solutions company focused on innovation,
+                <div class="hero-content-left">
+                    <h1 class="h1">Careers at AstraMedic Solutions</h1>
+                    <h2 class="h3">Build Your Future With Us</h2>
+                    <p>Join a modern healthcare and digital solutions company focused on innovation,
                         growth, and meaningful impact. Explore career opportunities in healthcare consultancy, digital
                         services, business development, and technology while growing in a professional and collaborative
                         environment.</p>
-                    <a href="#openings" class="btn-primary btn-light mt-4">View Openings</a>
+                    <a href="#openings" class="btn-primary btn-light">View Openings</a>
                 </div>
                 <div class="hero-content-right">
-                    <div class="glass-card text-white">
-                        <h3 class="h4 text-white mb-4">Join AstraMedic Solutions</h3>
+                    <div class="glass-card">
+                        <h3 class="h4">Join AstraMedic Solutions</h3>
                         <ul class="glass-list">
                             <li><i class="fa-solid fa-check"></i> <span><strong>Growth-Focused Environment</strong>
                                     (Continuous learning, mentorship)</span></li>
@@ -41,7 +41,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
     <section id="openings" class="jobs-section bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="section-header text-center">
                 <h2 class="h2">Available Job Positions</h2>
                 <p>We routinely hire talented individuals across multiple departments based on ongoing projects and
                     company expansion.</p>
@@ -52,13 +52,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 <!-- Job Card 1 -->
                 <div class="job-card shadow">
                     <div class="job-card-body">
-                        <h3 class="h5 mb-3">Business Development Executive (Digital Solutions)</h3>
+                        <h3 class="h5">Business Development Executive (Digital Solutions)</h3>
                         <ul class="job-meta-list">
                             <li><i class="fa-solid fa-wallet"></i> Rs 50,000 to 80,000/month</li>
                             <li><i class="fa-solid fa-briefcase"></i> Full-time</li>
                             <li><i class="fa-solid fa-location-dot"></i> Rawalpindi</li>
                         </ul>
-                        <button class="btn-primary w-100 mt-4 open-modal-btn" data-target="modal-1">Full Job
+                        <button class="btn-primary w-100 open-modal-btn" data-target="modal-1">Full Job
                             Description</button>
                     </div>
                 </div>
@@ -66,13 +66,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 <!-- Job Card 2 -->
                 <div class="job-card shadow">
                     <div class="job-card-body">
-                        <h3 class="h5 mb-3">Healthcare Business Development Executive (Consultants Project)</h3>
+                        <h3 class="h5">Healthcare Business Development Executive (Consultants Project)</h3>
                         <ul class="job-meta-list">
                             <li><i class="fa-solid fa-wallet"></i> Rs 70,000 to 120,000/month</li>
                             <li><i class="fa-solid fa-briefcase"></i> Full-time</li>
                             <li><i class="fa-solid fa-location-dot"></i> Rawalpindi</li>
                         </ul>
-                        <button class="btn-primary w-100 mt-4 open-modal-btn" data-target="modal-1">Full Job
+                        <button class="btn-primary w-100 open-modal-btn" data-target="modal-1">Full Job
                             Description</button>
                     </div>
                 </div>
@@ -80,13 +80,13 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 <!-- Job Card 3 -->
                 <div class="job-card shadow">
                     <div class="job-card-body">
-                        <h3 class="h5 mb-3">E-commerce Manager (AstraMedic Shop)</h3>
+                        <h3 class="h5">E-commerce Manager (AstraMedic Shop)</h3>
                         <ul class="job-meta-list">
                             <li><i class="fa-solid fa-wallet"></i> Rs 60,000 to 100,000/month</li>
                             <li><i class="fa-solid fa-briefcase"></i> Full-time</li>
                             <li><i class="fa-solid fa-location-dot"></i> Rawalpindi</li>
                         </ul>
-                        <button class="btn-primary w-100 mt-4 open-modal-btn" data-target="modal-1">Full Job
+                        <button class="btn-primary w-100 open-modal-btn" data-target="modal-1">Full Job
                             Description</button>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
     <section class="application-section bg-light">
         <div class="container container-narrow">
-            <div class="section-header text-center mb-5">
+            <div class="section-header text-center">
                 <h2 class="h2">Application Form</h2>
                 <p>Submit your details below to apply for an open position.</p>
             </div>
@@ -109,7 +109,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                     <!-- Hidden Honeypot Field -->
                     <input type="text" name="website_url_hp" class="hidden-honeypot" tabindex="-1" autocomplete="off">
 
-                    <h3 class="h4 mb-4">Personal Information</h3>
+                    <h3 class="h4">Personal Information</h3>
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="firstName" class="form-label">First Name *</label>
@@ -138,7 +138,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         </div>
                     </div>
 
-                    <h3 class="h4 mb-4 mt-5">Professional Information</h3>
+                    <h3 class="h4">Professional Information</h3>
                     <div class="form-grid">
                         <div class="form-group full-width">
                             <label for="position" class="form-label">Applying For Position *</label>
@@ -178,7 +178,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         </div>
                     </div>
 
-                    <div class="form-submit mt-5">
+                    <div class="form-submit">
                         <button type="submit" class="btn-primary w-100">Submit Application</button>
                     </div>
 

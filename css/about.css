@@ -1,4 +1,4 @@
-/\* STREAMING_CHUNK: Page Formatting and Utilities \*/
+/* STREAMING_CHUNK: Page Formatting and Utilities \*/
 .page-about {
 padding-bottom: 80px;
 }
@@ -6,12 +6,6 @@ padding-bottom: 80px;
 .text-center {
 text-align: center;
 }
-
-.mb-3 { margin-bottom: 1rem; }
-.mb-4 { margin-bottom: 1.5rem; }
-.mb-5 { margin-bottom: 3rem; }
-.mt-4 { margin-top: 1.5rem; }
-.mb-0 { margin-bottom: 0 !important; }
 
 .text-primary {
 color: var(--color-primary);
@@ -28,7 +22,7 @@ object-fit: cover;
 border-radius: 12px;
 }
 
-/\* STREAMING_CHUNK: Section 1 - Intro Grid \*/
+/* STREAMING_CHUNK: Section 1 - Intro Grid \*/
 .about-intro-section {
 padding: 60px 0;
 }
@@ -40,7 +34,7 @@ gap: 50px;
 align-items: center;
 }
 
-/\* STREAMING_CHUNK: Section 2 - Mission & Vision \*/
+/* STREAMING_CHUNK: Section 2 - Mission & Vision \*/
 .mission-vision-section {
 padding: 60px 0;
 }
@@ -51,8 +45,8 @@ grid-template-columns: repeat(2, 1fr);
 gap: 30px;
 }
 
-.card-peach {
-background-color: #FFF2EB; /\* Light Peach/Orange \*/
+.mv-card {
+background-color: #FFF2EB; /* Light Peach/Orange \*/
 padding: 50px 30px;
 border-radius: 12px;
 text-align: center;
@@ -65,7 +59,7 @@ color: #E67E22;
 margin-bottom: 20px;
 }
 
-/\* STREAMING_CHUNK: Section 3 - Our Values \*/
+/* STREAMING_CHUNK: Section 3 - Our Values */
 .values-section {
 padding: 60px 0;
 }
@@ -77,7 +71,7 @@ gap: 30px;
 }
 
 .card-green {
-background-color: #E8F5E9; /\* Light Green \*/
+background-color: #E8F5E9; /* Light Green \*/
 padding: 40px 30px;
 border-radius: 12px;
 text-align: center;
@@ -90,7 +84,7 @@ color: #2E7D32;
 margin-bottom: 15px;
 }
 
-/\* STREAMING_CHUNK: Section 4 - Our Projects \*/
+/* STREAMING_CHUNK: Section 4 - Our Projects \*/
 .projects-section {
 padding: 60px 0;
 }
@@ -109,7 +103,7 @@ flex-direction: column;
 }
 
 .card-gray {
-background-color: #F5F5F5; /\* Light Gray \*/
+background-color: #F5F5F5; /* Light Gray \*/
 border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -129,7 +123,7 @@ margin-bottom: 15px;
 font-weight: 800;
 }
 
-/\* STREAMING_CHUNK: Section 5 - CEO Message \*/
+/* STREAMING_CHUNK: Section 5 - CEO Message \*/
 .ceo-section {
 padding: 60px 0;
 }
@@ -141,7 +135,7 @@ gap: 50px;
 align-items: center;
 }
 
-/\* STREAMING_CHUNK: Section 6 - Team Carousel \*/
+/* STREAMING_CHUNK: Section 6 - Team Carousel */
 .team-section {
 padding: 60px 0;
 }
@@ -155,7 +149,7 @@ justify-content: center;
 
 .carousel-track-wrapper {
 overflow: hidden;
-width: calc(100% - 120px); /\* Leave room for outside buttons \*/
+width: calc(100% - 120px); /* Leave room for outside buttons */
 margin: 0 auto;
 }
 
@@ -165,7 +159,7 @@ transition: transform 0.4s ease-in-out;
 }
 
 .carousel-slide {
-flex: 0 0 calc(100% / 3); /\* 3 cards visible on desktop \*/
+flex: 0 0 calc(100% / 3); /* 3 cards visible on desktop */
 padding: 0 15px;
 box-sizing: border-box;
 }
@@ -195,9 +189,9 @@ color: #666;
 margin: 0;
 }
 
-/\* STREAMING_CHUNK: Red Circular Carousel Buttons */
+/* STREAMING_CHUNK: Red Circular Carousel Buttons */
 .carousel-btn {
-background-color: #E74C3C; /* Red buttons as requested \*/
+background-color: #E74C3C;
 color: #FFFFFF;
 border: none;
 width: 45px;
@@ -218,14 +212,13 @@ background-color: #C0392B;
 transform: scale(1.05);
 }
 
-/\* STREAMING_CHUNK: Responsive Grid Architecture \*/
+/* STREAMING_CHUNK: Responsive Grid Architecture \*/
 @media (max-width: 991px) {
 .intro-grid,
 .ceo-grid {
 grid-template-columns: 1fr;
 }
 
-```
 .ceo-text-col {
     order: 2;
 }
@@ -242,7 +235,7 @@ grid-template-columns: 1fr;
     flex: 0 0 calc(100% / 2); /* 2 cards visible on tablet */
 }
 
-```
+
 
 }
 
@@ -253,7 +246,7 @@ grid-template-columns: 1fr;
 grid-template-columns: 1fr;
 }
 
-```
+
 .carousel-track-wrapper {
     width: calc(100% - 90px);
 }
@@ -262,6 +255,6 @@ grid-template-columns: 1fr;
     flex: 0 0 100%; /* 1 card visible on mobile */
 }
 
-```
+
 
 }

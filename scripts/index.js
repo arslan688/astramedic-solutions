@@ -1,128 +1,134 @@
-class Carousel {
-    constructor(containerElement, options = {}) {
-        this.container = containerElement;
-        this.track = this.container.querySelector('.carousel-track');
-        this.slides = Array.from(this.track.children);
-        this.nextBtn = this.container.querySelector('.next-btn');
-        this.prevBtn = this.container.querySelector('.prev-btn');
-        this.dots = Array.from(this.container.querySelectorAll('.dot'));
-        
-        this.currentIndex = 0;
-        this.autoPlayInterval = null;
-        this.autoPlayDelay = options.delay || 5000;
-        this.isAutoPlay = options.autoPlay !== false;
+document.addEventListener("DOMContentLoaded", function () {
+  // ==========================================
+  // 1. HERO BANNER CAROUSEL
+  // ==========================================
+  const heroCarousel = document.getElementById("heroCarousel");
+  if (heroCarousel) {
+    const slides = Array.from(
+      heroCarousel.querySelectorAll(".hero-carousel-slide"),
+    );
+    const dots = Array.from(heroCarousel.querySelectorAll(".hero-dot"));
+    const previous = heroCarousel.querySelector(".hero-prev");
+    const next = heroCarousel.querySelector(".hero-next");
+    const progress = heroCarousel.querySelector(".hero-progress-bar");
 
-        this.init();
-    }
+    if (slides.length && previous && next) {
+      const delay = 6000;
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      );
 
-    init() {
-        if (this.nextBtn) {
-            this.nextBtn.addEventListener('click', () => {
-                this.moveToNextSlide();
-                this.resetAutoPlay();
-            });
-        }
+      let current = 0;
+      let timer = null;
+      let hovered = false;
+      let focused = false;
 
-        if (this.prevBtn) {
-            this.prevBtn.addEventListener('click', () => {
-                this.moveToPrevSlide();
-                this.resetAutoPlay();
-            });
-        }
+      const previewClasses = ["is-preview-1", "is-preview-2", "is-preview-3"];
 
-        this.dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                this.moveToSlide(index);
-                this.resetAutoPlay();
-            });
+      function renderSlide(index) {
+        current = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, i) => {
+          slide.classList.remove("is-active", "is-preview", ...previewClasses);
+          slide.setAttribute("aria-hidden", "true");
+
+          if (i === current) {
+            slide.classList.add("is-active");
+            slide.setAttribute("aria-hidden", "false");
+          } else {
+            const distance = (i - current + slides.length) % slides.length;
+            if (distance >= 1 && distance <= 3) {
+              slide.classList.add("is-preview", previewClasses[distance - 1]);
+            }
+          }
         });
 
-        if (this.isAutoPlay) {
-            this.startAutoPlay();
-            // Pause on hover
-            this.container.addEventListener('mouseenter', () => this.stopAutoPlay());
-            this.container.addEventListener('mouseleave', () => this.startAutoPlay());
-        }
-
-        // Handle window resize for accurate slide widths
-        window.addEventListener('resize', () => {
-            this.updateCarouselPosition();
+        dots.forEach((dot, i) => {
+          const active = i === current;
+          dot.classList.toggle("is-active", active);
+          if (active) {
+            dot.setAttribute("aria-current", "true");
+          } else {
+            dot.removeAttribute("aria-current");
+          }
         });
-    }
 
-    updateCarouselPosition() {
-        const slideWidth = this.slides[0].getBoundingClientRect().width;
-        this.track.style.transform = `translateX(-${this.currentIndex * slideWidth}px)`;
-        
-        // Update active classes
-        this.slides.forEach(slide => slide.classList.remove('active'));
-        this.slides[this.currentIndex].classList.add('active');
+        restartProgress();
+      }
 
-        this.dots.forEach(dot => dot.classList.remove('active'));
-        if(this.dots[this.currentIndex]) {
-            this.dots[this.currentIndex].classList.add('active');
+      function restartProgress() {
+        if (!progress) return;
+        progress.classList.remove("is-running");
+        progress.style.animation = "none";
+        void progress.offsetWidth;
+        progress.style.removeProperty("animation");
+
+        if (!reduceMotion.matches && !document.hidden && !hovered && !focused) {
+          progress.classList.add("is-running");
         }
-    }
+      }
 
-    moveToSlide(index) {
-        this.currentIndex = index;
-        this.updateCarouselPosition();
-    }
-
-    moveToNextSlide() {
-        if (this.currentIndex === this.slides.length - 1) {
-            this.currentIndex = 0; // Loop back to start
-        } else {
-            this.currentIndex++;
+      function stopAutoplay() {
+        if (timer !== null) {
+          clearInterval(timer);
+          timer = null;
         }
-        this.updateCarouselPosition();
-    }
+        if (progress) progress.classList.remove("is-running");
+      }
 
-    moveToPrevSlide() {
-        if (this.currentIndex === 0) {
-            this.currentIndex = this.slides.length - 1; // Loop to end
-        } else {
-            this.currentIndex--;
+      function startAutoplay() {
+        stopAutoplay();
+        if (reduceMotion.matches || document.hidden || hovered || focused)
+          return;
+        timer = setInterval(() => {
+          renderSlide(current + 1);
+        }, delay);
+        restartProgress();
+      }
+
+      function navigate(index) {
+        renderSlide(index);
+        startAutoplay();
+      }
+
+      previous.addEventListener("click", () => navigate(current - 1));
+      next.addEventListener("click", () => navigate(current + 1));
+      dots.forEach((dot, i) =>
+        dot.addEventListener("click", () => navigate(i)),
+      );
+
+      heroCarousel.addEventListener("mouseenter", () => {
+        hovered = true;
+        stopAutoplay();
+      });
+      heroCarousel.addEventListener("mouseleave", () => {
+        hovered = false;
+        startAutoplay();
+      });
+      heroCarousel.addEventListener("focusin", () => {
+        focused = true;
+        stopAutoplay();
+      });
+      heroCarousel.addEventListener("focusout", (event) => {
+        if (!heroCarousel.contains(event.relatedTarget)) {
+          focused = false;
+          startAutoplay();
         }
-        this.updateCarouselPosition();
-    }
+      });
 
-    startAutoPlay() {
-        if (this.isAutoPlay) {
-            this.autoPlayInterval = setInterval(() => {
-                this.moveToNextSlide();
-            }, this.autoPlayDelay);
-        }
-    }
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) stopAutoplay();
+        else startAutoplay();
+      });
 
-    stopAutoPlay() {
-        clearInterval(this.autoPlayInterval);
-    }
+      reduceMotion.addEventListener?.("change", () => {
+        startAutoplay();
+        renderSlide(current);
+      });
 
-    resetAutoPlay() {
-        this.stopAutoPlay();
-        this.startAutoPlay();
+      renderSlide(0);
+      startAutoplay();
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Initialize Hero Banner Carousel
-    const heroCarouselElement = document.getElementById('heroCarousel');
-    if (heroCarouselElement) {
-        new Carousel(heroCarouselElement, {
-            delay: 6000,
-            autoPlay: true
-        });
-    }
-
-    // Initialize Client Reviews Carousel
-    const reviewCarouselElement = document.getElementById('reviewCarousel');
-    if (reviewCarouselElement) {
-        new Carousel(reviewCarouselElement, {
-            delay: 5000,
-            autoPlay: true
-        });
-    }
+  }
 
 });
