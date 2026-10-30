@@ -6,6 +6,37 @@
 .licensing-hero {
     background: linear-gradient(rgba(241, 243, 245, 0.9), rgba(199, 199, 202, 0.089)), url('/images/Astramedic-cosultant-banner.png') center/cover no-repeat;
     padding: 120px 0;
+    margin: 0;
+}
+
+.hero-content-left > * {
+    animation: heroContentAnimate 0.85s ease-in-out both;
+}
+.hero-content-left > :nth-child(1) {
+    animation-delay: 0.05s;
+}
+.hero-content-left > :nth-child(2) {
+    animation-delay: 0.15s;
+}
+.hero-content-left > :nth-child(3) {
+    animation-delay: 0.25s;
+}
+.hero-content-left > :nth-child(4) {
+    animation-delay: 0.35s;
+}
+
+@keyframes heroContentAnimate {
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+        filter: blur(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 .hero-content-left {
@@ -32,64 +63,116 @@
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.stats-explicit-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr; /* Center column is slightly wider */
-    gap: 40px;
-    align-items: center; /* Vertically centers the side columns with the middle content */
+.stats-div {
+    display: flex;
+    flex-direction: row; /* Stacks components cleanly */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
 }
 
-/* Individual Block Handlers */
-.stat-block {
+.stat-block-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 30%;
+    gap: 40px;
+}
+.stat-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    width: 30%;
+    gap: 40px;
+}
+.stat-head{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
+    width: 40%;
+    /* gap: 40px; */
 }
 
-/* Reverses label and number for the left column layout */
-.flex-column-reverse {
-    flex-direction: column-reverse;
+.metric-group {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Right Stack Formatting */
-.right-stack {
-    gap: 30px; /* Controls space between the top and bottom metric on the right */
-}
-
-/* Typography & Layout Tweaks */
 .stat-number-wrapper {
-    font-family: var(--font-heading);
-    font-size: 56px;
+    font-family: var(--font-heading, sans-serif);
+    font-size: clamp(2.5rem, 4vw, 3.5rem); /* Responsive responsive text scaling */
     font-weight: 800;
     line-height: 1;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 
 .stat-suffix {
-    font-size: 40px;
-    margin-left: 5px;
+    font-size: 2.5rem;
+    margin-left: 2px;
 }
 
 .stat-label {
     margin: 0;
     font-size: 1.1rem;
+    font-weight: 600;
+    color: #212529;
 }
 
 .main-headline h2 {
-    font-size: 2.2rem;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
     margin-bottom: 15px;
 }
 
 .main-headline p {
     font-size: 0.95rem;
     line-height: 1.5;
-    max-width: 400px;
     margin: 0 auto;
 }
+
+@media (max-width: 600px) {
+   .stats-div {
+    display: flex;
+    flex-direction: column; /* Stacks components cleanly */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.stat-block-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    gap: 40px;
+    order: 2;
+}
+.stat-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    gap: 40px;
+    order: 3;
+}
+.stat-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    order: 1;
+}
+}
+
+
 
 /* STREAMING_CHUNK: Registration Cases Grid */
 
@@ -236,24 +319,7 @@
 
 /* Tablet */
 @media (max-width: 991px) {
-    .stats-explicit-grid {
-        grid-template-columns: 1fr; /* Forces headline to span 100% width on top */
-        gap: 50px;
-    }
-
-    .main-headline {
-        text-align: center;
-    }
-
-    .main-headline p {
-        margin: 0 auto; /* Centers headline paragraph container */
-    }
-
-    .metrics-container {
-        grid-template-columns: 1fr 1fr; /* Keeps stats in two horizontal columns beneath the title */
-        gap: 30px;
-        align-items: flex-start;
-    }
+   
 
     /* Flip order of the left stat so heading sits on top of number */
     .flex-column-reverse {

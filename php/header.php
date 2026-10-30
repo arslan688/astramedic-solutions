@@ -68,48 +68,46 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="site-header">
-        <div class="container">
-            <div class="nav-wrapper">
+        <div class="nav-wrapper">
 
-                <!-- Logo Section -->
-                <a href="/" class="logo-link">
-                    <img src="/images/astramedic-solutions-logo.png" alt="AstraMedic Solutions Logo" class="logo-img">
-                </a>
+            <!-- Logo Section -->
+            <a href="/" class="logo-link">
+                <img src="/images/astramedic-solutions-logo.png" alt="AstraMedic Solutions Logo" class="logo-img">
+            </a>
 
-                <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                <nav class="main-nav">
-                    <ul class="nav-menu">
-                        <li><a href="/" class="nav-link">Home</a></li>
-                        <li><a href="/healthcare-licensing-and-consultants.php" class="nav-link">Consultants</a></li>
-                        <li><a href="https://shop.astramedicsolutions.com" class="nav-link" target="_blank"
-                                rel="noopener noreferrer">Shop</a></li>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/healthcare-licensing-and-consultants.php" class="nav-link">Consultants</a></li>
+                    <li><a href="https://shop.astramedicsolutions.com" class="nav-link" target="_blank"
+                            rel="noopener noreferrer">Shop</a></li>
 
-                        <!-- Dropdown Parent -->
-                        <li class="nav-item-dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true"
-                                aria-expanded="false">Digital Solutions</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/healthcare-digital-marketing.php" class="dropdown-link">Digital
-                                        Marketing</a></li>
-                                <li><a href="/healthcare-web-development.php" class="dropdown-link">Web Development</a>
-                                </li>
-                                <li><a href="/healthcare-softwares.php" class="dropdown-link">Healthcare Softwares</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <!-- Dropdown Parent -->
+                    <li class="nav-item-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Digital
+                            Solutions</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/healthcare-digital-marketing.php" class="dropdown-link">Digital
+                                    Marketing</a></li>
+                            <li><a href="/healthcare-web-development.php" class="dropdown-link">Web Development</a>
+                            </li>
+                            <li><a href="/healthcare-softwares.php" class="dropdown-link">Healthcare Softwares</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <li><a href="/astracrew.php" class="nav-link">AstraCrew</a></li>
-                        <li><a href="/about.php" class="nav-link">About</a></li>
-                        <li><a href="/contact.php" class="nav-link">Contact</a></li>
-                        <li><a href="/careers.php" class="nav-link">Careers</a></li>
-                    </ul>
-                </nav>
+                    <li><a href="/astracrew.php" class="nav-link">AstraCrew</a></li>
+                    <li><a href="/about.php" class="nav-link">About</a></li>
+                    <li><a href="/contact.php" class="nav-link">Contact</a></li>
+                    <li><a href="/careers.php" class="nav-link">Careers</a></li>
+                </ul>
+            </nav>
 
-            </div>
         </div>
     </header>

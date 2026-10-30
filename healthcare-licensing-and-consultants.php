@@ -25,48 +25,41 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
     <section class="licensing-stats-bar bg-light">
         <div class="container">
-            <div class="stats-explicit-grid">
+            <div class="stats-div">
 
-                <!-- 1. Center / Top Headline Segment -->
-                <div class="stat-block text-center main-headline">
-                    <h2 class="font-weight-bold">Numbers That Build Trust</h2>
-                    <p class="lead-text">Every stat represents a healthcare professional whose international licensing
-                        dream we turned into reality.</p>
-                </div>
-
-                <!-- 2. Dual Column Stats Container -->
-                <div class="metrics-container">
-
-                    <!-- Left Stats Stack: Ongoing Cases -->
-                    <div class="stat-block text-center metric-column reverse-layout">
-                        <h3 class="stat-label">Ongoing Cases</h3>
+                <div class="stat-block-1">
+                    <div class="metric-group">
                         <div class="stat-number-wrapper">
                             <span class="stat-num text-primary" data-target="25">25</span>
                             <span class="stat-suffix text-primary">+</span>
                         </div>
+                        <h3 class="stat-label">Ongoing Cases</h3>
                     </div>
-
-                    <!-- Right Stats Stack: Approvals & Verifications Combined -->
-                    <div class="stat-block text-center metric-column right-stack">
-                        <!-- Top Sub-Metric -->
-                        <div class="metric-group top-metric">
-                            <h3 class="stat-label">Approvals This Month</h3>
-                            <div class="stat-number-wrapper">
-                                <span class="stat-num text-primary" data-target="15">15</span>
-                            </div>
-                        </div>
-
-                        <!-- Bottom Sub-Metric -->
-                        <div class="metric-group bottom-metric">
-                            <div class="stat-number-wrapper">
-                                <span class="stat-num text-primary" data-target="100">100</span>
-                                <span class="stat-suffix text-primary">+</span>
-                            </div>
-                            <h3 class="stat-label">Successful Verifications</h3>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="stat-head">
+                    <h2 class="h2 text-primary">Numbers That Build Trust</h2>
+                    <p>Every stat represents a healthcare professional whose international licensing
+                        dream we turned into reality.</p>
+                </div>
+
+                <div class="stat-block-2">
+
+                    <div class="metric-group">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num text-primary" data-target="15">15</span>
+                        </div>
+                        <h3 class="stat-label">Approvals This Month</h3>
+                    </div>
+
+                    <div class="metric-group">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-num text-primary" data-target="100">100</span>
+                            <span class="stat-suffix text-primary">+</span>
+                        </div>
+                        <h3 class="stat-label">Successful Verifications</h3>
+                    </div>
+                </div>
+
 
             </div>
         </div>
