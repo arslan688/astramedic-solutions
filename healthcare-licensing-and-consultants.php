@@ -217,6 +217,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                             authorities, including DHA, DOH/HAAD, MOH (UAE), QCHP (Qatar), and SCFHS (Saudi Arabia). Our
                             services include DataFlow verification guidance, document review, and step-by-step
                             application support. We also offer focused exam preparation support.</p>
+                        <a href="/healthcare-licensing-success-cases.php/#dataflow" class="btn-primary">View Success
+                            Cases</a>
                     </div>
                     <div class="service-img">
                         <img src="/images/dataflow-gulf-exam.jpg" alt="DataFlow and Gulf Exam Preparation"
@@ -236,6 +238,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                             through HCPC (UK) and CORU (Ireland). We guide you through qualification assessment,
                             document preparation, and complete application submission in line with updated regulatory
                             standards.</p>
+                        <a href="/healthcare-licensing-success-cases.php/#hcpc-coru" class="btn-primary">View Success
+                            Cases</a>
                     </div>
                 </div>
 
@@ -247,6 +251,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                             New Zealand (PBNZ) and relevant Australian registration pathways (AHPRA). Our team helps
                             identify express or alternative routes based on your qualifications and international
                             recognition.</p>
+                        <a href="/healthcare-licensing-success-cases.php/#pbnz" class="btn-primary">View Success
+                            Cases</a>
                     </div>
                     <div class="service-img">
                         <img src="/images/nz-australia-pathways.jpg" alt="New Zealand and Australia Express Pathways"
@@ -265,6 +271,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         <p>We offer dedicated assistance for registration with the Allied Health Professions Council
                             (AHPC) Pakistan. Our services include application guidance, document preparation, and
                             verification support to help you meet national regulatory requirements effectively.</p>
+                        <a href="/healthcare-licensing-success-cases.php/#ahpc" class="btn-primary">View Success
+                            Cases</a>
                     </div>
                 </div>
 
