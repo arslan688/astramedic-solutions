@@ -22,12 +22,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">We provide complete support for healthcare professionals applying to Gulf licensing authorities, including DHA, DOH/HAAD, MOH (UAE), QCHP (Qatar), and SCFHS (Saudi Arabia). Our services include DataFlow verification guidance, document review, and step-by-step application support to ensure compliance with authority requirements. In addition, we offer focused exam preparation support, helping candidates prepare for Prometric and licensing exams with the right strategy, materials, and guidance. With our expertise, you can confidently clear both verification and examination stages required for Gulf registration.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-gulf-1.jpg" data-fullsrc="/images/success-gulf-1.jpg"
-                    alt="Gulf Registration Success 1" class="gallery-img shadow">
-                <img src="/images/success-gulf-2.jpg" data-fullsrc="/images/success-gulf-2.jpg"
-                    alt="Gulf Registration Success 2" class="gallery-img shadow">
-                <img src="/images/success-gulf-3.jpg" data-fullsrc="/images/success-gulf-3.jpg"
-                    alt="Gulf Registration Success 3" class="gallery-img shadow">
+                <img src="/images/success-cases/dataflow-verification.jpg"
+                    data-fullsrc="/images/success-cases/dataflow-verification.jpg"
+                    alt="DataFlow verification success case" class="gallery-img shadow">
+                <img src="/images/success-cases/DHP-MOPH-success-case.jpg"
+                    data-fullsrc="/images/success-cases/DHP-MOPH-success-case.jpg" alt="DHP MOPH licensing success case"
+                    class="gallery-img shadow">
+                <img src="/images/success-cases/dataflow-logo.jpg"
+                    data-fullsrc="/images/success-cases/dataflow-logo.jpg" alt="DataFlow registration support"
+                    class="gallery-img shadow">
             </div>
         </div>
     </section>
@@ -39,12 +42,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">AstraMedic Consultants specializes in professional registration for the UK and Ireland through HCPC (UK) and CORU (Ireland). We guide you through qualification assessment, document preparation, and complete application submission in line with updated regulatory standards. Our team ensures your application is accurate, well-structured, and aligned with council expectations, minimizing delays and increasing approval chances. Whether you are applying as a physiotherapist or other allied health professional, we simplify the entire process for you.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-uk-1.jpg" data-fullsrc="/images/success-uk-1.jpg"
-                    alt="UK Registration Success 1" class="gallery-img shadow">
-                <img src="/images/success-uk-2.jpg" data-fullsrc="/images/success-uk-2.jpg"
-                    alt="UK Registration Success 2" class="gallery-img shadow">
-                <img src="/images/success-uk-3.jpg" data-fullsrc="/images/success-uk-3.jpg"
-                    alt="UK Registration Success 3" class="gallery-img shadow">
+                <img src="/images/success-cases/hcpc-registration.jpg"
+                    data-fullsrc="/images/success-cases/hcpc-registration.jpg" alt="HCPC registration success case"
+                    class="gallery-img shadow">
+                <img src="/images/success-cases/coru-successful-registration.jpg"
+                    data-fullsrc="/images/success-cases/coru-successful-registration.jpg"
+                    alt="CORU registration success case" class="gallery-img shadow">
+                <img src="/images/success-cases/HCPC-Successful-projec-case.jpg"
+                    data-fullsrc="/images/success-cases/HCPC-Successful-projec-case.jpg"
+                    alt="HCPC successful registration case" class="gallery-img shadow">
             </div>
         </div>
     </section>
@@ -56,12 +62,26 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">We offer fast-track guidance for healthcare professionals applying to Physiotherapy Board of New Zealand (PBNZ) and relevant Australian registration pathways (AHPRA). Our team helps identify express or alternative routes based on your qualifications and international recognition, reducing unnecessary delays. From eligibility assessment to documentation and submission, we ensure a streamlined pathway toward registration in New Zealand and Australia. This service is ideal for professionals seeking efficient and strategic licensing options.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-nz-1.jpg" data-fullsrc="/images/success-nz-1.jpg"
-                    alt="NZ Registration Success 1" class="gallery-img shadow">
-                <img src="/images/success-nz-2.jpg" data-fullsrc="/images/success-nz-2.jpg"
-                    alt="NZ Registration Success 2" class="gallery-img shadow">
-                <img src="/images/success-nz-3.jpg" data-fullsrc="/images/success-nz-3.jpg"
-                    alt="NZ Registration Success 3" class="gallery-img shadow">
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/PBNZ-success-case.jpg"
+                        data-fullsrc="/images/success-cases/PBNZ-success-case.jpg" alt="PBNZ registration success case"
+                        class="gallery-img shadow">
+                    <figcaption class="gallery-caption">PBNZ Registration Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/APC-New-Zealand.jpg"
+                        data-fullsrc="/images/success-cases/APC-New-Zealand.jpg" alt="APC New Zealand success case"
+                        class="gallery-img shadow">
+                    <figcaption class="gallery-caption">APC New Zealand Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/ahpra-success-case.jpg"
+                        data-fullsrc="/images/success-cases/ahpra-success-case.jpg"
+                        alt="AHPRA registration success case" class="gallery-img shadow">
+                    <figcaption class="gallery-caption">AHPRA Registration Success Case</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -73,12 +93,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">We offer dedicated assistance for registration with the Allied Health Professions Council (AHPC) Pakistan. Our services include application guidance, document preparation, and verification support to help you meet national regulatory requirements. Whether you are applying for initial registration or updating your credentials, we ensure your process is handled accurately and efficiently. This service is especially beneficial for professionals requiring local registration for career progression or international applications.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-pk-1.jpg" data-fullsrc="/images/success-pk-1.jpg"
-                    alt="PK Registration Success 1" class="gallery-img shadow">
-                <img src="/images/success-pk-2.jpg" data-fullsrc="/images/success-pk-2.jpg"
-                    alt="PK Registration Success 2" class="gallery-img shadow">
-                <img src="/images/success-pk-3.jpg" data-fullsrc="/images/success-pk-3.jpg"
-                    alt="PK Registration Success 3" class="gallery-img shadow">
+                <img src="/images/ahpc-pakistan-registration.jpg" data-fullsrc="/images/ahpc-pakistan-registration.jpg"
+                    alt="AHPC Pakistan registration" class="gallery-img shadow">
             </div>
         </div>
     </section>
