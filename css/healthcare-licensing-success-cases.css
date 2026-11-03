@@ -64,9 +64,11 @@
     margin-top: 12px;
     font-size: 16px;
     color: #ffffff;
+    background-color:#3A3A3AAD;
+    padding: 8px 12px;
     font-family: sans-serif;
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
 }
 
 .gallery-img {

@@ -22,15 +22,26 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">We provide complete support for healthcare professionals applying to Gulf licensing authorities, including DHA, DOH/HAAD, MOH (UAE), QCHP (Qatar), and SCFHS (Saudi Arabia). Our services include DataFlow verification guidance, document review, and step-by-step application support to ensure compliance with authority requirements. In addition, we offer focused exam preparation support, helping candidates prepare for Prometric and licensing exams with the right strategy, materials, and guidance. With our expertise, you can confidently clear both verification and examination stages required for Gulf registration.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-cases/dataflow-verification.jpg"
-                    data-fullsrc="/images/success-cases/dataflow-verification.jpg"
-                    alt="DataFlow verification success case" class="gallery-img shadow">
-                <img src="/images/success-cases/DHP-MOPH-success-case.jpg"
-                    data-fullsrc="/images/success-cases/DHP-MOPH-success-case.jpg" alt="DHP MOPH licensing success case"
-                    class="gallery-img shadow">
-                <img src="/images/success-cases/dataflow-logo.jpg"
-                    data-fullsrc="/images/success-cases/dataflow-logo.jpg" alt="DataFlow registration support"
-                    class="gallery-img shadow">
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/dataflow-verification.jpg"
+                        data-fullsrc="/images/success-cases/dataflow-verification.jpg"
+                        alt="DataFlow verification success case" class="gallery-img shadow">
+                    <figcaption class="gallery-caption">DataFlow Verification Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/DHP-MOPH-success-case.jpg"
+                        data-fullsrc="/images/success-cases/DHP-MOPH-success-case.jpg"
+                        alt="DHP MOPH licensing success case" class="gallery-img shadow">
+                    <figcaption class="gallery-caption">DHP MOPH Licensing Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/dataflow-logo.jpg"
+                        data-fullsrc="/images/success-cases/dataflow-logo.jpg" alt="DataFlow registration support"
+                        class="gallery-img shadow">
+                    <figcaption class="gallery-caption">DataFlow Registration Support</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -42,15 +53,26 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">AstraMedic Consultants specializes in professional registration for the UK and Ireland through HCPC (UK) and CORU (Ireland). We guide you through qualification assessment, document preparation, and complete application submission in line with updated regulatory standards. Our team ensures your application is accurate, well-structured, and aligned with council expectations, minimizing delays and increasing approval chances. Whether you are applying as a physiotherapist or other allied health professional, we simplify the entire process for you.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/success-cases/hcpc-registration.jpg"
-                    data-fullsrc="/images/success-cases/hcpc-registration.jpg" alt="HCPC registration success case"
-                    class="gallery-img shadow">
-                <img src="/images/success-cases/coru-successful-registration.jpg"
-                    data-fullsrc="/images/success-cases/coru-successful-registration.jpg"
-                    alt="CORU registration success case" class="gallery-img shadow">
-                <img src="/images/success-cases/HCPC-Successful-projec-case.jpg"
-                    data-fullsrc="/images/success-cases/HCPC-Successful-projec-case.jpg"
-                    alt="HCPC successful registration case" class="gallery-img shadow">
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/hcpc-registration.jpg"
+                        data-fullsrc="/images/success-cases/hcpc-registration.jpg" alt="HCPC registration success case"
+                        class="gallery-img shadow">
+                    <figcaption class="gallery-caption">HCPC Registration Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/coru-successful-registration.jpg"
+                        data-fullsrc="/images/success-cases/coru-successful-registration.jpg"
+                        alt="CORU registration success case" class="gallery-img shadow">
+                    <figcaption class="gallery-caption">CORU Registration Success Case</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="/images/success-cases/HCPC-Successful-projec-case.jpg"
+                        data-fullsrc="/images/success-cases/HCPC-Successful-projec-case.jpg"
+                        alt="HCPC successful registration case" class="gallery-img shadow">
+                    <figcaption class="gallery-caption">HCPC Successful Registration Case</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -93,8 +115,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <!-- <p class="section-desc mb-5">We offer dedicated assistance for registration with the Allied Health Professions Council (AHPC) Pakistan. Our services include application guidance, document preparation, and verification support to help you meet national regulatory requirements. Whether you are applying for initial registration or updating your credentials, we ensure your process is handled accurately and efficiently. This service is especially beneficial for professionals requiring local registration for career progression or international applications.</p> -->
 
             <div class="gallery-grid">
-                <img src="/images/ahpc-pakistan-registration.jpg" data-fullsrc="/images/ahpc-pakistan-registration.jpg"
-                    alt="AHPC Pakistan registration" class="gallery-img shadow">
+                <figure class="gallery-item">
+                    <img src="/images/ahpc-pakistan-registration.jpg"
+                        data-fullsrc="/images/ahpc-pakistan-registration.jpg" alt="AHPC Pakistan registration"
+                        class="gallery-img shadow">
+                    <figcaption class="gallery-caption">AHPC Pakistan Registration</figcaption>
+                </figure>
             </div>
         </div>
     </section>
