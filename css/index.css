@@ -14,39 +14,19 @@
     font-weight: 600;
 }
 
-.text-center {
-    text-align: center;
-}
-
 /* =========================================
    ASTRAMEDIC SOLUTIONS HERO CAROUSEL
    ========================================= */
 
-.hero-carousel-section {
-    --hero-navy: #5987c4;
-    --hero-blue: #00599B;
-    --hero-red: #D80000;
-
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-}
-
-.hero-carousel-section *,
-.hero-carousel-section *::before,
-.hero-carousel-section *::after {
-    box-sizing: border-box;
-}
 
 #heroCarousel {
     position: relative;
     isolation: isolate;
     width: 100%;
-    height: clamp(580px, 78vh, 760px);
+    height: clamp(650px, 90vh, 900px);
     min-height: 580px;
     overflow: hidden;
-    background: var(--hero-navy);
+    background: var(--color-primary);
     color: #FFFFFF;
 }
 
@@ -70,13 +50,12 @@
     padding: 65px 7% 100px;
 
     overflow: hidden;
-    background: var(--hero-navy);
+    background: var(--color-primary);
 
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     z-index: 0;
-
     transition: opacity 0.55s ease,
                 visibility 0.55s ease;
 }
@@ -123,13 +102,21 @@
     inset: 0;
     z-index: 1;
 
-    background: linear-gradient(
+    /* background: linear-gradient(
         90deg,
         rgba(0, 25, 60, 0.94) 0%,
         rgba(0, 40, 92, 0.84) 42%,
         rgba(0, 40, 92, 0.42) 72%,
         rgba(0, 25, 60, 0.16) 100%
-    );
+    ); */
+    /* background: linear-gradient(90deg, #2f2f2f87 0%, #2f2f2fb5 42%, #4a4a4a66 72%, rgba(0, 25, 60, 0.16) 100%); */
+    background: linear-gradient(
+    90deg,
+    rgba(25, 28, 32, 0.94) 0%,
+    rgba(45, 50, 56, 0.84) 42%,
+    rgba(45, 50, 56, 0.42) 72%,
+    rgba(25, 28, 32, 0.16) 100%
+);
 }
 
 /* ==========================================
@@ -242,37 +229,7 @@
     line-height: 1.8;
 }
 
-/* CTA button */
-#heroCarousel .hero-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
 
-    min-height: 48px;
-    padding: 13px 22px;
-
-    border: 1px solid var(--hero-red);
-    border-radius: 6px;
-
-    background: var(--hero-red);
-    color: #FFFFFF;
-
-    font-size: 0.93rem;
-    font-weight: 700;
-    line-height: 1.4;
-    text-decoration: none;
-
-    transition: background 0.25s ease,
-                transform 0.25s ease;
-}
-
-#heroCarousel .hero-btn:hover {
-    background: #B80000;
-    border-color: #B80000;
-    color: #FFFFFF;
-    transform: translateY(-2px);
-}
 
 /* ==========================================
    UPCOMING SLIDE PREVIEW CARDS
@@ -360,27 +317,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
     width: 43px;
     height: 43px;
     padding: 0;
-
-    border: 1px solid rgba(255, 255, 255, 0.65);
-    border-radius: 50%;
-
-    background: rgba(0, 40, 92, 0.8);
+    background-color: var(--color-btn-default);
     color: #FFFFFF;
-
-    font-size: 1rem;
+    border: 0px solid transparent;
+    border-radius: 50%;
     cursor: pointer;
-
-    transition: background 0.25s ease,
-                transform 0.25s ease;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #heroCarousel .hero-carousel-arrow:hover {
-    background: var(--hero-red);
-    transform: scale(1.06);
+    background-color: var(--color-btn-hover);
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Slide indicators */
@@ -409,7 +364,7 @@
 #heroCarousel .hero-dot.is-active {
     width: 28px;
     border-radius: 10px;
-    background: var(--hero-red);
+    background: var(--color-primary);
 }
 
 /* Bottom progress indicator */
@@ -429,7 +384,7 @@
     display: block;
     width: 0;
     height: 100%;
-    background: var(--hero-red);
+    background: var(--color-primary);
 }
 
 #heroCarousel .hero-progress-bar.is-running {

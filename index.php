@@ -15,8 +15,8 @@
 
                     <div class="hero-overlay"></div>
 
-                    <img src="/images/AstraMedic-Solutions_Hero-Image.webp"
-                        alt="AstraMedic Solutions healthcare services" class="hero-bg" fetchpriority="high">
+                    <img src="/images/astramedic-solutions-banner.jpg" alt="AstraMedic Solutions healthcare services"
+                        class="hero-bg" fetchpriority="high">
 
                     <div class="hero-content">
                         <span class="hero-eyebrow">YOUR HEALTHCARE PARTNER</span>
@@ -37,7 +37,7 @@
                             providers and patients.
                         </p>
 
-                        <a href="/about.php" class="hero-btn hero-btn-primary">
+                        <a href="/about.php" class="btn-primary">
                             Learn More <span aria-hidden="true">↗</span>
                         </a>
                     </div>
@@ -48,7 +48,7 @@
 
                     <div class="hero-overlay"></div>
 
-                    <img src="/images/Astramedic-cosultant-banner.png"
+                    <img src="/images/astramedic-consultant-banner.jpg"
                         alt="AstraMedic Consultants international licensing services" class="hero-bg" loading="lazy">
 
                     <div class="hero-content">
@@ -72,7 +72,7 @@
                             registration journey.
                         </p>
 
-                        <a href="/consultants.php" class="hero-btn hero-btn-primary">
+                        <a href="/healthcare-licensing-and-consultants.php" class="btn-primary">
                             Explore Services <span aria-hidden="true">↗</span>
                         </a>
                     </div>
@@ -83,7 +83,7 @@
 
                     <div class="hero-overlay"></div>
 
-                    <img src="/images/AstraMedic-Shop-Barner.webp"
+                    <img src="/images/astramedic-shop-banner.jpg"
                         alt="Medical equipment and healthcare products from AstraMedic Shop" class="hero-bg"
                         loading="lazy">
 
@@ -105,7 +105,7 @@
                             professionals, and homecare users across Pakistan.
                         </p>
 
-                        <a href="https://shop.astramedicsolutions.com" class="hero-btn hero-btn-primary" target="_blank"
+                        <a href="https://shop.astramedicsolutions.com" class="btn-primary" target="_blank"
                             rel="noopener noreferrer">
                             Visit the Shop <span aria-hidden="true">↗</span>
                         </a>
@@ -117,7 +117,7 @@
 
                     <div class="hero-overlay"></div>
 
-                    <img src="/images/AstraMedic-Digital-Solutions-Banner.webp"
+                    <img src="/images/astramedic-digital-solutions-banner.jpg"
                         alt="AstraMedic Digital Solutions for healthcare organizations" class="hero-bg" loading="lazy">
 
                     <div class="hero-content">
@@ -140,7 +140,7 @@
                             streamline operations.
                         </p>
 
-                        <a href="/digital-solutions.php" class="hero-btn hero-btn-primary">
+                        <a href="/healthcare-digital-marketing.php" class="btn-primary">
                             Discover More <span aria-hidden="true">↗</span>
                         </a>
                     </div>
@@ -294,7 +294,8 @@
         </div>
     </section>
 
-    <div id="featurable-8177a540-6015-43fd-86ca-9a191522978a" data-featurable-async ></div><script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
+    <div id="featurable-8177a540-6015-43fd-86ca-9a191522978a" data-featurable-async></div>
+    <script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
 
 </main>
 
