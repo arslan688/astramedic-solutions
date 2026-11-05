@@ -50,7 +50,6 @@
     padding: 65px 7% 100px;
 
     overflow: hidden;
-    background: var(--color-primary);
 
     opacity: 0;
     visibility: hidden;
@@ -253,7 +252,8 @@
 
     opacity: 1;
     visibility: visible;
-    pointer-events: none;
+    pointer-events: auto; 
+    cursor: pointer;
 
     transform: translateY(-50%);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);

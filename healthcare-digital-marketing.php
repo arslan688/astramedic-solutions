@@ -6,12 +6,27 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 ?>
 
 <main class="page-digital-marketing bg-light">
-    
+
     <!-- Hero / Intro Section -->
-    <section class="page-header bg-white text-center">
-        <div class="container">
-            <h1 class="h1 text-primary">Healthcare Digital Marketing Services</h1>
-            <p class="intro-text">Grow your healthcare brand online with strategies designed to attract patients, build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and stories for social media, and creates targeted and in-budget ads.</p>
+    <section class="hero-section">
+        <div class="container hero-split-container">
+
+            <!-- Left Side: Text Content -->
+            <div class="hero-text-box">
+                <h1 class="h1 text-primary">Healthcare Digital Marketing Services</h1>
+                <p class="intro-text">Grow your healthcare brand online with strategies designed to attract patients,
+                    build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and
+                    LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable
+                    information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and
+                    stories for social media, and creates targeted and in-budget ads.</p>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="hero-image-box">
+                <img src="/images/astramedic-healthcare-digital-marketing-service.png"
+                    alt="Healthcare Digital Marketing Services" class="hero-side-img">
+            </div>
+
         </div>
     </section>
 
@@ -21,15 +36,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <div class="section-header text-center">
                 <h2 class="h2">Our Core Digital Services</h2>
             </div>
-            
+
             <div class="dm-services-grid">
-                
+
                 <div class="service-card shadow">
                     <div class="service-icon">
                         <i class="fa-solid fa-share-nodes"></i>
                     </div>
                     <h3 class="h4">Social Media Management</h3>
-                    <p>AstraMedic Digital Services handles the day-to-day management of your Facebook, Instagram, Google My Business, TikTok, or YouTube accounts. This includes publishing posts, responding to comments, monitoring performance, and refining content based on results.</p>
+                    <p>AstraMedic Digital Services handles the day-to-day management of your Facebook, Instagram, Google
+                        My Business, TikTok, or YouTube accounts. This includes publishing posts, responding to
+                        comments, monitoring performance, and refining content based on results.</p>
                 </div>
 
                 <div class="service-card shadow">
@@ -37,7 +54,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
                     <h3 class="h4">Google and Social Media Ads</h3>
-                    <p>Run cost-effective campaigns on Google, Facebook, Instagram, and other platforms. We manage the full process: keyword research, audience targeting, ad design, copywriting, and ongoing optimization to ensure high ROI.</p>
+                    <p>Run cost-effective campaigns on Google, Facebook, Instagram, and other platforms. We manage the
+                        full process: keyword research, audience targeting, ad design, copywriting, and ongoing
+                        optimization to ensure high ROI.</p>
                 </div>
 
                 <div class="service-card shadow">
@@ -45,7 +64,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                         <i class="fa-solid fa-pen-nib"></i>
                     </div>
                     <h3 class="h4">Graphic Designing</h3>
-                    <p>Strengthen your brand with professional visuals. AstraMedic Digital Services creates high-quality graphics, infographics, and creative designs for social media, websites, and promotional material to elevate your digital presence.</p>
+                    <p>Strengthen your brand with professional visuals. AstraMedic Digital Services creates high-quality
+                        graphics, infographics, and creative designs for social media, websites, and promotional
+                        material to elevate your digital presence.</p>
                 </div>
 
             </div>
@@ -61,7 +82,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             </div>
 
             <div class="dm-pricing-grid">
-                
+
                 <!-- Clinic Package -->
                 <div class="pricing-card shadow">
                     <h3 class="h4 pricing-title">Clinic Package</h3>
@@ -72,7 +93,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                     </div>
                     <ul class="pricing-features">
                         <li><i class="fa-solid fa-check"></i> Setup on Facebook, Instagram, and Google My Business</li>
-                        <li><i class="fa-solid fa-check"></i> Design & post 2 Reels or image posts per week (FB & Insta)</li>
+                        <li><i class="fa-solid fa-check"></i> Design & post 2 Reels or image posts per week (FB & Insta)
+                        </li>
                         <li><i class="fa-solid fa-check"></i> Design & post 2 updates per week on GMB</li>
                         <li><i class="fa-solid fa-check"></i> Gain 500-1000 Likes and Followers</li>
                         <li><i class="fa-solid fa-check"></i> Increase page engagement by 20%-25%</li>

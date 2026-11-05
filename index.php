@@ -195,7 +195,7 @@
                     <p>Our experienced team ensures a smooth, transparent, and hassle-free process, supporting you at
                         every step of your licensing journey and helping you achieve global professional registration
                         with confidence.</p>
-                    <a href="/consultants.php" class="btn-primary">Get Your License</a>
+                    <a href="/healthcare-licensing-and-consultants.php" class="btn-primary">Get Your License</a>
                 </div>
                 <div class="image-col">
                     <img src="/images/Healthcare-Licensing-and-immigration.jpg"
@@ -213,7 +213,7 @@
                     <h3 class="h5 section-subtitle">Digital Marketing - Web Development</h3>
                     <p>AstraMedic Digital Solutions enhances healthcare organizations’ online presence with specialized
                         digital marketing, web development, and SEO services.</p>
-                    <a href="/digital-marketing.php" class="btn-primary">Get Your Service</a>
+                    <a href="/healthcare-digital-marketing.php" class="btn-primary">Get Your Service</a>
                 </div>
                 <div class="image-col">
                     <img src="/images/AstraMedic-Digital-Solutions-Design.jpg"

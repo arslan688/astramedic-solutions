@@ -52,7 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
             dot.removeAttribute("aria-current");
           }
         });
-
+        slides.forEach((slide, index) => {
+          slide.addEventListener("click", () => {
+            if (slide.classList.contains("is-preview")) {
+              navigate(index);
+            }
+          });
+        });
         restartProgress();
       }
 
@@ -130,5 +136,4 @@ document.addEventListener("DOMContentLoaded", function () {
       startAutoplay();
     }
   }
-
 });

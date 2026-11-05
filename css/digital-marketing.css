@@ -3,31 +3,32 @@
     padding-bottom: 0;
 }
 
-.page-header {
-    padding: 80px 0;
+.hero-split-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between;
+    gap: 40px; /* Space between text and image */
+    padding: 40px 0; /* Adjust vertical spacing as needed */
 }
 
-.intro-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    opacity: 0.9;
+/* Text and Image Boxes */
+.hero-text-box {
+    flex: 1; /* Takes up equal space */
+    text-align: left; 
 }
 
-.section-header {
-    margin-bottom: 50px;
+.hero-image-box {
+    flex: 1; /* Takes up equal space */
+    display: flex;
+    justify-content: center;
 }
 
-.text-primary {
-    color: var(--color-primary);
-}
-
-.shadow {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.w-100 {
-    width: 100%;
+/* Image Styling */
+.hero-side-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Matches your carousel styling */
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); */
 }
 
 /* STREAMING_CHUNK: Services Grid */
@@ -183,6 +184,18 @@
 /* STREAMING_CHUNK: Responsive Design Architecture */
 /* STRICT RULE IMPLEMENTATION: Prevent Grid Orphans by shifting 3-cols straight to 1-col on tablets */
 @media (max-width: 991px) {
+    .hero-split-container {
+        flex-direction: column; /* Stacks text on top of image */
+        text-align: center;
+    }
+    
+    .hero-text-box {
+        text-align: center; /* Re-centers text for mobile */
+    }
+    
+    .hero-image-box {
+        margin-top: 20px;
+    }
     .dm-services-grid {
         grid-template-columns: 1fr;
     }
@@ -198,7 +211,7 @@
 }
 
 @media (max-width: 767px) {
-    .page-header,
+    .hero-section,
     .dm-services-section,
     .dm-pricing-section,
     .dm-projects-section,
