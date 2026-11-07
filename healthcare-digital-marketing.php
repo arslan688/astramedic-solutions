@@ -13,8 +13,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
             <!-- Left Side: Text Content -->
             <div class="hero-text-box">
-                <h1 class="h1 text-primary">Healthcare Digital Marketing Services</h1>
-                <p class="intro-text">Grow your healthcare brand online with strategies designed to attract patients,
+                <h1 class="h1 text-primary"
+                    style="font-family: Outfit, sans-serif; line-height: 1.2; letter-spacing: 0px;">
+                    <span style="color: red;">AstraMedic Solutions</span>
+                    <br>
+                    <span style="color: #00285C;">Healthcare Digital</span>
+                    <br>
+                    <span style="color: #00285C;">Marketing Services</span>
+                </h1>
+                <p class="intro-text" style="color: grey;">Grow your healthcare brand online with strategies designed to
+                    attract patients,
                     build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and
                     LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable
                     information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and
@@ -23,10 +31,59 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
             <!-- Right Side: Image -->
             <div class="hero-image-box">
-                <img src="/images/astramedic-healthcare-digital-marketing-service.png"
-                    alt="Healthcare Digital Marketing Services" class="hero-side-img">
+                <img src="/images/astramedic-healthcare-digital-marketing-service.webp"
+                    alt="Healthcare Digital Marketing Services" loading="lazy" class="hero-side-img">
             </div>
 
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2 style="text-align: center;">Complete Multi-Platform Coverage</h2>
+            <p style="text-align: center;">From search intent to social feeds, we deploy targeted campaigns across every
+                major network to capture demand and scale your business.</p>
+        </div>
+        <div style="display: flex;">
+            <article>
+                <i class="fa-solid fa-search" style="text-align: center;"></i>
+                <h3 style="text-align: center;">Google Search</h3>
+                <p style="text-align: center;">Search, Display & Shopping Ads</p>
+            </article>
+            <article>
+                <i class="fa-brands fa-facebook" style="text-align: center;"></i>
+                <h3 style="text-align: center;">Facebook</h3>
+                <p style="text-align: center;">Facebook Ads & Social Media Management</p>
+            </article>
+            <article>
+                <i class="fa-brands fa-instagram" style="text-align: center;"></i>
+                <h3 style="text-align: center;">Instagram</h3>
+                <p style="text-align: center;">Instagram Ads & Social Media Management</p>
+            </article>
+            <article>
+                <i class="fa-brands fa-linkedin" style="text-align: center;"></i>
+                <h3 style="text-align: center;">LinkedIn</h3>
+                <p style="text-align: center;">LinkedIn Ads & Social Media Management</p>
+            </article>
+            <article>
+                <i class="fa-brands fa-tiktok" style="text-align: center;"></i>
+                <h3 style="text-align: center;">TikTok</h3>
+                <p style="text-align: center;">TikTok Ads & Social Media Management</p>
+            </article>
+            <article>
+                <i class="fa-brands fa-youtube" style="text-align: center;"></i>
+                <h3 style="text-align: center;">YouTube</h3>
+                <p style="text-align: center;">YouTube Ads & Social Media Management</p>
+            </article>
+            <aticle>
+                <i class="fa-brands fa-linkdIn" style="text-align: center;"></i>
+                <h3 style="text-align: center;">LinkdIn</h3>
+                <p style="text-align: center;">LinkdIn Profile Optimization</p>
+                </article>
+                <article>
+                    <i class="fa-brands fa-whatsapp" style="text-align: center;"></i>
+                    <h3 style="text-align: center;">WhatsApp</h3>
+                    <p style="text-align: center;">WhatsApp Business & Campaigns</p>
+                </article>
         </div>
     </section>
 
@@ -39,34 +96,92 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
             <div class="dm-services-grid">
 
+                <!-- Social Media Platforms Handling -->
                 <div class="service-card shadow">
                     <div class="service-icon">
                         <i class="fa-solid fa-share-nodes"></i>
                     </div>
-                    <h3 class="h4">Social Media Management</h3>
-                    <p>AstraMedic Digital Services handles the day-to-day management of your Facebook, Instagram, Google
-                        My Business, TikTok, or YouTube accounts. This includes publishing posts, responding to
-                        comments, monitoring performance, and refining content based on results.</p>
+                    <h3 class="h4">Social Media Platforms Handling</h3>
+                    <p>Engage patients and build a loyal community. AstraMedic Digital Services manages your daily
+                        presence across platforms, publishing targeted, patient-focused content that builds trust,
+                        drives interaction, and boosts your healthcare brand's visibility.</p>
                 </div>
 
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h3 class="h4">Google and Social Media Ads</h3>
-                    <p>Run cost-effective campaigns on Google, Facebook, Instagram, and other platforms. We manage the
-                        full process: keyword research, audience targeting, ad design, copywriting, and ongoing
-                        optimization to ensure high ROI.</p>
-                </div>
-
+                <!-- Graphic Design -->
                 <div class="service-card shadow">
                     <div class="service-icon">
                         <i class="fa-solid fa-pen-nib"></i>
                     </div>
-                    <h3 class="h4">Graphic Designing</h3>
-                    <p>Strengthen your brand with professional visuals. AstraMedic Digital Services creates high-quality
-                        graphics, infographics, and creative designs for social media, websites, and promotional
-                        material to elevate your digital presence.</p>
+                    <h3 class="h4">Graphic Design</h3>
+                    <p>Elevate your medical brand with striking, professional visuals. We design high-quality healthcare
+                        infographics, engaging social media posts, and cohesive promotional materials that capture
+                        attention and communicate your clinic's expertise.</p>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <h3 class="h4">Video Editing</h3>
+                    <p>Tell your clinic's story through captivating video content. We provide professional video editing
+                        for patient testimonials, educational reels, and facility tours, driving higher engagement and
+                        conversions across all your digital channels.</p>
+                </div>
+
+                <!-- Google Ads -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <h3 class="h4">Google Ads</h3>
+                    <p>Appear at the top of search results when patients are actively looking for care. We manage
+                        cost-effective, targeted Google Ads campaigns with optimized keywords to drive high-intent
+                        traffic, increase bookings, and maximize your ROI.</p>
+                </div>
+
+                <!-- Facebook and Instagram Ads -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="h4">Facebook & Instagram Ads</h3>
+                    <p>Reach your ideal local patients with precision audience targeting. Our customized ad campaigns
+                        utilize compelling copywriting and engaging visuals to generate clinic inquiries, boost
+                        appointments, and scale your brand awareness.</p>
+                </div>
+
+                <!-- YouTube Ads -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <h3 class="h4">YouTube Ads</h3>
+                    <p>Capture attention with impactful video marketing. We create and manage highly targeted YouTube ad
+                        campaigns that showcase your treatments, facilities, and medical authority to a deeply engaged,
+                        video-first audience.</p>
+                </div>
+
+                <!-- TikTok Ads -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <h3 class="h4">TikTok Ads</h3>
+                    <p>Tap into a rapidly growing demographic with dynamic short-form video ads. We design, launch, and
+                        optimize engaging TikTok campaigns that boost brand visibility and connect your practice with a
+                        younger, highly active audience.</p>
+                </div>
+
+                <!-- Logo Design -->
+                <div class="service-card shadow">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-object-group"></i>
+                    </div>
+                    <h3 class="h4">Logo Design</h3>
+                    <p>Establish a strong, memorable identity for your medical practice. We design custom, professional
+                        logos that reflect trust, care, and authority, ensuring your healthcare brand stands out
+                        visually in a competitive market.</p>
                 </div>
 
             </div>
@@ -148,12 +263,195 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="dm-projects-section text-center">
         <div class="container">
             <h2 class="h2">Successful Ongoing Projects</h2>
-            <div class="projects-wrapper">
-                <span class="project-badge">Reliance Hospital</span>
-                <span class="project-badge">Reliance Aesthetics</span>
-                <span class="project-badge">Alam Family Hospital</span>
-                <span class="project-badge">Dissertease Writing Hub</span>
-                <span class="project-badge">Prime Frozen Foods</span>
+
+            <div class="projects-marquee-container">
+                <div class="projects-marquee-track">
+                    <!-- Group 1 (Original Set) -->
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/reliance-hospital.jpg" width="278px" height="180px"
+                                alt="Reliance Hospital">
+                        </div>
+                        <span class="project-title">Reliance Hospital</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/reliance-aesthetics.jpg" width="278px" height="180px"
+                                alt="Reliance Aesthetics">
+                        </div>
+                        <span class="project-title">Reliance Aesthetics</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/alam-family-hospital.jpg" width="278px" height="180px"
+                                alt="Alam Family Hospital">
+                        </div>
+                        <span class="project-title">Alam Family Hospital</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/dissertease-writing-hub.jpg" width="278px" height="180px"
+                                alt="Dissertease Writing Hub">
+                        </div>
+                        <span class="project-title">Dissertease Writing Hub</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/prime-frozen-foods.jpg" width="278px" height="180px"
+                                alt="Prime Frozen Foods">
+                        </div>
+                        <span class="project-title">Prime Frozen Foods</span>
+                    </div>
+
+                    <!-- Group 2 (Duplicated Set for Seamless Infinite Scroll) -->
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/reliance-hospital.jpg" width="278px" height="180px"
+                                alt="Reliance Hospital">
+                        </div>
+                        <span class="project-title">Reliance Hospital</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/reliance-aesthetics.jpg" width="278px" height="180px"
+                                alt="Reliance Aesthetics">
+                        </div>
+                        <span class="project-title">Reliance Aesthetics</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/alam-family-hospital.jpg" width="278px" height="180px"
+                                alt="Alam Family Hospital">
+                        </div>
+                        <span class="project-title">Alam Family Hospital</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/dissertease-writing-hub.jpg" width="278px" height="180px"
+                                alt="Dissertease Writing Hub">
+                        </div>
+                        <span class="project-title">Dissertease Writing Hub</span>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="img-wrapper">
+                            <img src="/images/prime-frozen-foods.jpg" width="278px" height="180px"
+                                alt="Prime Frozen Foods">
+                        </div>
+                        <span class="project-title">Prime Frozen Foods</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="dm-reviews-section">
+        <div class="container text-center">
+            <h2 class="h2">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by healthcare professionals and growing brands.</p>
+
+            <div class="reviews-carousel-container">
+                <div class="reviews-carousel">
+
+                    <!-- Review 1: Reliance Hospital -->
+                    <div class="review-card shadow">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"AstraMedic completely transformed our patient acquisition. Their
+                            targeted Google Ads and social media management brought a 30% increase in OPD appointments
+                            within just two months. A highly professional healthcare marketing team!"</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">Dr. Ahmed Khan</h4>
+                                <span class="client-designation">Medical Director, Reliance Hospital</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2: Reliance Aesthetics -->
+                    <div class="review-card shadow">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Our aesthetic treatments needed a visually appealing approach. Their
+                            graphic design and Instagram reels have been phenomenal. We are getting daily inquiries from
+                            targeted local social media ads."</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">Dr. Sarah Ali</h4>
+                                <span class="client-designation">Lead Dermatologist, Reliance Aesthetics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3: Alam Family Hospital -->
+                    <div class="review-card shadow">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Transparent, data-driven, and highly effective. AstraMedic manages our
+                            entire digital presence, allowing us to focus on patient care while they handle our Google
+                            My Business and Facebook growth seamlessly."</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">Dr. Tariq Mahmood</h4>
+                                <span class="client-designation">CEO, Alam Family Hospital</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4: Dissertease Writing Hub -->
+                    <div class="review-card shadow">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review-text">"Even as a niche writing service, their team understood our target
+                            audience perfectly. The TikTok and YouTube ads they launched significantly boosted our
+                            student sign-ups. Fantastic ROI and great communication."</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">Ayesha Malik</h4>
+                                <span class="client-designation">Founder, Dissertease Writing Hub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5: Prime Frozen Foods -->
+                    <div class="review-card shadow">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"A truly diverse and capable agency! Their video editing and Facebook ad
+                            campaigns gave our frozen food line the exact digital push it needed for massive local
+                            retail awareness. Highly satisfied with their work."</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4 class="client-name">Bilal Qureshi</h4>
+                                <span class="client-designation">Marketing Head, Prime Frozen Foods</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -170,4 +468,5 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 </main>
 
 <script src="/scripts/contact-validation.js" defer></script>
+<script src="/scripts/digital-marketing.js" defer></script>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/footer.php'; ?>

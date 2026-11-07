@@ -12,6 +12,20 @@
 }
 
 /* Text and Image Boxes */
+@keyframes heroAnimation {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-18px) scale(1.02) rotate(1.5deg); /* Floats up, grows slightly, tilts right */
+    }
+    66% {
+        transform: translateY(6px) scale(0.99) rotate(-1.5deg);  /* Dips below baseline, shrinks a tiny bit, tilts left */
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(0deg);          /* Smoothly returns home to loop seamlessly */
+    }
+}
 .hero-text-box {
     flex: 1; /* Takes up equal space */
     text-align: left; 
@@ -19,16 +33,21 @@
 
 .hero-image-box {
     flex: 1; /* Takes up equal space */
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    perspective: 1000px;
 }
 
 /* Image Styling */
 .hero-side-img {
     max-width: 100%;
     height: auto;
-    border-radius: 15px; /* Matches your carousel styling */
-    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); */
+    display: block;
+    border-radius: 15px;
+    animation: heroAnimation 3s cubic-bezier(0.45, 0.05, 0.55, 0.95) 1;
+   /* Adds a smooth easing effect so the image glides gracefully */
+    transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1); 
+    will-change: transform;
 }
 
 /* STREAMING_CHUNK: Services Grid */
@@ -154,31 +173,244 @@
     color: var(--color-secondary);
 }
 
-/* STREAMING_CHUNK: Projects & Contact Sections */
+/* STREAMING_CHUNK: Projects Marquee Section */
 .dm-projects-section {
-    padding: 80px 0;
+    padding: 120px 0;
+    overflow: hidden;
+    background-color: var(--color-primary);
 }
 
-.projects-wrapper {
+.dm-projects-section .h2 {
+    margin-bottom: 40px;
+    color: var(--color-bg-site);
+    text-align: center;
+}
+
+/* Marquee Container Setup */
+.projects-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Fading Edges for the Marquee */
+.projects-marquee-container::before,
+.projects-marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.projects-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-primary), transparent);
+}
+
+.projects-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-primary), transparent);
+}
+
+/* The Scrolling Track */
+.projects-marquee-track {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
+    gap: 30px;
+    width: max-content;
+    animation: scrollMarquee 35s linear infinite;
 }
 
-.project-badge {
-    background-color: var(--color-bg-section-light);
-    color: var(--color-primary);
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 15px;
-    border: 1px solid rgba(2, 116, 190, 0.1);
+/* Pause Animation on Hover */
+.projects-marquee-container:hover .projects-marquee-track {
+    animation-play-state: paused;
 }
 
-.dm-contact-section {
+/* Individual Project Card Styling */
+.project-card {
+    flex: 0 0 auto;
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    cursor: pointer;
+    border: 1px solid rgba(2, 116, 190, 0.05);
+}
+
+.project-card .img-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-title {
+    display: block;
+    padding: 20px 15px;
+    color: var(--color-primary, #0274be);
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--color-bg-section-light, #f8faff);
+}
+
+/* Hover Transformations */
+.project-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 30px rgba(2, 116, 190, 0.15);
+}
+
+.project-card:hover img {
+    transform: scale(1.1); /* Slight zoom on the image when hovering over the card */
+}
+
+/* Marquee Animation Keyframes */
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Scrolls exactly half the width of the track (which is why the items are duplicated) */
+        transform: translateX(calc(-50% - 15px)); 
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        width: 240px;
+    }
+    .project-card .img-wrapper {
+        height: 150px;
+    }
+}
+
+/* STREAMING_CHUNK: Reviews Carousel Section */
+.dm-reviews-section {
     padding: 80px 0;
+    background-color: var(--color-bg-section-light, #f8faff);
+}
+
+.dm-reviews-section .h2 {
+    margin-bottom: 10px;
+}
+
+.dm-reviews-section .section-subtitle {
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Carousel Container setup for smooth scrolling */
+.reviews-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.reviews-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Makes the scrolling snap to cards */
+    padding: 20px;
+    padding-bottom: 40px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary, #0274be) #e0e0e0;
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.reviews-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-carousel::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.reviews-carousel::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary, #0274be);
+    border-radius: 10px;
+}
+
+/* Individual Review Card */
+.review-card {
+    flex: 0 0 350px; /* Fixed width for each card */
+    scroll-snap-align: center; /* Snaps exactly in the middle on scroll */
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(2, 116, 190, 0.05);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Transformation */
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(2, 116, 190, 0.12);
+}
+
+/* Rating Stars */
+.rating-stars {
+    color: #FFD43B; /* Gold color for stars */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Review Text */
+.review-text {
+    font-style: italic;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Pushes client info to the bottom evenly */
+}
+
+/* Client Info Layout */
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.client-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #222;
+}
+
+.client-designation {
+    font-size: 13px;
+    color: #777;
+    display: block;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .review-card {
+        flex: 0 0 300px;
+        padding: 20px;
+    }
 }
 
 /* STREAMING_CHUNK: Responsive Design Architecture */

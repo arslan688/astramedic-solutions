@@ -90,7 +90,8 @@
 
                     <!-- Dropdown Parent -->
                     <li class="nav-item-dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Digital
+                        <a href="javascript:void(0);" class="nav-link dropdown-toggle" aria-haspopup="true"
+                            aria-expanded="false">Digital
                             Solutions</a>
                         <ul class="dropdown-menu">
                             <li><a href="/healthcare-digital-marketing.php" class="dropdown-link">Digital
