@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Services Pathway</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+        --text-dark: #1e293b;
+        --text-light: #475569;
+        --line-color-1: #06b6d4;
+        /* Teal */
+        --line-color-2: #3b82f6;
+        /* Blue */
+        --line-color-3: #8b5cf6;
+        /* Purple */
+        --line-width: 4px;
+        --icon-size: 80px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8fafc;
+        color: var(--text-dark);
+        overflow-x: hidden;
+    }
+
+    /* Section & Container */
+    .services-pathway-section {
+        position: relative;
+        padding: 80px 20px;
+        background: #ffffff;
+        overflow: hidden;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+        color: #0f172a;
+    }
+
+    /* Snaking Timeline Logic */
+    .pathway-timeline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pathway-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: -var(--line-width);
+        /* Overlap borders slightly for seamless connection */
+    }
+
+    /* Alternating Layout */
+    .pathway-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .pathway-content {
+        flex: 1;
+        padding: 20px 40px;
+    }
+
+    .pathway-spacer {
+        flex: 1;
+    }
+
+    /* Icons */
+    .pathway-icon {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        border-radius: 50%;
+        background: white;
+        border: var(--line-width) solid var(--line-color-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: var(--line-color-2);
+        z-index: 5;
+        position: relative;
+        box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
+    }
+
+    /* The Snaking Line */
+    .pathway-item::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - (var(--icon-size) / 2) + (var(--icon-size) / 2));
+        width: 50%;
+        height: 100%;
+        border: var(--line-width) solid transparent;
+        z-index: 1;
+    }
+
+    /* Left curving line (Odd items) */
+    .pathway-item:nth-child(odd)::before {
+        right: 50%;
+        border-color: var(--line-color-1);
+        border-right: none;
+        border-radius: 120px 0 0 120px;
+    }
+
+    /* Right curving line (Even items) */
+    .pathway-item:nth-child(even)::before {
+        left: 50%;
+        border-color: var(--line-color-2);
+        border-left: none;
+        border-radius: 0 120px 120px 0;
+    }
+
+    /* Adjust colors for a gradient-like transition down the path */
+    .pathway-item:nth-child(4n+1)::before {
+        border-color: var(--line-color-1);
+    }
+
+    .pathway-item:nth-child(4n+2)::before {
+        border-color: var(--line-color-2);
+    }
+
+    .pathway-item:nth-child(4n+3)::before {
+        border-color: var(--line-color-3);
+    }
+
+    .pathway-item:nth-child(4n+0)::before {
+        border-color: var(--line-color-1);
+    }
+
+    .pathway-item:nth-child(4n+1) .pathway-icon {
+        border-color: var(--line-color-1);
+        color: var(--line-color-1);
+    }
+
+    .pathway-item:nth-child(4n+2) .pathway-icon {
+        border-color: var(--line-color-2);
+        color: var(--line-color-2);
+    }
+
+    .pathway-item:nth-child(4n+3) .pathway-icon {
+        border-color: var(--line-color-3);
+        color: var(--line-color-3);
+    }
+
+    .pathway-item:nth-child(4n+0) .pathway-icon {
+        border-color: var(--line-color-1);
+        color: var(--line-color-1);
+    }
+
+    /* Remove the tail end of the very last item */
+    .pathway-item:last-child::before {
+        height: 0;
+        border: none;
+    }
+
+    /* Typography */
+    .pathway-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+    }
+
+    .pathway-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--text-light);
+    }
+
+    /* Background Blobs (Decoration) */
+    .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(40px);
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .blob-1 {
+        top: 5%;
+        left: -5%;
+        width: 300px;
+        height: 300px;
+        background: #cffafe;
+    }
+
+    .blob-2 {
+        top: 30%;
+        right: -10%;
+        width: 400px;
+        height: 400px;
+        background: #e0e7ff;
+    }
+
+    .blob-3 {
+        top: 60%;
+        left: -10%;
+        width: 350px;
+        height: 350px;
+        background: #ede9fe;
+    }
+
+    .blob-4 {
+        bottom: -5%;
+        right: 10%;
+        width: 250px;
+        height: 250px;
+        background: #ccfbf1;
+    }
+
+    .star {
+        position: absolute;
+        color: #f59e0b;
+        font-size: 24px;
+        z-index: 2;
+        opacity: 0.7;
+    }
+
+    .star-1 {
+        top: 15%;
+        right: 20%;
+    }
+
+    .star-2 {
+        top: 45%;
+        left: 15%;
+        color: #8b5cf6;
+    }
+
+    /* Responsive Mobile Layout (Flattens to a straight timeline) */
+    @media (max-width: 768px) {
+
+        .pathway-item,
+        .pathway-item:nth-child(even) {
+            flex-direction: row;
+            margin-bottom: 40px;
+        }
+
+        .pathway-spacer {
+            display: none;
+            /* Hide the empty grid space on mobile */
+        }
+
+        .pathway-content {
+            padding: 0 0 0 25px;
+        }
+
+        .pathway-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Change snaking line to a straight left border line */
+        .pathway-item::before,
+        .pathway-item:nth-child(odd)::before,
+        .pathway-item:nth-child(even)::before {
+            left: 30px;
+            /* Center of the 60px icon */
+            right: auto;
+            width: var(--line-width);
+            border: none;
+            border-left: var(--line-width) dashed var(--line-color-2);
+            border-radius: 0;
+            top: 60px;
+            height: calc(100% + 40px);
+        }
+
+        .pathway-item:last-child::before {
+            display: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<body>
+
+    <section class="services-pathway-section">
+        <!-- Decorative Background Elements -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="star star-1"><i class="fa-solid fa-star"></i></div>
+        <div class="star star-2"><i class="fa-solid fa-sparkles"></i></div>
+
+        <div class="container">
+            <h2 class="section-title">Our Core Digital Services</h2>
+
+            <div class="pathway-timeline">
+
+                <!-- Service 1 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-solid fa-hashtag"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Social Media Platforms Handling</h3>
+                        <p>Engage patients and build a loyal community. AstraMedic Digital Services manages your daily
+                            presence across platforms, publishing targeted, patient-focused content that builds trust,
+                            drives interaction, and boosts your healthcare brand's visibility.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Graphic Design</h3>
+                        <p>Elevate your medical brand with striking, professional visuals. We design high-quality
+                            healthcare infographics, engaging social media posts, and cohesive promotional materials
+                            that capture attention and communicate your clinic's expertise.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Video Editing</h3>
+                        <p>Tell your clinic's story through captivating video content. We provide professional video
+                            editing for patient testimonials, educational reels, and facility tours, driving higher
+                            engagement and conversions across all your digital channels.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Google Ads</h3>
+                        <p>Appear at the top of search results when patients are actively looking for care. We manage
+                            cost-effective, targeted Google Ads campaigns with optimized keywords to drive high-intent
+                            traffic, increase bookings, and maximize your ROI.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Facebook & Instagram Ads</h3>
+                        <p>Reach your ideal local patients with precision audience targeting. Our customized ad
+                            campaigns utilize compelling copywriting and engaging visuals to generate clinic inquiries,
+                            boost appointments, and scale your brand awareness.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>YouTube Ads</h3>
+                        <p>Capture attention with impactful video marketing. We create and manage highly targeted
+                            YouTube ad campaigns that showcase your treatments, facilities, and medical authority to a
+                            deeply engaged, video-first audience.</p>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>TikTok Ads</h3>
+                        <p>Tap into a rapidly growing demographic with dynamic short-form video ads. We design, launch,
+                            and optimize engaging TikTok campaigns that boost brand visibility and connect your practice
+                            with a younger, highly active audience.</p>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="pathway-item">
+                    <div class="pathway-spacer"></div>
+                    <div class="pathway-icon">
+                        <i class="fa-solid fa-object-group"></i>
+                    </div>
+                    <div class="pathway-content">
+                        <h3>Logo Design</h3>
+                        <p>Establish a strong, memorable identity for your medical practice. We design custom,
+                            professional logos that reflect trust, care, and authority, ensuring your healthcare brand
+                            stands out visually in a competitive market.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
