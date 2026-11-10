@@ -31,8 +31,55 @@
     text-align: left; 
 }
 
+/* --- Hero Buttons Container --- */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Ensures buttons wrap nicely on mobile devices */
+}
+
+/* --- Base Button Styling --- */
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    border-radius: 8px; /* Slightly rounded edges */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Base state for the Arrow */
+.btn-hero i {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease; /* Smooth animation for the arrow */
+}
+
+/* The Arrow Hover Animation (Slides right by 6px) */
+.btn-hero:hover i {
+    transform: rotate(90deg);
+}
+
+
+/* --- Outline Button--- */
+.btn-hero-outline {
+    background-color: transparent;
+    color:  var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-hero-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-site);
+}
+
 .hero-image-box {
-    flex: 1; /* Takes up equal space */
+    flex: 1;
     display: inline-flex;
     justify-content: center;
     perspective: 1000px;
@@ -50,6 +97,180 @@
     will-change: transform;
 }
 
+/* STREAMING_CHUNK: Multiplatform Section Grid */
+/* --- Main Layout & Header --- */
+.platform-coverage-section {
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* --- Cards Container (Desktop: Single Row) --- */
+.platform-cards-container {
+    display: flex;
+    flex-wrap: nowrap; /* Forces all items into one row */
+    justify-content: center;
+    gap: 12px; /* Tighter gap to ensure they fit neatly */
+    width: 100%;
+    max-width: 1350px; 
+    margin: 0 auto;
+}
+
+/* --- Individual Card Styling --- */
+.platform-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 24px 10px;
+    flex: 1 1 0; /* Allows cards to uniformly shrink/squish to fit the row */
+    min-width: 110px; /* Prevents cards from getting too crushed */
+    max-width: 155px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* --- The Hover Effect --- */
+.platform-card:hover {
+    border-color: #d0e1ff;
+    box-shadow: 0 12px 28px rgba(24, 119, 242, 0.12);
+    transform: translateY(-2px);
+}
+
+/* --- Typography Inside Cards --- */
+.platform-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+}
+
+.platform-card p {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- Icon Block Styling --- */
+.platform-card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.platform-card:hover i{
+    transform: rotate(-5deg);
+    /* box-shadow: 0 8px 20px rgba(0,0,0,0.15); */
+}
+
+/* Brand Specific Icon Backgrounds */
+.google-bg { background: linear-gradient(135deg, #1A73E8, #34A853); }
+.facebook-bg { background: #1877F2; }
+.instagram-bg { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.linkedin-bg { background: #0A66C2; }
+.tiktok-bg { background: #000000; }
+.youtube-bg { background: #FF0000; }
+.whatsapp-bg { background: #25D366; }
+
+/* =========================================
+   Responsive Design (Tablets & Mobile)
+   ========================================= */
+
+/* Tablets (Under 992px) */
+@media (max-width: 992px) {
+    .platform-coverage-section {
+        padding: 50px 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .platform-cards-container {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        gap: 16px;
+    }
+
+    .platform-card {
+        flex: unset; /* Removes single-row force */
+        width: calc(25% - 16px); /* 4 cards per row */
+        max-width: none;
+    }
+}
+
+/* Large Mobile Phones (Under 768px) */
+@media (max-width: 768px) {
+    .platform-coverage-section {
+        padding: 40px 15px;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .platform-cards-container {
+        gap: 12px;
+    }
+
+    .platform-card {
+        width: calc(33.333% - 12px); /* 3 cards per row */
+        padding: 20px 10px;
+    }
+}
+
+/* Small Mobile Phones (Under 480px) */
+@media (max-width: 480px) {
+    .platform-card {
+        width: calc(50% - 12px); /* 2 cards per row */
+        padding: 16px 8px;
+    }
+
+    .platform-card h3 {
+        font-size: 13px;
+    }
+
+    .platform-card p {
+        font-size: 11px;
+    }
+
+    .platform-card i {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
 /* STREAMING_CHUNK: Services Grid */
 .dm-services-section {
     padding: 80px 0;

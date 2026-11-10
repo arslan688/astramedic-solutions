@@ -14,8 +14,8 @@
     --color-bg-section-light: #FFFFFFA8;
     
     /* Button Colors */
-    --color-btn-default: #025790;
-    --color-btn-hover: #0274BE;
+    --color-btn-default: #00285C;
+    --color-btn-hover: #003A85;
 
     /* Typography */
     /* Typography Fonts */
@@ -126,7 +126,7 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: 14px;
     font-weight: 600;
     padding: 17px 34px;
@@ -142,7 +142,7 @@ p {
 .btn-primary:hover, 
 .btn-primary:focus {
     background-color: var(--color-btn-hover);
-    color: #FFFFFF;
+    color: var(--color-bg-site);
     text-decoration: none;
 }
 

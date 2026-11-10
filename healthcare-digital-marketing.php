@@ -21,12 +21,23 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                     <br>
                     <span style="color: #00285C;">Marketing Services</span>
                 </h1>
-                <p class="intro-text" style="color: grey;">Grow your healthcare brand online with strategies designed to
-                    attract patients,
-                    build trust, and increase engagement. We boost engagement on platforms like Facebook, Instagram, and
-                    LinkedIn with patient-focused content. Your patients don’t just want promotions; they want valuable
-                    information that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and
-                    stories for social media, and creates targeted and in-budget ads.</p>
+                <p class="intro-text" style="color: grey;">
+                    Grow your healthcare brand online with strategies designed to attract patients, build trust, and
+                    increase engagement. We boost engagement on platforms like Facebook, Instagram, and LinkedIn with
+                    patient-focused content. Your patients don’t just want promotions; they want valuable information
+                    that speaks to their needs. AstraMedic Digital Services team designs posts, reels, and stories for
+                    social media, and creates targeted and in-budget ads.
+                </p>
+
+                <!-- New Buttons Section -->
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-hero btn-primary">
+                        Explore Services <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact-form" class="btn-hero btn-hero-outline">
+                        Get a Quote <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
 
             <!-- Right Side: Image -->
@@ -37,53 +48,62 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
 
         </div>
     </section>
-    <section>
-        <div>
-            <h2 style="text-align: center;">Complete Multi-Platform Coverage</h2>
-            <p style="text-align: center;">From search intent to social feeds, we deploy targeted campaigns across every
-                major network to capture demand and scale your business.</p>
+
+    <section class="platform-coverage-section">
+        <div class="section-header">
+            <h2>Complete Multi-Platform Coverage</h2>
+            <p>From search intent to social feeds, we deploy targeted campaigns across every major network to capture
+                demand and scale your business.</p>
         </div>
-        <div style="display: flex;">
-            <article>
-                <i class="fa-solid fa-search" style="text-align: center;"></i>
-                <h3 style="text-align: center;">Google Search</h3>
-                <p style="text-align: center;">Search, Display & Shopping Ads</p>
+
+        <div class="platform-cards-container">
+            <article class="platform-card">
+                <i class="fa-solid fa-search google-bg"></i>
+                <h3>Google Search</h3>
+                <p>Search, Display & Shopping Ads</p>
             </article>
-            <article>
-                <i class="fa-brands fa-facebook" style="text-align: center;"></i>
-                <h3 style="text-align: center;">Facebook</h3>
-                <p style="text-align: center;">Facebook Ads & Social Media Management</p>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-facebook facebook-bg"></i>
+                <h3>Facebook</h3>
+                <p>Facebook Ads & Social Media Management</p>
             </article>
-            <article>
-                <i class="fa-brands fa-instagram" style="text-align: center;"></i>
-                <h3 style="text-align: center;">Instagram</h3>
-                <p style="text-align: center;">Instagram Ads & Social Media Management</p>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-instagram instagram-bg"></i>
+                <h3>Instagram</h3>
+                <p>Instagram Ads & Social Media Management</p>
             </article>
-            <article>
-                <i class="fa-brands fa-linkedin" style="text-align: center;"></i>
-                <h3 style="text-align: center;">LinkedIn</h3>
-                <p style="text-align: center;">LinkedIn Ads & Social Media Management</p>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-linkedin linkedin-bg"></i>
+                <h3>LinkedIn</h3>
+                <p>LinkedIn Ads & Social Media Management</p>
             </article>
-            <article>
-                <i class="fa-brands fa-tiktok" style="text-align: center;"></i>
-                <h3 style="text-align: center;">TikTok</h3>
-                <p style="text-align: center;">TikTok Ads & Social Media Management</p>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-tiktok tiktok-bg"></i>
+                <h3>TikTok</h3>
+                <p>TikTok Ads & Social Media Management</p>
             </article>
-            <article>
-                <i class="fa-brands fa-youtube" style="text-align: center;"></i>
-                <h3 style="text-align: center;">YouTube</h3>
-                <p style="text-align: center;">YouTube Ads & Social Media Management</p>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-youtube youtube-bg"></i>
+                <h3>YouTube</h3>
+                <p>YouTube Ads & Social Media Management</p>
             </article>
-            <aticle>
-                <i class="fa-brands fa-linkdIn" style="text-align: center;"></i>
-                <h3 style="text-align: center;">LinkdIn</h3>
-                <p style="text-align: center;">LinkdIn Profile Optimization</p>
-                </article>
-                <article>
-                    <i class="fa-brands fa-whatsapp" style="text-align: center;"></i>
-                    <h3 style="text-align: center;">WhatsApp</h3>
-                    <p style="text-align: center;">WhatsApp Business & Campaigns</p>
-                </article>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-linkedin linkedin-bg"></i>
+                <h3>LinkedIn</h3>
+                <p>LinkedIn Profile Optimization</p>
+            </article>
+
+            <article class="platform-card">
+                <i class="fa-brands fa-whatsapp whatsapp-bg"></i>
+                <h3>WhatsApp</h3>
+                <p>WhatsApp Business & Campaigns</p>
+            </article>
         </div>
     </section>
 
@@ -99,7 +119,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 <!-- Social Media Platforms Handling -->
                 <div class="service-card shadow">
                     <div class="service-icon">
-                        <i class="fa-solid fa-share-nodes"></i>
+                        <img src="/images/social-media.png" alt="Social Media Platforms Handling" width="60" height="60"
+                            loading="lazy">
                     </div>
                     <h3 class="h4">Social Media Platforms Handling</h3>
                     <p>Engage patients and build a loyal community. AstraMedic Digital Services manages your daily
