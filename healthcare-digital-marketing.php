@@ -119,8 +119,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                 <!-- Social Media Platforms Handling -->
                 <div class="service-card shadow">
                     <div class="service-icon">
-                        <img src="/images/social-media.png" alt="Social Media Platforms Handling" width="60" height="60"
-                            loading="lazy">
+                        <i class="fa-solid fa-share-nodes"></i>
                     </div>
                     <h3 class="h4">Social Media Platforms Handling</h3>
                     <p>Engage patients and build a loyal community. AstraMedic Digital Services manages your daily

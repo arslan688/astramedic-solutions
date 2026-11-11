@@ -36,6 +36,10 @@
     --container-narrow-max-width: 750px;
 }
 
+.shadow {
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
 /* STREAMING_CHUNK: Applying global resets */
 *, *::before, *::after {
     margin: 0;

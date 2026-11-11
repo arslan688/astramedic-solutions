@@ -84,7 +84,7 @@
             <nav class="main-nav">
                 <ul class="nav-menu">
                     <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/healthcare-licensing-and-consultants.php" class="nav-link">Consultants</a></li>
+                    <li><a href="/healthcare-licensing-and-consultants" class="nav-link">Consultants</a></li>
                     <li><a href="https://shop.astramedicsolutions.com" class="nav-link" target="_blank"
                             rel="noopener noreferrer">Shop</a></li>
 
@@ -94,19 +94,19 @@
                             aria-expanded="false">Digital
                             Solutions</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/healthcare-digital-marketing.php" class="dropdown-link">Digital
+                            <li><a href="/healthcare-digital-marketing" class="dropdown-link">Digital
                                     Marketing</a></li>
-                            <li><a href="/healthcare-web-development.php" class="dropdown-link">Web Development</a>
+                            <li><a href="/healthcare-web-development" class="dropdown-link">Web Development</a>
                             </li>
-                            <li><a href="/healthcare-softwares.php" class="dropdown-link">Healthcare Softwares</a>
+                            <li><a href="/healthcare-softwares" class="dropdown-link">Healthcare Softwares</a>
                             </li>
                         </ul>
                     </li>
 
-                    <li><a href="/astracrew.php" class="nav-link">AstraCrew</a></li>
-                    <li><a href="/about.php" class="nav-link">About</a></li>
-                    <li><a href="/contact.php" class="nav-link">Contact</a></li>
-                    <li><a href="/careers.php" class="nav-link">Careers</a></li>
+                    <li><a href="/astracrew" class="nav-link">AstraCrew</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                    <li><a href="/careers" class="nav-link">Careers</a></li>
                 </ul>
             </nav>
 

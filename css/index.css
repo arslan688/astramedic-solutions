@@ -109,13 +109,19 @@
         rgba(0, 25, 60, 0.16) 100%
     ); */
     /* background: linear-gradient(90deg, #2f2f2f87 0%, #2f2f2fb5 42%, #4a4a4a66 72%, rgba(0, 25, 60, 0.16) 100%); */
-    background: linear-gradient(
+    /* background: linear-gradient(
     90deg,
     rgba(25, 28, 32, 0.94) 0%,
     rgba(45, 50, 56, 0.84) 42%,
     rgba(45, 50, 56, 0.42) 72%,
     rgba(25, 28, 32, 0.16) 100%
-);
+); */
+    background: linear-gradient( 
+    90deg, 
+    rgb(80 91 105 / 94%) 0%,
+    rgb(90 104 120 / 84%) 42%,
+    rgba(45, 50, 56, 0.42) 72%, 
+    rgba(25, 28, 32, 0.16) 100% );
 }
 
 /* ==========================================
@@ -559,10 +565,6 @@
 .rounded-img {
     border-radius: 12px;
     width: 100%;
-}
-
-.shadow {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* STREAMING_CHUNK: Building the Shop CSS Grid layout */

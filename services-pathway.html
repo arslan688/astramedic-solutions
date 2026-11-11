@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AstraMedic Digital Services: social media management, graphic design, video editing and digital advertising.">
+  <meta name="description"
+    content="AstraMedic Digital Services: social media management, graphic design, video editing and digital advertising.">
   <title>Our Core Digital Services</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +24,9 @@
       --line-width: 11;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -69,7 +73,7 @@
       top: 116px;
       left: 0;
       width: 100%;
-      height: calc(100% - 145px);
+      height: calc(100% - 245px);
       pointer-events: none;
       overflow: visible;
     }
@@ -106,7 +110,9 @@
       width: 46%;
       min-height: 210px;
       padding: 12px 14px;
-      background: rgba(255, 255, 255, .88);
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border-radius: 16px;
     }
 
@@ -127,8 +133,15 @@
       column-gap: 12px;
     }
 
-    .service-item:nth-child(4n + 2) .service-copy { grid-column: 1; grid-row: 1; }
-    .service-item:nth-child(4n + 2) .service-illustration { grid-column: 2; grid-row: 1; }
+    .service-item:nth-child(4n + 2) .service-copy {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .service-item:nth-child(4n + 2) .service-illustration {
+      grid-column: 2;
+      grid-row: 1;
+    }
 
     .service-item:nth-child(4n + 3) .service-inner,
     .service-item:nth-child(4n) .service-inner {
@@ -267,68 +280,153 @@
       box-shadow: 2px 3px 0 rgba(17, 28, 75, .12);
     }
 
-    .social-bubble.facebook { left: 3px; top: 23px; background: #287be7; }
-    .social-bubble.instagram { left: 58px; top: 0; color: #fff; background: #dc6cae; }
-    .social-bubble.like { left: 60px; top: 52px; width: 55px; height: 55px; color: #247be0; background: #fff; font-size: 29px; }
-    .social-bubble.youtube { right: 2px; top: 23px; background: #ff7777; }
-    .social-bubble.linkedin { right: 8px; bottom: 0; background: #16aaa8; }
+    .social-bubble.facebook {
+      left: 3px;
+      top: 23px;
+      background: #287be7;
+    }
 
-    .art-google .art-main { color: #4285f4; background: #fff; }
-    .art-google .art-float { color: #fff; background: #4285f4; }
-    .art-meta .art-main { color: #1877f2; background: #e7f2ff; }
-    .art-meta .art-float { color: #fff; background: #1977ec; }
-    .art-youtube .art-main { color: #f04444; background: #fff0f0; }
-    .art-youtube .art-float { color: #fff; background: #f04444; }
-    .art-tiktok .art-main { color: #111c4b; background: #dff9f5; }
-    .art-tiktok .art-float { color: #fff; background: #111c4b; }
-    .art-logo .art-main { color: #8b50c6; background: #f4eaff; }
-    .art-logo .art-float { color: #fff; background: #8b50c6; }
+    .social-bubble.instagram {
+      left: 58px;
+      top: 0;
+      color: #fff;
+      background: #dc6cae;
+    }
 
-    /* Small decorative shapes around the pathway */
-    .decoration {
+    .social-bubble.like {
+      left: 60px;
+      top: 52px;
+      width: 55px;
+      height: 55px;
+      color: #247be0;
+      background: #fff;
+      font-size: 29px;
+    }
+
+    .social-bubble.youtube {
+      right: 2px;
+      top: 23px;
+      background: #ff7777;
+    }
+
+    .social-bubble.linkedin {
+      right: 8px;
+      bottom: 0;
+      background: #16aaa8;
+    }
+
+    .art-google .art-main {
+      color: #4285f4;
+      background: #fff;
+    }
+
+    .art-google .art-float {
+      color: #fff;
+      background: #4285f4;
+    }
+
+    .art-meta .art-main {
+      color: #1877f2;
+      background: #e7f2ff;
+    }
+
+    .art-meta .art-float {
+      color: #fff;
+      background: #1977ec;
+    }
+
+    .art-youtube .art-main {
+      color: #f04444;
+      background: #fff0f0;
+    }
+
+    .art-youtube .art-float {
+      color: #fff;
+      background: #f04444;
+    }
+
+    .art-tiktok .art-main {
+      color: #111c4b;
+      background: #dff9f5;
+    }
+
+    .art-tiktok .art-float {
+      color: #fff;
+      background: #111c4b;
+    }
+
+    .art-logo .art-main {
+      color: #8b50c6;
+      background: #f4eaff;
+    }
+
+    .art-logo .art-float {
+      color: #fff;
+      background: #8b50c6;
+    }
+
+    /* **************Master positioning class */
+    .dec {
       position: absolute;
-      z-index: 1;
+      z-index: -1;
       pointer-events: none;
+      top: var(--t, auto);
+      bottom: var(--b, auto);
+      left: var(--l, auto);
+      right: var(--r, auto);
+      color: var(--c, var(--teal));
+      opacity: var(--o, 0.9);
+      transform: rotate(var(--rot, 0deg)) scale(var(--s, 1));
     }
 
+    /* Base shape styles */
     .blob {
-      width: 150px;
-      height: 185px;
+      width: 120px;
+      /* Slightly smaller to fit better inside the layout */
+      height: 140px;
       border-radius: 48% 52% 40% 60% / 40% 45% 55% 60%;
-      opacity: .95;
+      background: var(--c);
+      opacity: var(--o, 0.3);
+      /* Lowered opacity so they don't distract from text */
     }
 
-    .blob-left-top { top: 30%; left: -105px; background: #20b9b4; transform: rotate(-25deg); }
-    .blob-right-top { top: 15%; right: -112px; background: #16a9d0; transform: rotate(28deg); }
-    .blob-right-mid { top: 57%; right: -112px; background: #347ee8; transform: rotate(-24deg); }
-    .blob-left-bottom { bottom: 5%; left: -112px; background: #347ee8; transform: rotate(22deg); }
-    .blob-right-bottom { bottom: -80px; right: -55px; width: 205px; height: 165px; background: #8950c8; transform: rotate(-23deg); }
+    .blob.large {
+      width: 180px;
+      height: 210px;
+    }
+
+    .blob.small {
+      width: 70px;
+      height: 85px;
+    }
 
     .sparkle {
-      color: var(--blue);
-      opacity: .9;
-      font-size: 22px;
+      font-size: calc(22px * var(--s, 1));
     }
-    .sparkle.s1 { top: 18%; right: 24%; color: #f36f62; font-size: 28px; }
-    .sparkle.s2 { top: 34%; left: 8%; color: var(--ink); }
-    .sparkle.s3 { top: 51%; right: 12%; color: var(--teal); font-size: 27px; }
-    .sparkle.s4 { top: 72%; left: 15%; color: var(--purple); font-size: 26px; }
-    .sparkle.s5 { bottom: 8%; right: 29%; color: var(--purple); font-size: 25px; }
 
     .dot {
-      width: 13px;
-      height: 13px;
+      width: calc(12px * var(--s, 1));
+      height: calc(12px * var(--s, 1));
       border-radius: 50%;
-      background: var(--teal);
-      opacity: .9;
+      background: var(--c);
     }
-    .dot.d1 { top: 22%; left: 59%; }
-    .dot.d2 { top: 39%; right: 15%; background: var(--purple); }
-    .dot.d3 { top: 63%; left: 12%; background: var(--coral); }
-    .dot.d4 { bottom: 16%; right: 18%; background: var(--blue); }
+
+    .ring {
+      width: calc(16px * var(--s, 1));
+      height: calc(16px * var(--s, 1));
+      border: 3px solid var(--c);
+      border-radius: 50%;
+    }
+
+    .plus {
+      font-size: calc(18px * var(--s, 1));
+      font-weight: bold;
+    }
 
     @media (max-width: 700px) {
-      body { padding: 14px 10px; }
+      body {
+        padding: 14px 10px;
+      }
 
       .services-pathway-section {
         padding: 34px 18px 42px;
@@ -340,7 +438,9 @@
         font-size: 1.85rem;
       }
 
-      .services-path { display: none; }
+      .services-path {
+        display: none;
+      }
 
       .services-list {
         gap: 22px;
@@ -379,8 +479,15 @@
         box-shadow: 0 0 0 2px var(--teal);
       }
 
-      .service-item:nth-child(3n + 2)::before { background: var(--blue); box-shadow: 0 0 0 2px var(--blue); }
-      .service-item:nth-child(3n)::before { background: var(--purple); box-shadow: 0 0 0 2px var(--purple); }
+      .service-item:nth-child(3n + 2)::before {
+        background: var(--blue);
+        box-shadow: 0 0 0 2px var(--blue);
+      }
+
+      .service-item:nth-child(3n)::before {
+        background: var(--purple);
+        box-shadow: 0 0 0 2px var(--purple);
+      }
 
       .service-inner,
       .service-item:nth-child(odd) .service-inner,
@@ -411,34 +518,99 @@
         margin: 0 -5px;
       }
 
-      .service-item:nth-child(4n + 2) .service-illustration { margin-left: -5px; }
-      .art-main { width: 82px; height: 72px; font-size: 36px; border-width: 4px; }
-      .art-float { width: 36px; height: 36px; font-size: 18px; }
-      .art-small { width: 32px; height: 32px; font-size: 14px; }
-      .social-bubble { width: 34px; height: 34px; font-size: 17px; }
-      .social-bubble.like { width: 44px; height: 44px; font-size: 23px; }
+      .service-item:nth-child(4n + 2) .service-illustration {
+        margin-left: -5px;
+      }
 
-      .service-copy { min-width: 0; }
-      .service-copy h3 { margin-bottom: 5px; font-size: 1.12rem; }
-      .service-copy p { font-size: .84rem; line-height: 1.5; }
+      .art-main {
+        width: 82px;
+        height: 72px;
+        font-size: 36px;
+        border-width: 4px;
+      }
 
-      .blob { opacity: .22; transform: scale(.7); }
-      .sparkle, .dot { opacity: .35; }
+      .art-float {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+
+      .art-small {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+      }
+
+      .social-bubble {
+        width: 34px;
+        height: 34px;
+        font-size: 17px;
+      }
+
+      .social-bubble.like {
+        width: 44px;
+        height: 44px;
+        font-size: 23px;
+      }
+
+      .service-copy {
+        min-width: 0;
+      }
+
+      .service-copy h3 {
+        margin-bottom: 5px;
+        font-size: 1.12rem;
+      }
+
+      .service-copy p {
+        font-size: .84rem;
+        line-height: 1.5;
+      }
+
+      .blob {
+        opacity: .22;
+        transform: scale(.7);
+      }
+
+      .sparkle,
+      .dot {
+        opacity: .35;
+      }
     }
 
     @media (max-width: 420px) {
-      .services-pathway-section { padding-right: 12px; padding-left: 12px; }
-      .section-title { font-size: 1.6rem; }
-      .services-list { padding-left: 7px; }
-      .services-list::before { left: 18px; }
+      .services-pathway-section {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+
+      .services-list {
+        padding-left: 7px;
+      }
+
+      .services-list::before {
+        left: 18px;
+      }
+
       .service-item,
-      .service-item:nth-child(even) { padding-left: 25px; }
-      .service-item::before { left: -2px; }
+      .service-item:nth-child(even) {
+        padding-left: 25px;
+      }
+
+      .service-item::before {
+        left: -2px;
+      }
+
       .service-inner,
       .service-item:nth-child(odd) .service-inner,
       .service-item:nth-child(even) .service-inner {
         gap: 10px;
       }
+
       .service-illustration,
       .social-illustration {
         width: 88px;
@@ -448,53 +620,94 @@
         margin-left: -12px;
         margin-right: -12px;
       }
-      .service-copy h3 { font-size: 1rem; }
-      .service-copy p { font-size: .78rem; }
+
+      .service-copy h3 {
+        font-size: 1rem;
+      }
+
+      .service-copy p {
+        font-size: .78rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <section class="services-pathway-section" aria-labelledby="services-title">
-    <!-- Decorative background shapes -->
-    <span class="decoration blob blob-left-top" aria-hidden="true"></span>
-    <span class="decoration blob blob-right-top" aria-hidden="true"></span>
-    <span class="decoration blob blob-right-mid" aria-hidden="true"></span>
-    <span class="decoration blob blob-left-bottom" aria-hidden="true"></span>
-    <span class="decoration blob blob-right-bottom" aria-hidden="true"></span>
-    <i class="decoration sparkle s1 fa-solid fa-star" aria-hidden="true"></i>
-    <i class="decoration sparkle s2 fa-solid fa-star" aria-hidden="true"></i>
-    <i class="decoration sparkle s3 fa-solid fa-sparkles" aria-hidden="true"></i>
-    <i class="decoration sparkle s4 fa-solid fa-star" aria-hidden="true"></i>
-    <i class="decoration sparkle s5 fa-solid fa-sparkles" aria-hidden="true"></i>
-    <span class="decoration dot d1" aria-hidden="true"></span>
-    <span class="decoration dot d2" aria-hidden="true"></span>
-    <span class="decoration dot d3" aria-hidden="true"></span>
-    <span class="decoration dot d4" aria-hidden="true"></span>
+    <!-- ========================================== -->
+    <!-- 1. BLOBS (Clustered behind/near content) -->
+    <span class="dec blob small" style="--t: 8%; --l: 25%; --c: #20b9b4; --rot: 15deg;"></span>
+    <span class="dec blob" style="--t: 22%; --l: 15%; --c: #16a9d0; --rot: -25deg;"></span>
+    <span class="dec blob large" style="--t: 38%; --r: 20%; --c: #347ee8; --rot: 45deg; --o: 0.15;"></span>
+    <span class="dec blob small" style="--t: 52%; --l: 22%; --c: #f36f62; --rot: -10deg;"></span>
+    <span class="dec blob" style="--t: 65%; --r: 18%; --c: #8950c8; --rot: 20deg;"></span>
+    <span class="dec blob" style="--t: 78%; --l: 12%; --c: #20b9b4; --rot: -40deg;"></span>
+    <span class="dec blob small" style="--b: 5%; --r: 22%; --c: #16a9d0; --rot: 15deg;"></span>
+
+    <!-- ========================================== -->
+    <!-- 2. SPARKLES & STARS -->
+    <!-- ========================================== -->
+    <i class="dec sparkle fa-solid fa-star" style="--t: 6%; --l: 35%; --c: #f36f62; --s: 1.2;"></i>
+    <i class="dec sparkle fa-solid fa-sparkles" style="--t: 12%; --r: 18%; --c: var(--teal); --s: 0.8;"></i>
+    <i class="dec sparkle fa-solid fa-star" style="--t: 25%; --l: 32%; --c: var(--purple);"></i>
+    <i class="dec sparkle fa-solid fa-sparkles" style="--t: 40%; --r: 35%; --c: var(--blue); --s: 1.1;"></i>
+    <i class="dec sparkle fa-solid fa-star" style="--t: 55%; --l: 18%; --c: var(--teal); --s: 0.9;"></i>
+    <i class="dec sparkle fa-solid fa-sparkles" style="--t: 68%; --r: 28%; --c: #f36f62; --s: 1.3;"></i>
+    <i class="dec sparkle fa-solid fa-star" style="--t: 82%; --l: 28%; --c: var(--purple); --s: 0.8;"></i>
+
+    <!-- ========================================== -->
+    <!-- 3. DOTS -->
+    <!-- ========================================== -->
+    <span class="dec dot" style="--t: 9%; --l: 22%; --c: var(--blue);"></span>
+    <span class="dec dot" style="--t: 5%; --l: 8%; --c: var(--blue);"></span>
+    <span class="dec dot" style="--t: 15%; --l: 12%; --c: var(--blue);"></span>
+    <span class="dec dot" style="--t: 20%; --l: 18%; --c: var(--teal); --s: 0.6;"></span>
+    <span class="dec dot" style="--t: 36%; --r: 25%; --c: #f36f62; --s: 1.2;"></span>
+    <span class="dec dot" style="--t: 48%; --l: 28%; --c: var(--purple);"></span>
+    <span class="dec dot" style="--t: 62%; --r: 15%; --c: var(--teal); --s: 0.8;"></span>
+    <span class="dec dot" style="--t: 75%; --l: 15%; --c: var(--blue); --s: 1.5;"></span>
+    <span class="dec dot" style="--t: 85%; --r: 30%; --c: #f36f62;"></span>
+
+    <!-- ========================================== -->
+    <!-- 4. RINGS & PLUSES -->
+    <!-- ========================================== -->
+    <span class="dec ring" style="--t: 14%; --l: 28%; --c: var(--purple);"></span>
+    <span class="dec ring" style="--t: 12%; --l: 15%; --c: var(--purple);"></span>
+    <span class="dec ring" style="--t: 28%; --l: 25%; --c: var(--blue); --s: 0.7;"></span>
+    <span class="dec ring" style="--t: 58%; --l: 35%; --c: var(--teal); --s: 1.2;"></span>
+    <span class="dec ring" style="--t: 80%; --r: 20%; --c: var(--purple); --s: 0.9;"></span>
+
+    <i class="dec plus fa-solid fa-plus" style="--t: 12%; --l: 30%; --c: var(--teal);"></i>
+    <i class="dec plus fa-solid fa-plus" style="--t: 7%; --l: 15%; --c: var(--teal);"></i>
+    <i class="dec plus fa-solid fa-plus" style="--t: 45%; --l: 20%; --c: var(--purple); --s: 1.2;"></i>
+    <i class="dec plus fa-solid fa-plus" style="--t: 72%; --r: 22%; --c: var(--blue);"></i>
 
     <div class="services-container">
       <h2 class="section-title" id="services-title">Our Core Digital Services</h2>
 
       <div class="services-list">
         <!-- The SVG sits behind the service blocks and draws one continuous path. -->
-        <svg class="services-path" viewBox="0 0 1000 2080" preserveAspectRatio="none" aria-hidden="true">
+        <svg class="services-path" viewBox="0 0 1000 2800" preserveAspectRatio="none" aria-hidden="true"
+          style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;">
           <defs>
-            <linearGradient id="servicesPathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <!-- Adjusted gradient to flow top-to-bottom vertically -->
+            <linearGradient id="servicesPathGradient" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="0%" stop-color="#20b9b4" />
-              <stop offset="48%" stop-color="#347ee8" />
+              <stop offset="45%" stop-color="#347ee8" />
               <stop offset="100%" stop-color="#8950c8" />
             </linearGradient>
           </defs>
-          <path d="M 470 18
-                   C 675 15, 825 86, 800 220
-                   C 778 350, 548 340, 350 405
-                   C 155 470, 160 590, 350 650
-                   C 545 712, 824 668, 820 820
-                   C 816 970, 555 960, 350 1030
-                   C 155 1098, 168 1220, 372 1280
-                   C 574 1340, 824 1310, 810 1460
-                   C 796 1610, 548 1605, 350 1670
-                   C 158 1735, 180 1860, 372 1920
-                   C 555 1978, 700 1980, 610 2060" />
+
+          <!-- Updated path matching your red sketch -->
+          <path d="M 750 0
+         C 750 200, 150 200, 200 400
+         S 850 600, 800 800
+         S 150 1000, 200 1200
+         S 850 1400, 800 1600
+         S 150 1800, 200 2000
+         S 850 2200, 800 2400
+         S 150 2600, 200 2800" fill="none" stroke="url(#servicesPathGradient)" stroke-width="12"
+            stroke-linecap="round" />
         </svg>
 
         <article class="service-item">
@@ -508,7 +721,8 @@
             </div>
             <div class="service-copy">
               <h3>Social Media Platforms Handling</h3>
-              <p>Build a consistent and trusted online presence. We manage your social media content, publishing schedule, and community engagement to help your healthcare brand connect with the right audience.</p>
+              <p>Build a consistent and trusted online presence. We manage your social media content, publishing
+                schedule, and community engagement to help your healthcare brand connect with the right audience.</p>
             </div>
           </div>
         </article>
@@ -517,7 +731,8 @@
           <div class="service-inner">
             <div class="service-copy">
               <h3>Graphic Design</h3>
-              <p>Give your medical brand a clear and professional visual identity through healthcare graphics, social media posts, infographics, and promotional designs.</p>
+              <p>Give your medical brand a clear and professional visual identity through healthcare graphics, social
+                media posts, infographics, and promotional designs.</p>
             </div>
             <div class="service-illustration art-graphic" aria-hidden="true">
               <div class="art-main"><i class="fa-regular fa-image"></i></div>
@@ -536,7 +751,8 @@
             </div>
             <div class="service-copy">
               <h3>Video Editing</h3>
-              <p>Turn your footage into engaging videos for reels, patient education, testimonials, and clinic introductions, ready to share across your digital channels.</p>
+              <p>Turn your footage into engaging videos for reels, patient education, testimonials, and clinic
+                introductions, ready to share across your digital channels.</p>
             </div>
           </div>
         </article>
@@ -550,7 +766,8 @@
             </div>
             <div class="service-copy">
               <h3>Google Ads</h3>
-              <p>Reach people actively searching for healthcare services. We plan and manage targeted search campaigns designed to bring relevant visitors, calls, and appointment inquiries.</p>
+              <p>Reach people actively searching for healthcare services. We plan and manage targeted search campaigns
+                designed to bring relevant visitors, calls, and appointment inquiries.</p>
             </div>
           </div>
         </article>
@@ -559,7 +776,8 @@
           <div class="service-inner">
             <div class="service-copy">
               <h3>Facebook &amp; Instagram Ads</h3>
-              <p>Connect with relevant local audiences through carefully targeted campaigns that promote your services, generate inquiries, and increase awareness of your practice.</p>
+              <p>Connect with relevant local audiences through carefully targeted campaigns that promote your services,
+                generate inquiries, and increase awareness of your practice.</p>
             </div>
             <div class="service-illustration art-meta" aria-hidden="true">
               <div class="art-main"><i class="fa-brands fa-meta"></i></div>
@@ -578,7 +796,8 @@
             </div>
             <div class="service-copy">
               <h3>YouTube Ads</h3>
-              <p>Showcase your treatments, facilities, and expertise with targeted video campaigns that help your healthcare brand reach viewers who matter to your practice.</p>
+              <p>Showcase your treatments, facilities, and expertise with targeted video campaigns that help your
+                healthcare brand reach viewers who matter to your practice.</p>
             </div>
           </div>
         </article>
@@ -592,7 +811,8 @@
             </div>
             <div class="service-copy">
               <h3>TikTok Ads</h3>
-              <p>Use short-form video advertising to introduce your services, increase brand visibility, and reach audiences who actively discover content on TikTok.</p>
+              <p>Use short-form video advertising to introduce your services, increase brand visibility, and reach
+                audiences who actively discover content on TikTok.</p>
             </div>
           </div>
         </article>
@@ -601,7 +821,8 @@
           <div class="service-inner">
             <div class="service-copy">
               <h3>Logo Design</h3>
-              <p>Create a memorable foundation for your healthcare brand with a custom logo that communicates professionalism, clarity, and trust across your digital platforms.</p>
+              <p>Create a memorable foundation for your healthcare brand with a custom logo that communicates
+                professionalism, clarity, and trust across your digital platforms.</p>
             </div>
             <div class="service-illustration art-logo" aria-hidden="true">
               <div class="art-main"><i class="fa-solid fa-bezier-curve"></i></div>
@@ -614,4 +835,5 @@
     </div>
   </section>
 </body>
+
 </html>

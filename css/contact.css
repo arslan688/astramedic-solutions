@@ -37,10 +37,6 @@ padding: 40px;
 background-color: var(--color-bg-site);
 }
 
-.shadow {
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
 .text-primary {
 color: var(--color-primary);
 }

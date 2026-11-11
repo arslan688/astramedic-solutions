@@ -310,7 +310,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    align-items: center; /* Vertically aligns featured card if sizes differ */
+    align-items: center;
 }
 
 .pricing-card {
@@ -319,12 +319,26 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.pricing-card:hover{
+    border-color: #d0e1ff;
+    box-shadow: 0 12px 28px rgba #1877f21f(24, 119, 242, 0.12);
+    transform: translateY(-2px);
 }
 
 .featured-package {
     background-color: var(--color-primary);
     transform: scale(1.05);
     border-color: var(--color-primary);
+    color: var(--color-bg-site);
+}
+
+.featured-package:hover{
+    border-color: #d0e1ff;
+    box-shadow: 0 12px 28px rgba #1877f21f(24, 119, 242, 0.12);
+    transform: scale(1.05) translateY(-2px);
 }
 
 .pricing-title {
@@ -336,6 +350,14 @@
     text-align: center;
     color: var(--color-primary);
     margin-bottom: 30px;
+}
+
+.featured-package .pricing-amount .price{
+    color: var(--color-bg-site);
+
+}
+.featured-package .pricing-title{
+    color: var(--color-bg-site);
 }
 
 .pricing-amount .currency {
@@ -357,7 +379,7 @@
 }
 
 .featured-package .pricing-amount .duration {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-bg-section-light);
 }
 
 .pricing-features {
