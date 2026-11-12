@@ -18,21 +18,23 @@
                 <h5 class="footer-heading">Quick Links</h5>
                 <ul class="footer-nav">
                     <li><a href="/" class="footer-link">Home</a></li>
-                    <li><a href="/about.php" class="footer-link">About Us</a></li>
-                    <li><a href="/healthcare-licensing-and-consultants.php" class="footer-link">Consultants</a></li>
+                    <li><a href="/about" class="footer-link">About Us</a></li>
+                    <li><a href="/healthcare-licensing-and-consultants" class="footer-link">Consultants</a></li>
                     <li><a href="https://shop.astramedicsolutions.com" class="footer-link" target="_blank"
                             rel="noopener noreferrer">Shop</a></li>
-                    <li><a href="/astracrew.php" class="footer-link">AstraCrew</a></li>
-                    <li><a href="/careers.php" class="footer-link">Careers</a></li>
+                    <li><a href="/astracrew" class="footer-link">AstraCrew</a></li>
+                    <li><a href="/careers" class="footer-link">Careers</a></li>
+                    <li><a href="/terms-and-conditions" class="footer-link">Terms and Conditions</a></li>
+                    <li><a href="/privacy-policy" class="footer-link">Privacy Policy</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h5 class="footer-heading">Digital Solutions</h5>
                 <ul class="footer-nav">
-                    <li><a href="/healthcare-digital-marketing.php" class="footer-link">Digital Marketing</a></li>
-                    <li><a href="/healthcare-web-development.php" class="footer-link">Web Development</a></li>
-                    <li><a href="/healthcare-softwares.php" class="footer-link">Healthcare Softwares</a></li>
+                    <li><a href="/healthcare-digital-marketing" class="footer-link">Digital Marketing</a></li>
+                    <li><a href="/healthcare-web-development" class="footer-link">Web Development</a></li>
+                    <li><a href="/healthcare-softwares" class="footer-link">Healthcare Softwares</a></li>
                 </ul>
             </div>
 
