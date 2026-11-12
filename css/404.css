@@ -1,0 +1,75 @@
+/* 
+ * 404 Error Page Stylesheet
+ */
+
+.error-container {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-container h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1;
+}
+
+.error-container h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--text-color-dark, #3A3A3A);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.error-container p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text-color-dark, #3A3A3A);
+    margin-top: 0;
+    margin-bottom: 40px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* Button styles fallback (assumes .btn-primary is in universal.css, but styled here for exact blueprint match) */
+/* .error-container .btn-primary {
+    display: inline-block;
+    background-color: var(--button-default-background, #025790);
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 17px 34px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+} */
+
+.error-container .btn-primary:hover {
+    background-color: var(--button-hover-background, #0274BE);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    .error-container {
+        min-height: 50vh;
+        padding: 40px 15px;
+    }
+    
+    .error-container h1 {
+        font-size: 6rem;
+    }
+    
+    .error-container h2 {
+        font-size: 26px;
+    }
+}

@@ -108,102 +108,213 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     </section>
 
     <!-- Core Services Section -->
-    <section class="dm-services-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 class="h2">Our Core Digital Services</h2>
-            </div>
+    <section class="services-pathway-section" aria-labelledby="services-title">
+        <!-- ========================================== -->
+        <!-- 1. BLOBS (Clustered behind/near content) -->
+        <span class="dec blob small" style="--t: 8%; --l: 25%; --c: #20b9b4; --rot: 15deg;"></span>
+        <span class="dec blob" style="--t: 22%; --l: 15%; --c: #16a9d0; --rot: -25deg;"></span>
+        <span class="dec blob large" style="--t: 38%; --r: 20%; --c: #347ee8; --rot: 45deg; --o: 0.15;"></span>
+        <span class="dec blob small" style="--t: 52%; --l: 22%; --c: #f36f62; --rot: -10deg;"></span>
+        <span class="dec blob" style="--t: 65%; --r: 18%; --c: #8950c8; --rot: 20deg;"></span>
+        <span class="dec blob" style="--t: 78%; --l: 12%; --c: #20b9b4; --rot: -40deg;"></span>
+        <span class="dec blob small" style="--b: 5%; --r: 22%; --c: #16a9d0; --rot: 15deg;"></span>
 
-            <div class="dm-services-grid">
+        <!-- ========================================== -->
+        <!-- 2. SPARKLES & STARS -->
+        <!-- ========================================== -->
+        <i class="dec sparkle fa-solid fa-star" style="--t: 6%; --l: 35%; --c: #f36f62; --s: 1.2;"></i>
+        <i class="dec sparkle fa-solid fa-sparkles" style="--t: 12%; --r: 18%; --c: var(--teal); --s: 0.8;"></i>
+        <i class="dec sparkle fa-solid fa-star" style="--t: 25%; --l: 32%; --c: var(--purple);"></i>
+        <i class="dec sparkle fa-solid fa-sparkles" style="--t: 40%; --r: 35%; --c: var(--blue); --s: 1.1;"></i>
+        <i class="dec sparkle fa-solid fa-star" style="--t: 55%; --l: 18%; --c: var(--teal); --s: 0.9;"></i>
+        <i class="dec sparkle fa-solid fa-sparkles" style="--t: 68%; --r: 28%; --c: #f36f62; --s: 1.3;"></i>
+        <i class="dec sparkle fa-solid fa-star" style="--t: 82%; --l: 28%; --c: var(--purple); --s: 0.8;"></i>
 
-                <!-- Social Media Platforms Handling -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-share-nodes"></i>
+        <!-- ========================================== -->
+        <!-- 3. DOTS -->
+        <!-- ========================================== -->
+        <span class="dec dot" style="--t: 9%; --l: 22%; --c: var(--blue);"></span>
+        <span class="dec dot" style="--t: 5%; --l: 8%; --c: var(--blue);"></span>
+        <span class="dec dot" style="--t: 15%; --l: 12%; --c: var(--blue);"></span>
+        <span class="dec dot" style="--t: 20%; --l: 18%; --c: var(--teal); --s: 0.6;"></span>
+        <span class="dec dot" style="--t: 36%; --r: 25%; --c: #f36f62; --s: 1.2;"></span>
+        <span class="dec dot" style="--t: 48%; --l: 28%; --c: var(--purple);"></span>
+        <span class="dec dot" style="--t: 62%; --r: 15%; --c: var(--teal); --s: 0.8;"></span>
+        <span class="dec dot" style="--t: 75%; --l: 15%; --c: var(--blue); --s: 1.5;"></span>
+        <span class="dec dot" style="--t: 85%; --r: 30%; --c: #f36f62;"></span>
+
+        <!-- ========================================== -->
+        <!-- 4. RINGS & PLUSES -->
+        <!-- ========================================== -->
+        <span class="dec ring" style="--t: 14%; --l: 28%; --c: var(--purple);"></span>
+        <span class="dec ring" style="--t: 12%; --l: 15%; --c: var(--purple);"></span>
+        <span class="dec ring" style="--t: 28%; --l: 25%; --c: var(--blue); --s: 0.7;"></span>
+        <span class="dec ring" style="--t: 58%; --l: 35%; --c: var(--teal); --s: 1.2;"></span>
+        <span class="dec ring" style="--t: 80%; --r: 20%; --c: var(--purple); --s: 0.9;"></span>
+
+        <i class="dec plus fa-solid fa-plus" style="--t: 12%; --l: 30%; --c: var(--teal);"></i>
+        <i class="dec plus fa-solid fa-plus" style="--t: 7%; --l: 15%; --c: var(--teal);"></i>
+        <i class="dec plus fa-solid fa-plus" style="--t: 45%; --l: 20%; --c: var(--purple); --s: 1.2;"></i>
+        <i class="dec plus fa-solid fa-plus" style="--t: 72%; --r: 22%; --c: var(--blue);"></i>
+
+        <div class="services-container">
+            <h2 class="section-title" id="services-title">Our Core Digital Services</h2>
+
+            <div class="services-list">
+                <!-- The SVG sits behind the service blocks and draws one continuous path. -->
+                <svg class="services-path" viewBox="0 0 1000 2800" preserveAspectRatio="none" aria-hidden="true"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;">
+                    <defs>
+                        <!-- Adjusted gradient to flow top-to-bottom vertically -->
+                        <linearGradient id="servicesPathGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#20b9b4" />
+                            <stop offset="45%" stop-color="#347ee8" />
+                            <stop offset="100%" stop-color="#8950c8" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Updated path matching your red sketch -->
+                    <path d="M 750 0
+                            C 750 200, 150 200, 200 400
+                            S 850 600, 800 800
+                            S 150 1000, 200 1200
+                            S 850 1400, 800 1600
+                            S 150 1800, 200 2000
+                            S 850 2200, 800 2400
+                            S 150 2600, 200 2800" fill="none" stroke="url(#servicesPathGradient)" stroke-width="12"
+                        stroke-linecap="round" />
+                </svg>
+
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-illustration social-illustration" aria-hidden="true">
+                            <span class="social-bubble facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="social-bubble instagram"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="social-bubble like"><i class="fa-solid fa-thumbs-up"></i></span>
+                            <span class="social-bubble youtube"><i class="fa-brands fa-youtube"></i></span>
+                            <span class="social-bubble linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                        </div>
+                        <div class="service-copy">
+                            <h3>Social Media Platforms Handling</h3>
+                            <p>Build a consistent and trusted online presence. We manage your social media content,
+                                publishing
+                                schedule, and community engagement to help your healthcare brand connect with the right
+                                audience.</p>
+                        </div>
                     </div>
-                    <h3 class="h4">Social Media Platforms Handling</h3>
-                    <p>Engage patients and build a loyal community. AstraMedic Digital Services manages your daily
-                        presence across platforms, publishing targeted, patient-focused content that builds trust,
-                        drives interaction, and boosts your healthcare brand's visibility.</p>
-                </div>
+                </article>
 
-                <!-- Graphic Design -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-pen-nib"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-copy">
+                            <h3>Graphic Design</h3>
+                            <p>Give your medical brand a clear and professional visual identity through healthcare
+                                graphics, social
+                                media posts, infographics, and promotional designs.</p>
+                        </div>
+                        <div class="service-illustration art-graphic" aria-hidden="true">
+                            <div class="art-main"><i class="fa-regular fa-image"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-pen-nib"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-palette"></i></span>
+                        </div>
                     </div>
-                    <h3 class="h4">Graphic Design</h3>
-                    <p>Elevate your medical brand with striking, professional visuals. We design high-quality healthcare
-                        infographics, engaging social media posts, and cohesive promotional materials that capture
-                        attention and communicate your clinic's expertise.</p>
-                </div>
+                </article>
 
-                <!-- Video Editing -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-film"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-illustration art-video" aria-hidden="true">
+                            <div class="art-main"><i class="fa-solid fa-circle-play"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-scissors"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-film"></i></span>
+                        </div>
+                        <div class="service-copy">
+                            <h3>Video Editing</h3>
+                            <p>Turn your footage into engaging videos for reels, patient education, testimonials, and
+                                clinic
+                                introductions, ready to share across your digital channels.</p>
+                        </div>
                     </div>
-                    <h3 class="h4">Video Editing</h3>
-                    <p>Tell your clinic's story through captivating video content. We provide professional video editing
-                        for patient testimonials, educational reels, and facility tours, driving higher engagement and
-                        conversions across all your digital channels.</p>
-                </div>
+                </article>
 
-                <!-- Google Ads -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-brands fa-google"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-illustration art-google" aria-hidden="true">
+                            <div class="art-main"><i class="fa-brands fa-google"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                        <div class="service-copy">
+                            <h3>Google Ads</h3>
+                            <p>Reach people actively searching for healthcare services. We plan and manage targeted
+                                search campaigns
+                                designed to bring relevant visitors, calls, and appointment inquiries.</p>
+                        </div>
                     </div>
-                    <h3 class="h4">Google Ads</h3>
-                    <p>Appear at the top of search results when patients are actively looking for care. We manage
-                        cost-effective, targeted Google Ads campaigns with optimized keywords to drive high-intent
-                        traffic, increase bookings, and maximize your ROI.</p>
-                </div>
+                </article>
 
-                <!-- Facebook and Instagram Ads -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-users-viewfinder"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-copy">
+                            <h3>Facebook &amp; Instagram Ads</h3>
+                            <p>Connect with relevant local audiences through carefully targeted campaigns that promote
+                                your services,
+                                generate inquiries, and increase awareness of your practice.</p>
+                        </div>
+                        <div class="service-illustration art-meta" aria-hidden="true">
+                            <div class="art-main"><i class="fa-brands fa-meta"></i></div>
+                            <span class="art-float"><i class="fa-brands fa-instagram"></i></span>
+                            <span class="art-small"><i class="fa-brands fa-facebook-f"></i></span>
+                        </div>
                     </div>
-                    <h3 class="h4">Facebook & Instagram Ads</h3>
-                    <p>Reach your ideal local patients with precision audience targeting. Our customized ad campaigns
-                        utilize compelling copywriting and engaging visuals to generate clinic inquiries, boost
-                        appointments, and scale your brand awareness.</p>
-                </div>
+                </article>
 
-                <!-- YouTube Ads -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-brands fa-youtube"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-illustration art-youtube" aria-hidden="true">
+                            <div class="art-main"><i class="fa-brands fa-youtube"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-bullhorn"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-play"></i></span>
+                        </div>
+                        <div class="service-copy">
+                            <h3>YouTube Ads</h3>
+                            <p>Showcase your treatments, facilities, and expertise with targeted video campaigns that
+                                help your
+                                healthcare brand reach viewers who matter to your practice.</p>
+                        </div>
                     </div>
-                    <h3 class="h4">YouTube Ads</h3>
-                    <p>Capture attention with impactful video marketing. We create and manage highly targeted YouTube ad
-                        campaigns that showcase your treatments, facilities, and medical authority to a deeply engaged,
-                        video-first audience.</p>
-                </div>
+                </article>
 
-                <!-- TikTok Ads -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-brands fa-tiktok"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-illustration art-tiktok" aria-hidden="true">
+                            <div class="art-main"><i class="fa-brands fa-tiktok"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-music"></i></span>
+                        </div>
+                        <div class="service-copy">
+                            <h3>TikTok Ads</h3>
+                            <p>Use short-form video advertising to introduce your services, increase brand visibility,
+                                and reach
+                                audiences who actively discover content on TikTok.</p>
+                        </div>
                     </div>
-                    <h3 class="h4">TikTok Ads</h3>
-                    <p>Tap into a rapidly growing demographic with dynamic short-form video ads. We design, launch, and
-                        optimize engaging TikTok campaigns that boost brand visibility and connect your practice with a
-                        younger, highly active audience.</p>
-                </div>
+                </article>
 
-                <!-- Logo Design -->
-                <div class="service-card shadow">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-object-group"></i>
+                <article class="service-item">
+                    <div class="service-inner">
+                        <div class="service-copy">
+                            <h3>Logo Design</h3>
+                            <p>Create a memorable foundation for your healthcare brand with a custom logo that
+                                communicates
+                                professionalism, clarity, and trust across your digital platforms.</p>
+                        </div>
+                        <div class="service-illustration art-logo" aria-hidden="true">
+                            <div class="art-main"><i class="fa-solid fa-bezier-curve"></i></div>
+                            <span class="art-float"><i class="fa-solid fa-pen-ruler"></i></span>
+                            <span class="art-small"><i class="fa-solid fa-shapes"></i></span>
+                        </div>
                     </div>
-                    <h3 class="h4">Logo Design</h3>
-                    <p>Establish a strong, memorable identity for your medical practice. We design custom, professional
-                        logos that reflect trust, care, and authority, ensuring your healthcare brand stands out
-                        visually in a competitive market.</p>
-                </div>
-
+                </article>
             </div>
         </div>
     </section>
