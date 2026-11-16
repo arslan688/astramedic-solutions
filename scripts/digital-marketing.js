@@ -1,3 +1,26 @@
+function toggleDigitalMarketingFaq(element) {
+    const section = element.closest('.dm-faq-section');
+    const parent = element.parentElement;
+    const content = element.nextElementSibling;
+    const isOpen = parent.classList.contains('active-faq');
+
+    if (!section || !content) {
+        return;
+    }
+
+    section.querySelectorAll('.faq-item').forEach((item) => {
+        item.classList.remove('active-faq');
+        item.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+        item.querySelector('.faq-content').style.maxHeight = null;
+    });
+
+    if (!isOpen) {
+        parent.classList.add('active-faq');
+        element.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = `${content.scrollHeight}px`;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const box = document.querySelector('.hero-image-box');
     const img = document.querySelector('.hero-side-img');
@@ -28,5 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
         box.addEventListener('mouseleave', () => {
             img.style.transform = 'rotateX(0deg) rotateY(0deg) translateX(0px) translateY(0px)';
         });
+    }
+
+    const revealItems = document.querySelectorAll('.dm-reveal');
+
+    if ('IntersectionObserver' in window && revealItems.length) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.12 });
+
+        revealItems.forEach((item) => revealObserver.observe(item));
+    } else {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
     }
 });

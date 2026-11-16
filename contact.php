@@ -44,7 +44,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
                     <div class="contact-form-wrapper bg-white shadow">
                         <h2 class="h3">Send Us a Message</h2>
                         <link rel="stylesheet" href="/css/contact-form.css">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
+                        <?php
+                        $contactFormKey = 'contact';
+                        include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php';
+                        ?>
                     </div>
                 </div>
 

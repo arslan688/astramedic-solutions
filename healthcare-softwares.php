@@ -130,7 +130,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <h2 class="h2 section-header">Ready to take your healthcare organization to the next level?</h2>
             <p class="intro-text">Contact AstraMedic Digital Solutions for a consultation.</p>
             <link rel="stylesheet" href="/css/contact-form.css">
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
+            <?php
+            $contactFormKey = 'healthcare-software';
+            include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php';
+            ?>
         </div>
     </section>
 

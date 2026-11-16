@@ -3,6 +3,7 @@ $page_title = "Healthcare Digital Marketing Services";
 $meta_description = "Grow your healthcare brand online with specialized digital marketing strategies, social media management, and targeted ads designed to attract patients.";
 $page_css = "/css/digital-marketing.css";
 include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
+
 ?>
 
 <main class="page-digital-marketing bg-light">
@@ -319,6 +320,182 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         </div>
     </section>
 
+    <!-- Why Choose AstraMedic Solutions -->
+    <section class="dm-why-section" aria-labelledby="why-choose-title">
+        <div class="dm-section-mesh" aria-hidden="true"></div>
+        <div class="container dm-why-inner">
+            <div class="dm-why-intro">
+                <div class="dm-content-copy">
+                    <h2 id="why-choose-title"><span>Why Choose </span> AstraMedic Solutions for Healthcare
+                        <br><em>Digital
+                            Marketing?</em>
+                    </h2>
+                    <p>Marketing healthcare services requires a clear understanding of patient needs, trust, and
+                        professional communication. At AstraMedic Solutions, we develop healthcare digital marketing
+                        strategies that help hospitals, clinics, and medical businesses build their online presence,
+                        connect with relevant audiences, and generate more inquiries.</p>
+                </div>
+                <div class="dm-browser-frame dm-reveal">
+                    <div class="dm-content-image">
+                        <img src="/images/healthcare-digital-marketing-team.webp"
+                            alt="AstraMedic Solutions team planning healthcare digital marketing campaigns"
+                            loading="lazy">
+                    </div>
+                    <span class="dm-metric-badge dm-metric-outreach"><strong>+248%</strong> Outreach</span>
+                    <span class="dm-metric-badge dm-metric-roi"><strong>4.8x</strong> Campaign ROI</span>
+                </div>
+            </div>
+
+            <div class="dm-benefits-grid">
+                <article class="dm-benefit-card dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-hospital" aria-hidden="true"></i></div>
+                    <h3>Healthcare-Focused Marketing</h3>
+                    <p>We create professional content and campaigns tailored to hospitals, clinics, and healthcare
+                        professionals.</p>
+                </article>
+                <article class="dm-benefit-card dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+                    <h3>Customized Marketing Strategies</h3>
+                    <p>We plan campaigns around your services, location, audience, goals, and budget.</p>
+                </article>
+                <article class="dm-benefit-card dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-photo-film" aria-hidden="true"></i></div>
+                    <h3>Creative Content &amp; Social Media Management</h3>
+                    <p>Our team handles healthcare graphics, reels, video editing, social posts, and content
+                        scheduling.</p>
+                </article>
+                <article class="dm-benefit-card dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+                    <h3>Targeted Advertising Campaigns</h3>
+                    <p>We manage Google Ads and social advertising to support local visibility and meaningful
+                        inquiries.</p>
+                </article>
+                <article class="dm-benefit-card dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+                    <h3>Affordable Digital Marketing Packages</h3>
+                    <p>Choose a monthly package with clearly outlined services and deliverables for your healthcare
+                        business.</p>
+                </article>
+                <article class="dm-benefit-card dm-benefit-cta dm-reveal">
+                    <div class="dm-benefit-icon"><i class="fa-solid fa-arrow-up-right-dots" aria-hidden="true"></i>
+                    </div>
+                    <h3>Ready to grow your practice?</h3>
+                    <p>Turn your next campaign into a measurable patient-growth opportunity.</p>
+                    <a href="#contact-form">Partner With Us <span aria-hidden="true">&rarr;</span> Book a Free Audit</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Businesses We Serve -->
+    <section class="dm-audience-section bg-white" aria-labelledby="audience-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="audience-title">Digital Marketing Services for Hospitals, Clinics &amp; Healthcare Businesses
+                </h2>
+                <p>AstraMedic Solutions provides healthcare digital marketing services in Pakistan for medical practices
+                    and healthcare organizations of different sizes. From independent clinics to established hospitals,
+                    we help businesses promote their services, improve online visibility, and connect with potential
+                    patients.</p>
+            </div>
+
+            <div class="dm-audience-grid">
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/healthcare-hospitals-medical-centers.jpg"
+                        alt="Hospital and medical center digital marketing services" loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Hospitals &amp; Medical Centers</h3>
+                        <p>Promote departments, specialist doctors, facilities, and healthcare services through
+                            professional campaigns.</p>
+                    </div>
+                </article>
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/private-clinics-specialist-practices.jpg"
+                        alt="Private clinic and specialist practice marketing" loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Private Clinics &amp; Specialist Practices</h3>
+                        <p>Build awareness and reach patients searching for relevant medical services in your area.</p>
+                    </div>
+                </article>
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/dental-clinic-marketing.jpg" alt="Dental clinic digital marketing services"
+                        loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Dental Clinics</h3>
+                        <p>Highlight dental treatments, services, and appointment options with informative content and
+                            ads.</p>
+                    </div>
+                </article>
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/physiotherapy-rehabilitation-marketing.jpg"
+                        alt="Physiotherapy and rehabilitation center marketing" loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Physiotherapy &amp; Rehabilitation Centers</h3>
+                        <p>Introduce rehabilitation programs and treatment facilities through educational campaigns.</p>
+                    </div>
+                </article>
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/skin-aesthetic-clinic-marketing.jpg"
+                        alt="Skin and aesthetic clinic digital marketing" loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Skin &amp; Aesthetic Clinics</h3>
+                        <p>Promote dermatology services, skincare treatments, and aesthetic procedures with high-quality
+                            content.</p>
+                    </div>
+                </article>
+                <article class="dm-audience-card dm-reveal">
+                    <img src="/images/diagnostic-lab-marketing.jpg"
+                        alt="Diagnostic laboratory digital marketing services" loading="lazy">
+                    <div class="dm-card-body">
+                        <h3>Diagnostic Labs &amp; Medical Laboratories</h3>
+                        <p>Help people discover your diagnostic services, facilities, and test information locally.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Digital Marketing Process -->
+    <section class="dm-process-section" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="process-title">How Our Healthcare Digital Marketing Process Works</h2>
+                <p>We follow a structured approach to make your online marketing consistent, relevant, and easier to
+                    manage.</p>
+            </div>
+
+            <div class="dm-process-grid">
+                <article class="dm-process-card dm-reveal">
+                    <div class="dm-process-icon"><i class="fa-solid fa-stethoscope"
+                            aria-hidden="true"></i><span>01</span></div>
+                    <h3>Understand Your Healthcare Business</h3>
+                    <p>We learn about your services, audience, location, competitors, and marketing goals to identify
+                        suitable opportunities.</p>
+                </article>
+                <article class="dm-process-card dm-reveal">
+                    <div class="dm-process-icon"><i class="fa-solid fa-map" aria-hidden="true"></i><span>02</span></div>
+                    <h3>Plan Your Marketing Strategy</h3>
+                    <p>We develop a plan around your requirements and budget, selecting platforms, content ideas, and
+                        advertising campaigns.</p>
+                </article>
+                <article class="dm-process-card dm-reveal">
+                    <div class="dm-process-icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i><span>03</span>
+                    </div>
+                    <h3>Create Content &amp; Launch Campaigns</h3>
+                    <p>We design graphics, edit videos, prepare reels, publish content, and manage included paid
+                        campaigns.</p>
+                </article>
+                <article class="dm-process-card dm-reveal">
+                    <div class="dm-process-icon"><i class="fa-solid fa-chart-simple"
+                            aria-hidden="true"></i><span>04</span></div>
+                    <h3>Monitor &amp; Improve Performance</h3>
+                    <p>We review engagement and inquiry data, then adjust content and advertising strategies to support
+                        your goals.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Packages Section -->
     <section class="dm-pricing-section bg-white">
         <div class="container">
@@ -394,7 +571,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
     <section class="dm-projects-section text-center">
         <div class="container">
             <h2 class="h2">Successful Ongoing Projects</h2>
-
+            <p>Explore some of the brands and businesses we work with at AstraMedic Solutions. Our ongoing projects
+                include hospitals, aesthetic clinics, healthcare providers, and businesses from other industries.
+                <br>
+                We work on digital marketing activities such as social media management, creative content, graphic
+                design, and online advertising according to each client's needs.
+            </p>
             <div class="projects-marquee-container">
                 <div class="projects-marquee-track">
                     <!-- Group 1 (Original Set) -->
@@ -587,12 +769,170 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         </div>
     </section>
 
+    <!-- Frequently Asked Questions -->
+    <section class="dm-faq-section bg-white" aria-labelledby="faq-title">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2 id="faq-title" class="faq-heading">Frequently Asked Questions</h2>
+                <div class="faq-divider" aria-hidden="true"></div>
+            </div>
+            <div class="faq-accordion-group">
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-1"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">1. What healthcare digital marketing services does AstraMedic
+                            Solutions offer?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-1">
+                        <p class="faq-answer">AstraMedic Solutions provides social media management, graphic design,
+                            video editing, Google Ads, Facebook and Instagram advertising, YouTube Ads, TikTok Ads, and
+                            logo design for healthcare businesses in Pakistan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-2"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">2. How much does healthcare digital marketing cost in
+                            Pakistan?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-2">
+                        <p class="faq-answer">Our packages start at Rs. 25,000 per month. The Clinic Package is Rs.
+                            25,000, the Hospital Package is Rs. 32,000, and the Healthcare Network Package is Rs. 50,000
+                            per month.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-3"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">3. Which social media platforms do you manage?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-3">
+                        <p class="faq-answer">We manage Facebook, Instagram, LinkedIn, TikTok, YouTube, and Google
+                            Business Profile, including content creation, scheduling, and advertising where included.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-4"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">4. Can digital marketing help my clinic or hospital attract more
+                            patients?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-4">
+                        <p class="faq-answer">Yes. Google Ads and social campaigns can help you reach people searching
+                            for medical services. Results depend on location, competition, budget, and campaign
+                            performance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-5"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">5. Is the advertising budget included in monthly packages?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-5">
+                        <p class="faq-answer">Package prices cover the listed content and marketing services. Any paid
+                            advertising budget should be confirmed in your quotation before work begins.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-6"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">6. Do you create social media posts, graphics, and reels?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-6">
+                        <p class="faq-answer">Yes. We create informative posts, promotional graphics, patient education
+                            content, and short videos. Quantities depend on your selected package.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-7"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">7. How long does it take to see results?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-7">
+                        <p class="faq-answer">Results depend on your services, competition, audience, and budget. Paid
+                            campaigns may generate traffic soon after launch, while consistent social growth usually
+                            takes longer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-8"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">8. Can you manage Google Business Profile?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-8">
+                        <p class="faq-answer">Yes. Depending on your package, we can help with profile setup, business
+                            updates, and review management so patients can find your location, services, and contact
+                            details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-9"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">9. How do I get started with AstraMedic Solutions?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-9">
+                        <p class="faq-answer">Fill out the contact form or request a quote. Tell us about your business,
+                            services, and goals so we can recommend suitable services and a package.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-10"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">10. Do you provide website development services?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-10">
+                        <p class="faq-answer">Yes, we design and develop custom healthcare websites for clinics,
+                            hospitals,
+                            and medical practices. Please visit our <a href="/healthcare-web-development">Website
+                                Development
+                                page</a> to explore our
+                            services and website packages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="dm-faq-answer-11"
+                        onclick="toggleDigitalMarketingFaq(this)">
+                        <span class="faq-question">11. Do you offer SEO services for healthcare businesses?</span>
+                        <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-content" id="dm-faq-answer-11">
+                        <p class="faq-answer">Yes, we provide healthcare SEO services to help your clinic or hospital
+                            rank
+                            higher in search results and attract more patients. Please visit our <a
+                                href="/healthcare-web-development">SEO Services page</a> to view
+                            our offerings and SEO packages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Form Section -->
     <section id="contact" class="dm-contact-section bg-white">
         <div class="container text-center">
-            <h2 class="h2 section-header">Ready to Grow Your Brand?</h2>
+
+            <h2 class="h2 section-header">
+                Ready to Grow Your Brand?
+            </h2>
+
             <link rel="stylesheet" href="/css/contact-form.css">
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
+
+            <?php
+            $contactFormKey = 'healthcare-digital-marketing';
+            include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php';
+            ?>
+
         </div>
     </section>
 

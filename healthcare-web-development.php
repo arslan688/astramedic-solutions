@@ -135,7 +135,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="container text-center">
             <h2 class="h2 section-header">Ready to Start Your Project?</h2>
             <link rel="stylesheet" href="/css/contact-form.css">
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php'; ?>
+            <?php
+            $contactFormKey = 'web-development';
+            include $_SERVER['DOCUMENT_ROOT'] . '/php/contact-form.php';
+            ?>
         </div>
     </section>
 
