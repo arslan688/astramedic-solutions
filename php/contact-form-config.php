@@ -119,7 +119,7 @@ return [
                 'website_package' => [
                     'label' => 'Interested Package for Website Development',
                     'type' => 'select',
-                    'required' => false,
+                    'required' => true,
                     'options' => [
                         'clinic' => 'Personal PortFolio Website',
                         'hospital' => 'Buisness website',
@@ -145,7 +145,7 @@ return [
                 'software_type' => [
                     'label' => 'Required Software',
                     'type' => 'select',
-                    'required' => false,
+                    'required' => true,
                     'options' => [
                         'hospital' => 'Hospital Management Software',
                         'clinic' => 'Clinic Management Software',

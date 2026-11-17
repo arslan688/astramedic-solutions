@@ -294,9 +294,44 @@
         </div>
     </section>
 
-    <div id="featurable-8177a540-6015-43fd-86ca-9a191522978a" data-featurable-async></div>
-    <script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
-
+    <section class="google-reviews" aria-label="Customer reviews" id="customerReviews">
+        <h2 class="h2 section-title">Our Clients Reviews</h2>
+        <div class="google-reviews__summary">
+            <div class="google-reviews__overview">
+                <div>
+                    <div class="google-reviews__score-label">Excellent</div>
+                    <div class="google-reviews__stars-line">
+                        <span class="google-reviews__stars" id="overallStars" aria-label="5 stars"></span>
+                        <span class="google-reviews__rating-number">4.9</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="google-reviews__google-text"><span class="google-reviews__google-name"
+                            aria-label="Google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span>
+                        Rating</div>
+                    <div class="google-reviews__review-count">Based on <a href="https://www.google.com/maps"
+                            id="reviewCountLink" target="_blank" rel="noopener noreferrer">105 reviews</a></div>
+                </div>
+            </div>
+            <a class="btn-primary" id="writeReviewLink" href="https://www.google.com/maps" target="_blank"
+                rel="noopener noreferrer">Write a review</a>
+        </div>
+        <div class="google-reviews__slider">
+            <button class="google-reviews__nav google-reviews__nav--prev" id="reviewsPrev" aria-label="Previous review">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m15 4-8 8 8 8" />
+                </svg>
+            </button>
+            <div class="google-reviews__viewport" id="reviewsViewport" aria-live="polite">
+                <div class="google-reviews__track" id="reviewsTrack"></div>
+            </div>
+            <button class="google-reviews__nav google-reviews__nav--next" id="reviewsNext" aria-label="Next review">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m9 4 8 8-8 8" />
+                </svg>
+            </button>
+        </div>
+    </section>
 </main>
 
 <script src="/scripts/index.js" defer></script>

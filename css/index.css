@@ -1,127 +1,111 @@
 /* STREAMING_CHUNK: Establishing base layout spacing for homepage sections */
 .home-section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .section-title {
-    color: var(--color-primary);
-    margin-bottom: 15px;
+  color: var(--color-primary);
+  margin-bottom: 15px;
 }
 
 .section-subtitle {
-    color: var(--color-secondary);
-    margin-bottom: 25px;
-    font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 /* =========================================
    ASTRAMEDIC SOLUTIONS HERO CAROUSEL
    ========================================= */
 
-
 #heroCarousel {
-    position: relative;
-    isolation: isolate;
-    width: 100%;
-    height: clamp(650px, 90vh, 900px);
-    min-height: 580px;
-    overflow: hidden;
-    background: var(--color-primary);
-    color: #FFFFFF;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: clamp(650px, 90vh, 900px);
+  min-height: 580px;
+  overflow: hidden;
+  background: var(--color-primary);
+  color: #ffffff;
 }
 
 /* Track must occupy the full carousel */
 #heroCarousel .hero-carousel-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /* Every slide starts as a full-size absolute layer */
 #heroCarousel .hero-carousel-slide {
-    position: absolute;
-    inset: 0;
+  position: absolute;
+  inset: 0;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 100%;
-    height: 100%;
-    padding: 65px 7% 100px;
+  width: 100%;
+  height: 100%;
+  padding: 65px 7% 100px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: 0;
-    transition: opacity 0.55s ease,
-                visibility 0.55s ease;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 0;
+  transition:
+    opacity 0.55s ease,
+    visibility 0.55s ease;
 }
 
 /* Active slide fills the entire hero */
 #heroCarousel .hero-carousel-slide.is-active {
-    inset: 0;
-    z-index: 2;
+  inset: 0;
+  z-index: 2;
 
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* ==========================================
    BACKGROUND IMAGES
-   This is the key positioning fix
    ========================================== */
 
 #heroCarousel .hero-bg {
-    position: absolute !important;
-    inset: 0;
+  position: absolute !important;
+  inset: 0;
 
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
 
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
 
-    z-index: 0;
-    transform: scale(1);
-    transition: transform 7s ease;
+  z-index: 0;
+  transform: scale(1);
+  transition: transform 7s ease;
 }
 
 #heroCarousel .hero-carousel-slide.is-active .hero-bg {
-    transform: scale(1.045);
+  transform: scale(1.045);
 }
 
 /* Dark overlay sits above the image, below the text */
 #heroCarousel .hero-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-
-    /* background: linear-gradient(
-        90deg,
-        rgba(0, 25, 60, 0.94) 0%,
-        rgba(0, 40, 92, 0.84) 42%,
-        rgba(0, 40, 92, 0.42) 72%,
-        rgba(0, 25, 60, 0.16) 100%
-    ); */
-    /* background: linear-gradient(90deg, #2f2f2f87 0%, #2f2f2fb5 42%, #4a4a4a66 72%, rgba(0, 25, 60, 0.16) 100%); */
-    /* background: linear-gradient(
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
     90deg,
-    rgba(25, 28, 32, 0.94) 0%,
-    rgba(45, 50, 56, 0.84) 42%,
-    rgba(45, 50, 56, 0.42) 72%,
-    rgba(25, 28, 32, 0.16) 100%
-); */
-    background: linear-gradient( 
-    90deg, 
     rgb(80 91 105 / 94%) 0%,
     rgb(90 104 120 / 84%) 42%,
-    rgba(45, 50, 56, 0.42) 72%, 
-    rgba(25, 28, 32, 0.16) 100% );
+    rgba(45, 50, 56, 0.42) 72%,
+    rgba(25, 28, 32, 0.16) 100%
+  );
 }
 
 /* ==========================================
@@ -129,179 +113,172 @@
    ========================================== */
 
 #heroCarousel .hero-content {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 
-    width: 50%;
-    max-width: 650px;
-    margin: 0;
-    padding: 0;
+  width: 50%;
+  max-width: 650px;
+  margin: 0;
+  padding: 0;
 
-    text-align: left;
+  text-align: left;
 }
 
 /* Animate every active slide's content */
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > * {
-    animation: heroContentAnimate 0.85s ease-in-out both;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > * {
+  animation: heroContentAnimate 0.85s ease-in-out both;
 }
 
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > :nth-child(1) {
-    animation-delay: 0.05s;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > :nth-child(1) {
+  animation-delay: 0.05s;
 }
 
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > :nth-child(2) {
-    animation-delay: 0.15s;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > :nth-child(2) {
+  animation-delay: 0.15s;
 }
 
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > :nth-child(3) {
-    animation-delay: 0.25s;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > :nth-child(3) {
+  animation-delay: 0.25s;
 }
 
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > :nth-child(4) {
-    animation-delay: 0.35s;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > :nth-child(4) {
+  animation-delay: 0.35s;
 }
 
-#heroCarousel .hero-carousel-slide.is-active
-.hero-content > :nth-child(5) {
-    animation-delay: 0.45s;
+#heroCarousel .hero-carousel-slide.is-active .hero-content > :nth-child(5) {
+  animation-delay: 0.45s;
 }
 
 @keyframes heroContentAnimate {
-    from {
-        opacity: 0;
-        transform: translateY(70px);
-        filter: blur(12px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+    filter: blur(12px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 #heroCarousel .hero-eyebrow {
-    display: inline-block;
-    margin: 0 0 18px;
-    padding: 8px 12px;
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 8px 12px;
 
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 5px;
 
-    background: rgba(0, 40, 92, 0.48);
-    color: #FFFFFF;
+  background: rgba(0, 40, 92, 0.48);
+  color: #ffffff;
 
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    line-height: 1.5;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
 }
 
 #heroCarousel .hero-title {
-    max-width: 100%;
-    margin: 0 0 18px;
+  max-width: 100%;
+  margin: 0 0 18px;
 
-    color: #FFFFFF;
-    font-size: var(--font-size-h1);
-    font-weight: 800;
-    line-height: 1.12;
-    letter-spacing: -0.7px;
+  color: #ffffff;
+  font-size: var(--font-size-h1);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.7px;
 
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #heroCarousel .hero-subtitle {
-    max-width: 100%;
-    margin: 0 0 18px;
+  max-width: 100%;
+  margin: 0 0 18px;
 
-    color: #FFFFFF;
-    font-size: clamp(1.1rem, 1.8vw, 1.55rem);
-    font-weight: 600;
-    line-height: 1.45;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 1.8vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 #heroCarousel .hero-text {
-    max-width: 620px;
-    margin: 0 0 27px;
+  max-width: 620px;
+  margin: 0 0 27px;
 
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 0.98rem;
-    line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.98rem;
+  line-height: 1.8;
 }
-
-
 
 /* ==========================================
    UPCOMING SLIDE PREVIEW CARDS
    ========================================== */
 
 #heroCarousel .hero-carousel-slide.is-preview {
-    inset: auto;
-    top: 50%;
-    right: 0;
-    left: auto;
-    bottom: auto;
+  inset: auto;
+  top: 50%;
+  right: 0;
+  left: auto;
+  bottom: auto;
 
-    display: block;
-    width: 155px;
-    height: 225px;
-    padding: 0;
+  display: block;
+  width: 155px;
+  height: 225px;
+  padding: 0;
 
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
 
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto; 
-    cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  cursor: pointer;
 
-    transform: translateY(-50%);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+  transform: translateY(-50%);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
 
-    transition: right 0.55s ease,
-                transform 0.55s ease,
-                opacity 0.35s ease;
+  transition:
+    right 0.55s ease,
+    transform 0.55s ease,
+    opacity 0.35s ease;
 }
 
 /* Preview layering */
 #heroCarousel .hero-carousel-slide.is-preview-1 {
-    right: calc(5% + 340px);
-    z-index: 4;
+  right: calc(5% + 340px);
+  z-index: 4;
 }
 
 #heroCarousel .hero-carousel-slide.is-preview-2 {
-    right: calc(5% + 170px);
-    z-index: 5;
+  right: calc(5% + 170px);
+  z-index: 5;
 }
 
 #heroCarousel .hero-carousel-slide.is-preview-3 {
-    right: 5%;
-    z-index: 6;
+  right: 5%;
+  z-index: 6;
 }
 
 /* Preview pictures fill their entire cards */
 #heroCarousel .hero-carousel-slide.is-preview .hero-bg {
-    object-fit: cover;
-    transform: none;
+  object-fit: cover;
+  transform: none;
 }
 
 /* Preview cards must not display the main slide's text */
 #heroCarousel .hero-carousel-slide.is-preview .hero-content {
-    display: none !important;
+  display: none !important;
 }
 
 #heroCarousel .hero-carousel-slide.is-preview .hero-overlay {
-    background: linear-gradient(
-        180deg,
-        rgba(0, 25, 60, 0.02),
-        rgba(0, 25, 60, 0.35)
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 25, 60, 0.02),
+    rgba(0, 25, 60, 0.35)
+  );
 }
 
 /* ==========================================
@@ -309,346 +286,650 @@
    ========================================== */
 
 #heroCarousel .hero-carousel-navigation {
-    position: absolute;
-    right: 5%;
-    bottom: 25px;
-    z-index: 10;
+  position: absolute;
+  right: 5%;
+  bottom: 25px;
+  z-index: 10;
 
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 #heroCarousel .hero-carousel-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 600;
-    width: 43px;
-    height: 43px;
-    padding: 0;
-    background-color: var(--color-btn-default);
-    color: #FFFFFF;
-    border: 0px solid transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  background-color: var(--color-btn-default);
+  color: #ffffff;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 #heroCarousel .hero-carousel-arrow:hover {
-    background-color: var(--color-btn-hover);
-    color: #FFFFFF;
-    text-decoration: none;
+  background-color: var(--color-btn-hover);
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Slide indicators */
 #heroCarousel .hero-carousel-indicators {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 #heroCarousel .hero-dot {
-    display: block;
-    width: 9px;
-    height: 9px;
-    padding: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  padding: 0;
 
-    border: 0;
-    border-radius: 50%;
+  border: 0;
+  border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.55);
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
 
-    transition: width 0.25s ease,
-                background 0.25s ease;
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
 }
 
 #heroCarousel .hero-dot.is-active {
-    width: 28px;
-    border-radius: 10px;
-    background: var(--color-primary);
+  width: 28px;
+  border-radius: 10px;
+  background: var(--color-primary);
 }
 
 /* Bottom progress indicator */
 #heroCarousel .hero-carousel-progress {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 11;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
 
-    height: 3px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.18);
+  height: 3px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 #heroCarousel .hero-progress-bar {
-    display: block;
-    width: 0;
-    height: 100%;
-    background: var(--color-primary);
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--color-primary);
 }
 
 #heroCarousel .hero-progress-bar.is-running {
-    animation: heroProgress 6s linear forwards;
+  animation: heroProgress 6s linear forwards;
 }
 
 @keyframes heroProgress {
-    from { width: 0; }
-    to   { width: 100%; }
-}
-
-/* ==========================================
-   TABLET
-   ========================================== */
-
-@media (max-width: 991px) {
-    #heroCarousel {
-        height: 660px;
-        min-height: 600px;
-    }
-
-    #heroCarousel .hero-carousel-slide {
-        padding: 55px 5% 95px;
-    }
-
-    #heroCarousel .hero-content,
-    #heroCarousel .hero-carousel-slide.is-active .hero-content {
-        width: 52%;
-        max-width: 52%;
-    }
-
-    #heroCarousel .hero-carousel-slide.is-preview {
-        width: 115px;
-        height: 170px;
-    }
-
-    #heroCarousel .hero-carousel-slide.is-preview-1 {
-        right: calc(4% + 250px);
-    }
-
-    #heroCarousel .hero-carousel-slide.is-preview-2 {
-        right: calc(4% + 125px);
-    }
-
-    #heroCarousel .hero-carousel-slide.is-preview-3 {
-        right: 4%;
-    }
-
-    #heroCarousel .hero-title {
-        font-size: clamp(2rem, 4vw, 3rem);
-    }
-
-    #heroCarousel .hero-text {
-        font-size: 0.91rem;
-        line-height: 1.7;
-    }
-}
-
-/* ==========================================
-   MOBILE
-   ========================================== */
-
-@media (max-width: 600px) {
-    #heroCarousel {
-        height: 720px;
-        min-height: 650px;
-    }
-
-    #heroCarousel .hero-carousel-slide {
-        padding: 40px 22px 95px;
-    }
-
-    #heroCarousel .hero-overlay {
-        background: linear-gradient(
-            180deg,
-            rgba(0, 25, 60, 0.72) 0%,
-            rgba(0, 25, 60, 0.9) 48%,
-            rgba(0, 25, 60, 0.97) 100%
-        );
-    }
-
-    /* Hide the overlapping cards on small screens */
-    #heroCarousel .hero-carousel-slide.is-preview {
-        display: none !important;
-    }
-
-    #heroCarousel .hero-carousel-slide.is-active .hero-content {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #heroCarousel .hero-eyebrow {
-        font-size: 0.65rem;
-        letter-spacing: 1px;
-    }
-
-    #heroCarousel .hero-title {
-        font-size: clamp(1.9rem, 8vw, 2.5rem);
-    }
-
-    #heroCarousel .hero-subtitle {
-        font-size: 1.08rem;
-    }
-
-    #heroCarousel .hero-text {
-        font-size: 0.9rem;
-        line-height: 1.65;
-    }
-
-    #heroCarousel .hero-carousel-navigation {
-        right: 0;
-        bottom: 20px;
-        left: 0;
-        justify-content: center;
-        gap: 14px;
-    }
-
-    #heroCarousel .hero-carousel-arrow {
-        width: 40px;
-        height: 40px;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* Accessibility */
 #heroCarousel .hero-btn:focus-visible,
 #heroCarousel .hero-carousel-arrow:focus-visible,
 #heroCarousel .hero-dot:focus-visible {
-    outline: 3px solid #FFFFFF;
-    outline-offset: 4px;
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #heroCarousel *,
-    #heroCarousel *::before,
-    #heroCarousel *::after {
-        animation: none !important;
-        transition: none !important;
-    }
-
-    #heroCarousel .hero-bg {
-        transform: none !important;
-    }
-
-    #heroCarousel .hero-carousel-slide.is-active .hero-content > * {
-        opacity: 1;
-        filter: none;
-        transform: none;
-    }
-
-    #heroCarousel .hero-progress-bar.is-running {
-        width: 100%;
-    }
-}
 /* STREAMING_CHUNK: Formatting split-layout structural blocks */
 .split-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
 }
 
 .split-layout.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .split-layout .content-col,
 .split-layout .image-col {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .rounded-img {
-    border-radius: 12px;
-    width: 100%;
+  border-radius: 12px;
+  width: 100%;
 }
 
 /* STREAMING_CHUNK: Building the Shop CSS Grid layout */
 .service-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 30px;
-margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .grid-card {
-    background: var(--color-bg-site);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
+  background: var(--color-bg-site);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 .card-img-wrapper {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    background-color: var(--color-bg-section-light);
-    border-radius: 8px; 
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--color-bg-section-light);
+  border-radius: 8px;
 }
 
 .card-img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
-    padding: 30px;
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-content p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 25px;
-    flex-grow: 1;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+  flex-grow: 1;
 }
 
 .card-content .btn-primary {
-    width: 100%;
+  width: 100%;
 }
 
-/* Responsive adjustments */
+/* STREAMING_CHUNK: Google Reviews Section */
+.google-reviews {
+  --review-ink: #101827;
+  --review-muted: #687386;
+  --review-border: #dfe3e9;
+  --review-star: #f9a000;
+  --review-blue: #07578a;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--review-ink);
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px 48px 35px;
+}
+
+.google-reviews .h2 {
+  text-align: center;
+}
+
+.google-reviews__summary {
+  border: 1px solid var(--review-border);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 73px;
+  padding: 12px 21px;
+  margin-bottom: 14px;
+}
+
+.google-reviews__overview {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.google-reviews__score-label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.google-reviews__stars-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.google-reviews__stars {
+  color: var(--review-star);
+  display: inline-flex;
+  gap: 1px;
+  white-space: nowrap;
+}
+
+.google-reviews__stars svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.google-reviews__rating-number {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.google-reviews__google-text {
+  font-size: 14px;
+  color: #172033;
+  white-space: nowrap;
+}
+
+.google-reviews__google-name {
+  font-size: 19px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.google-reviews__google-name span:nth-child(1),
+.google-reviews__google-name span:nth-child(4) {
+  color: #4285f4;
+}
+
+.google-reviews__google-name span:nth-child(2),
+.google-reviews__google-name span:nth-child(6) {
+  color: #ea4335;
+}
+
+.google-reviews__google-name span:nth-child(3) {
+  color: #fbbc05;
+}
+
+.google-reviews__google-name span:nth-child(5) {
+  color: #34a853;
+}
+
+.google-reviews__review-count {
+  color: var(--review-muted);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.google-reviews__review-count a {
+  color: #34506d;
+  text-decoration: underline;
+}
+
+.google-reviews .btn-primary {
+  border-radius: 5px;
+  padding: 11px 12px;
+  font-size: 13px;
+  border: 0;
+}
+
+.google-reviews__slider {
+  position: relative;
+}
+
+.google-reviews__viewport {
+  overflow: hidden;
+}
+
+.google-reviews__track {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.google-reviews__card {
+  background: #fff;
+  border: 1px solid var(--review-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  flex: 0 0 calc((100% - 28px) / 3);
+  min-width: 0;
+  min-height: 161px;
+  padding: 12px 11px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.google-reviews__person {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.google-reviews__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.google-reviews__person-name {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  line-height: 1.15;
+}
+
+.google-reviews__date {
+  font-size: 12px;
+  color: var(--review-muted);
+  margin: 0;
+}
+
+.google-reviews__body {
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 15px 0 9px;
+  overflow-wrap: anywhere;
+}
+
+.google-reviews__body.is-clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  overflow: hidden;
+}
+
+.google-reviews__read-more {
+  align-self: flex-start;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--review-muted);
+  font: inherit;
+  font-size: 13px;
+  margin: -3px 0 12px;
+}
+
+.google-reviews__read-more:hover {
+  text-decoration: underline;
+}
+
+.google-reviews__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.google-reviews__google-g {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.google-reviews__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--review-border);
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  color: #7b8797;
+  z-index: 2;
+}
+
+.google-reviews__nav svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.google-reviews__nav--prev {
+  left: -45px;
+}
+
+.google-reviews__nav--next {
+  right: -45px;
+}
+
+.google-reviews__nav:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.google-reviews__nav:focus-visible,
+.google-reviews__write:focus-visible,
+.google-reviews__read-more:focus-visible {
+  outline: 3px solid #4285f4;
+  outline-offset: 2px;
+}
+
+/* *******Responsive adjustments************* */
 @media (max-width: 991px) {
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #heroCarousel {
+    height: 660px;
+    min-height: 600px;
+  }
+
+  #heroCarousel .hero-carousel-slide {
+    padding: 55px 5% 95px;
+  }
+
+  #heroCarousel .hero-content,
+  #heroCarousel .hero-carousel-slide.is-active .hero-content {
+    width: 52%;
+    max-width: 52%;
+  }
+
+  #heroCarousel .hero-carousel-slide.is-preview {
+    width: 115px;
+    height: 170px;
+  }
+
+  #heroCarousel .hero-carousel-slide.is-preview-1 {
+    right: calc(4% + 250px);
+  }
+
+  #heroCarousel .hero-carousel-slide.is-preview-2 {
+    right: calc(4% + 125px);
+  }
+
+  #heroCarousel .hero-carousel-slide.is-preview-3 {
+    right: 4%;
+  }
+
+  #heroCarousel .hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  #heroCarousel .hero-text {
+    font-size: 0.91rem;
+    line-height: 1.7;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .google-reviews__card {
+    flex-basis: calc((100% - 14px) / 2);
+  }
 }
 
 @media (max-width: 767px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-    .home-section { padding: 50px 0; }
-    
-    .hero-carousel-section .carousel-slide {
-        height: auto;
-        padding: 100px 0;
-    }
-    
-    .hero-text { font-size: 16px; }
-    
-    .split-layout { gap: 30px; }
-    
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-    
+  #heroCarousel {
+    height: 720px;
+    min-height: 650px;
+  }
+
+  #heroCarousel .hero-carousel-slide {
+    padding: 40px 22px 95px;
+  }
+
+  #heroCarousel .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 25, 60, 0.72) 0%,
+      rgba(0, 25, 60, 0.9) 48%,
+      rgba(0, 25, 60, 0.97) 100%
+    );
+  }
+
+  /* Hide the overlapping cards on small screens */
+  #heroCarousel .hero-carousel-slide.is-preview {
+    display: none !important;
+  }
+
+  #heroCarousel .hero-carousel-slide.is-active .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #heroCarousel .hero-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+  }
+
+  #heroCarousel .hero-title {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+  }
+
+  #heroCarousel .hero-subtitle {
+    font-size: 1.08rem;
+  }
+
+  #heroCarousel .hero-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  #heroCarousel .hero-carousel-navigation {
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  #heroCarousel .hero-carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-section {
+    padding: 50px 0;
+  }
+
+  .hero-carousel-section .carousel-slide {
+    height: auto;
+    padding: 100px 0;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .split-layout {
+    gap: 30px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .google-reviews {
+    padding: 24px 40px 30px;
+  }
+
+  .google-reviews__summary {
+    align-items: flex-start;
+    padding: 13px;
+    gap: 10px;
+  }
+
+  .google-reviews__overview {
+    gap: 8px;
+  }
+
+  .google-reviews__write {
+    font-size: 11px;
+    padding: 9px 8px;
+  }
+
+  .google-reviews__card {
+    flex-basis: 100%;
+  }
+
+  .google-reviews__nav--prev {
+    left: -37px;
+  }
+
+  .google-reviews__nav--next {
+    right: -37px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #heroCarousel *,
+  #heroCarousel *::before,
+  #heroCarousel *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  #heroCarousel .hero-bg {
+    transform: none !important;
+  }
+
+  #heroCarousel .hero-carousel-slide.is-active .hero-content > * {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+
+  #heroCarousel .hero-progress-bar.is-running {
+    width: 100%;
+  }
+
+  .google-reviews__track {
+    transition: none;
+  }
 }
