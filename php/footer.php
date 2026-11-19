@@ -33,7 +33,7 @@
                 <h5 class="footer-heading">Digital Solutions</h5>
                 <ul class="footer-nav">
                     <li><a href="/healthcare-digital-marketing" class="footer-link">Digital Marketing</a></li>
-                    <li><a href="/healthcare-web-development" class="footer-link">Web Development</a></li>
+                    <li><a href="/web-development" class="footer-link">Web Development</a></li>
                     <li><a href="/healthcare-softwares" class="footer-link">Healthcare Softwares</a></li>
                 </ul>
             </div>

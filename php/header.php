@@ -101,7 +101,7 @@ if (session_status() === PHP_SESSION_NONE) {
                         <ul class="dropdown-menu">
                             <li><a href="/healthcare-digital-marketing" class="dropdown-link">Digital
                                     Marketing</a></li>
-                            <li><a href="/healthcare-web-development" class="dropdown-link">Web Development</a>
+                            <li><a href="/web-development" class="dropdown-link">Web Development</a>
                             </li>
                             <li><a href="/healthcare-softwares" class="dropdown-link">Healthcare Softwares</a>
                             </li>

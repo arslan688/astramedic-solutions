@@ -16,11 +16,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
             <div class="hero-text-box">
                 <h1 class="h1 text-primary"
                     style="font-family: Outfit, sans-serif; line-height: 1.2; letter-spacing: 0px;">
-                    <span style="color: red;">AstraMedic Solutions</span>
+                    <span style="color: var(--color-accent);">AstraMedic Solutions</span>
                     <br>
-                    <span style="color: #00285C;">Healthcare Digital</span>
+                    <span style="color: var(--color-primary);">Healthcare Digital</span>
                     <br>
-                    <span style="color: #00285C;">Marketing Services</span>
+                    <span style="color: var(--color-primary);">Marketing Services</span>
                 </h1>
                 <p class="intro-text" style="color: grey;">
                     Grow your healthcare brand online with strategies designed to attract patients, build trust, and

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="720" viewBox="0 0 920 720" role="img" aria-labelledby="title desc">
+  <title id="title">Website design placeholder</title>
+  <desc id="desc">Stylized desktop and mobile website mockups; replace with your website screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0f6fe"/><stop offset="1" stop-color="#dceaf9"/></linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0edff"/><stop offset="1" stop-color="#c7def6"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="15" stdDeviation="19" flood-color="#00285c" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="920" height="720" rx="26" fill="url(#bg)"/>
+  <circle cx="780" cy="110" r="110" fill="#cbdff8" opacity=".6"/>
+  <circle cx="92" cy="620" r="150" fill="#d7e8fb" opacity=".8"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="81" width="734" height="497" rx="18" fill="#fff"/>
+    <path d="M88 81h698a18 18 0 0 1 18 18v42H70V99a18 18 0 0 1 18-18Z" fill="#f8fbff"/>
+    <circle cx="101" cy="112" r="6" fill="#ed9b94"/><circle cx="121" cy="112" r="6" fill="#f2cc76"/><circle cx="141" cy="112" r="6" fill="#82c9ae"/>
+    <rect x="289" y="99" width="299" height="26" rx="13" fill="#e9eff7"/>
+    <text x="438" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#71849b">your-website.com</text>
+    <rect x="101" y="165" width="33" height="33" rx="9" fill="#00285c"/>
+    <path d="M110 182h15m-7-7v15" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <text x="147" y="187" fill="#00285c" font-family="Arial, sans-serif" font-weight="700" font-size="18">YOUR BRAND</text>
+    <text x="555" y="187" fill="#6b7e96" font-family="Arial, sans-serif" font-size="12">Home</text>
+    <text x="612" y="187" fill="#6b7e96" font-family="Arial, sans-serif" font-size="12">Services</text>
+    <text x="686" y="187" fill="#6b7e96" font-family="Arial, sans-serif" font-size="12">Contact</text>
+    <rect x="100" y="228" width="671" height="310" rx="16" fill="url(#hero)"/>
+    <rect x="135" y="271" width="155" height="22" rx="11" fill="#ffffff" opacity=".7"/>
+    <text x="147" y="287" fill="#00285c" font-family="Arial, sans-serif" font-size="11" font-weight="700">MADE FOR YOUR VISITORS</text>
+    <text x="135" y="339" fill="#00285c" font-family="Arial, sans-serif" font-size="33" font-weight="700">A better website</text>
+    <text x="135" y="379" fill="#00285c" font-family="Arial, sans-serif" font-size="33" font-weight="700">for your business.</text>
+    <rect x="135" y="407" width="259" height="11" rx="5" fill="#7b9fc9" opacity=".56"/>
+    <rect x="135" y="428" width="210" height="11" rx="5" fill="#7b9fc9" opacity=".42"/>
+    <rect x="135" y="458" width="146" height="42" rx="8" fill="#00285c"/>
+    <text x="208" y="484" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="700" font-size="13">Get in touch</text>
+    <circle cx="618" cy="376" r="116" fill="#ffffff" opacity=".55"/>
+    <rect x="542" y="289" width="148" height="189" rx="19" fill="#fff" opacity=".92"/>
+    <rect x="561" y="309" width="110" height="88" rx="11" fill="#e9f2ff"/>
+    <circle cx="616" cy="349" r="29" fill="#c5dcf7"/>
+    <path d="M593 351l16 17 31-35" fill="none" stroke="#00285c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="563" y="418" width="107" height="8" rx="4" fill="#d1e1f5"/>
+    <rect x="563" y="436" width="73" height="8" rx="4" fill="#dbe7f6"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="696" y="310" width="167" height="326" rx="27" fill="#001d43"/>
+    <rect x="703" y="319" width="153" height="308" rx="21" fill="#fff"/>
+    <rect x="756" y="327" width="50" height="9" rx="5" fill="#001d43"/>
+    <rect x="716" y="355" width="127" height="25" rx="5" fill="#edf4fc"/>
+    <rect x="727" y="361" width="16" height="16" rx="5" fill="#00285c"/>
+    <text x="752" y="372" fill="#00285c" font-family="Arial, sans-serif" font-weight="700" font-size="11">BRAND</text>
+    <rect x="717" y="392" width="125" height="111" rx="10" fill="#e1edfc"/>
+    <circle cx="780" cy="427" r="26" fill="#c1d7f3"/>
+    <rect x="733" y="462" width="94" height="8" rx="4" fill="#a1bad9"/>
+    <rect x="745" y="477" width="70" height="7" rx="3" fill="#bdd0e8"/>
+    <rect x="718" y="515" width="123" height="9" rx="4" fill="#bdcee3"/>
+    <rect x="718" y="533" width="107" height="9" rx="4" fill="#d7e3f2"/>
+    <rect x="719" y="565" width="120" height="36" rx="8" fill="#00285c"/>
+    <text x="779" y="588" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12" font-weight="700">Contact us</text>
+  </g>
+  <rect x="84" y="650" width="299" height="35" rx="17" fill="#fff" opacity=".95"/>
+  <text x="233" y="672" text-anchor="middle" fill="#5e7594" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">IMAGE PLACEHOLDER · REPLACE LATER</text>
+</svg>
