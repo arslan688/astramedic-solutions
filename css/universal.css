@@ -19,10 +19,6 @@
   --color-btn-default: #00285c;
   --color-btn-hover: #003a85;
 
-  --astramed-text-light: #ffffff;
-  --astramed-border: #dce5ee;
-  --astramed-shadow: 0 12px 32px rgba(0, 40, 92, 0.08);
-
   /* Typography Fonts */
   --font-body: "Open Sans", sans-serif;
   --font-heading: "Manrope", sans-serif;
@@ -170,7 +166,7 @@ p {
   font-weight: 600;
   padding: 17px 34px;
   background-color: var(--color-btn-default);
-  color: #ffffff;
+  color: var(--color-bg-site);
   border: 0px solid transparent;
   border-radius: 5px;
   cursor: pointer;

@@ -12,6 +12,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="container relative-z">
             <div class="hero-grid">
                 <div class="hero-content-left">
+                    <span class="hero-eyebrow">Careers at AstraMedic</span>
                     <h1 class="h1">Careers at AstraMedic Solutions</h1>
                     <h2 class="h3">Build Your Future With Us</h2>
                     <p>Join a modern healthcare and digital solutions company focused on innovation,
@@ -43,7 +44,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/php/header.php';
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="h2">Available Job Positions</h2>
-                <p>We routinely hire talented individuals across multiple departments based on ongoing projects and
+                <p>There are no job openings at the moment. We routinely hire talented individuals across multiple
+                    departments based on ongoing projects and
                     company expansion.</p>
             </div>
 

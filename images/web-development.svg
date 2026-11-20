@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="720" viewBox="0 0 920 720" role="img" aria-labelledby="title desc">
+  <title id="title">Website design placeholder</title>
+  <desc id="desc">Stylized desktop and mobile website mockups in violet and cyan theme.</desc>
+  <defs>
+    <!-- Translucent periwinkle card background -->
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.28" />
+    </linearGradient>
+    <!-- Vibrant royal violet hero banner inside browser -->
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f1fb8" />
+      <stop offset="100%" stop-color="#3b1396" />
+    </linearGradient>
+    <!-- Soft shadow for mockups and floating badge -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="15" stdDeviation="19" flood-color="#1e1b4b" flood-opacity="0.18" />
+    </filter>
+    <filter id="badgeShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Outer frosted glass container -->
+  <rect x="24" y="16" width="872" height="660" rx="28" fill="url(#cardBg)" stroke="#ffffff" stroke-opacity="0.45" stroke-width="4" />
+
+  <!-- Background decorative circles -->
+  <circle cx="775" cy="125" r="105" fill="#38bdf8" opacity="0.55" />
+  <circle cx="115" cy="575" r="135" fill="#7c3aed" opacity="0.65" />
+
+  <!-- Desktop Browser Mockup -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="81" width="734" height="497" rx="18" fill="#ffffff" />
+    <!-- Browser Top Bar -->
+    <path d="M88 81h698a18 18 0 0 1 18 18v42H70V99a18 18 0 0 1 18-18Z" fill="#e2d9f8" />
+    <circle cx="101" cy="112" r="6" fill="#f87171" />
+    <circle cx="121" cy="112" r="6" fill="#fbbf24" />
+    <circle cx="141" cy="112" r="6" fill="#34d399" />
+    <!-- URL Bar -->
+    <rect x="289" y="99" width="299" height="26" rx="13" fill="#cfc3f2" />
+    <text x="438" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4c3d75">your-website.com</text>
+
+    <!-- Brand Logo & Nav -->
+    <rect x="101" y="165" width="33" height="33" rx="9" fill="#0ea5e9" />
+    <path d="M110 182h15m-7-7v15" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <text x="147" y="187" fill="#1e1b4b" font-family="Arial, sans-serif" font-weight="700" font-size="18">YOUR BRAND</text>
+    <text x="555" y="187" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="600">Home</text>
+    <text x="612" y="187" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="600">Services</text>
+    <text x="686" y="187" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="600">Contact</text>
+
+    <!-- Violet Inner Hero Section -->
+    <rect x="100" y="228" width="671" height="310" rx="16" fill="url(#hero)" />
+    <rect x="135" y="271" width="165" height="22" rx="11" fill="#ffffff" opacity="0.16" />
+    <text x="147" y="286" fill="#e0e7ff" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.5">MADE FOR YOUR VISITORS</text>
+    
+    <text x="135" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="33" font-weight="700">A better website</text>
+    <text x="135" y="379" fill="#ffffff" font-family="Arial, sans-serif" font-size="33" font-weight="700">for your business.</text>
+    
+    <rect x="135" y="407" width="259" height="10" rx="5" fill="#a78bfa" opacity="0.55" />
+    <rect x="135" y="427" width="210" height="10" rx="5" fill="#a78bfa" opacity="0.4" />
+    
+    <!-- Cyan CTA Button -->
+    <rect x="135" y="458" width="146" height="42" rx="8" fill="#00b4f0" />
+    <text x="208" y="484" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-weight="700" font-size="13">Get in touch</text>
+
+    <!-- Right Illustration Card inside Hero -->
+    <circle cx="618" cy="376" r="116" fill="#c4b5fd" opacity="0.35" />
+    <rect x="542" y="289" width="148" height="189" rx="19" fill="#ddd6fe" opacity="0.95" />
+    <rect x="561" y="309" width="110" height="88" rx="11" fill="#00a8e8" />
+    <path d="M595 353l15 16 29-33" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="563" y="418" width="107" height="9" rx="4.5" fill="#0284c7" />
+    <rect x="563" y="436" width="73" height="9" rx="4.5" fill="#38bdf8" />
+  </g>
+
+  <!-- Mobile Phone Mockup -->
+  <g filter="url(#shadow)">
+    <rect x="696" y="310" width="167" height="326" rx="27" fill="#1e1b4b" />
+    <rect x="703" y="319" width="153" height="308" rx="21" fill="#ffffff" />
+    <!-- Speaker Notch -->
+    <rect x="756" y="327" width="50" height="8" rx="4" fill="#1e1b4b" />
+    <!-- Mobile Header -->
+    <rect x="716" y="355" width="127" height="25" rx="6" fill="#ddd6fe" />
+    <rect x="724" y="360" width="16" height="16" rx="4" fill="#0ea5e9" />
+    <text x="748" y="372" fill="#4c1d95" font-family="Arial, sans-serif" font-weight="700" font-size="11">BRAND</text>
+    <!-- Mobile Hero Card -->
+    <rect x="717" y="392" width="125" height="111" rx="10" fill="#ddd6fe" />
+    <circle cx="780" cy="427" r="24" fill="#5b21b6" />
+    <rect x="733" y="462" width="94" height="8" rx="4" fill="#5b21b6" />
+    <rect x="745" y="477" width="70" height="7" rx="3.5" fill="#7c3aed" />
+    <!-- Mobile Text Lines -->
+    <rect x="718" y="515" width="123" height="8" rx="4" fill="#0284c7" />
+    <rect x="718" y="532" width="107" height="8" rx="4" fill="#38bdf8" />
+    <!-- Mobile CTA Button -->
+    <rect x="719" y="565" width="120" height="36" rx="8" fill="#4c1d95" />
+    <text x="779" y="588" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="700">Contact us</text>
+  </g>
+
+  <!-- Subtle bottom pill behind badge -->
+  <rect x="145" y="625" width="250" height="28" rx="14" fill="#ffffff" opacity="0.9" />
+
+  <!-- Floating Bottom-Left Badge ("Designed to work / On every screen size") -->
+  <g filter="url(#badgeShadow)">
+    <rect x="12" y="618" width="356" height="86" rx="14" fill="#c7f9ff" stroke="#7dd3fc" stroke-width="2" />
+    <!-- Violet Code Icon Box -->
+    <rect x="30" y="633" width="56" height="56" rx="12" fill="#4f1fb8" />
+    <text x="58" y="668" text-anchor="middle" fill="#ffffff" font-family="monospace, sans-serif" font-size="22" font-weight="700"></text>
+    <!-- Badge Text -->
+    <text x="104" y="656" fill="#0f172a" font-family="Arial, sans-serif" font-size="19" font-weight="700">Designed to work</text>
+    <text x="104" y="681" fill="#334155" font-family="Arial, sans-serif" font-size="16" font-weight="500">On every screen size</text>
+  </g>
+</svg>
