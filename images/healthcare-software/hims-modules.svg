@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+<title id="title">Hospital management modules illustration</title><desc id="desc">Illustrative system modules with no real patient data.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e6f0fa"/><stop offset="1" stop-color="#f6faff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#00285c" flood-opacity=".13"/></filter></defs>
+<rect width="900" height="720" rx="26" fill="url(#bg)"/>
+<rect x="48" y="50" width="804" height="623" rx="20" fill="#fff" filter="url(#s)"/>
+<rect x="48" y="50" width="804" height="77" rx="20" fill="#00285c"/><rect x="48" y="109" width="804" height="18" fill="#00285c"/>
+<text x="80" y="97" font-family="Arial" font-size="23" font-weight="bold" fill="#fff">Hospital management</text><text x="652" y="94" font-family="Arial" font-size="13" fill="#d8e8f8">Demo workspace</text>
+<text x="79" y="172" font-family="Arial" font-size="19" font-weight="bold" fill="#183654">Department modules</text><text x="79" y="199" font-family="Arial" font-size="13" fill="#768da7">Illustrative module categories</text>
+<g font-family="Arial" font-weight="bold" fill="#224565" font-size="17">
+<rect x="79" y="232" width="222" height="133" rx="14" fill="#f0f6fc"/><circle cx="120" cy="275" r="20" fill="#d8e9fb"/><text x="111" y="282" font-size="23" fill="#1a5999">+</text><text x="103" y="332">OPD &amp; Intake</text>
+<rect x="339" y="232" width="222" height="133" rx="14" fill="#f3f8f9"/><circle cx="380" cy="275" r="20" fill="#dcefed"/><text x="372" y="282" font-size="19" fill="#2a8179">▣</text><text x="363" y="332">IPD &amp; Admissions</text>
+<rect x="599" y="232" width="222" height="133" rx="14" fill="#f6f3fc"/><circle cx="640" cy="275" r="20" fill="#eae2f9"/><text x="633" y="282" font-size="18" fill="#7a61a7">◫</text><text x="624" y="332">Medical Records</text>
+<rect x="79" y="392" width="222" height="133" rx="14" fill="#f3f8f9"/><circle cx="120" cy="435" r="20" fill="#dcefed"/><text x="112" y="443" font-size="22" fill="#2a8179">✚</text><text x="103" y="492">Laboratory</text>
+<rect x="339" y="392" width="222" height="133" rx="14" fill="#f6f3fc"/><circle cx="380" cy="435" r="20" fill="#eae2f9"/><text x="373" y="442" font-size="18" fill="#7a61a7">◫</text><text x="363" y="492">Pharmacy &amp; Stock</text>
+<rect x="599" y="392" width="222" height="133" rx="14" fill="#f0f6fc"/><circle cx="640" cy="435" r="20" fill="#d8e9fb"/><text x="633" y="442" font-size="18" fill="#1a5999">▤</text><text x="624" y="492">Billing &amp; Finance</text>
+</g>
+<rect x="79" y="561" width="742" height="72" rx="13" fill="#f5f8fc" stroke="#e3edf6"/><text x="107" y="591" font-family="Arial" font-size="17" font-weight="bold" fill="#183654">Connected administrative workflows</text><text x="107" y="615" font-family="Arial" font-size="13" fill="#758ca3">Choose modules based on your facility's needs.</text>
+</svg>

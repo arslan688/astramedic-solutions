@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Patient portal illustration</title><desc id="desc">Sample portal with appointment and patient information navigation, no actual patient data.</desc>
+<rect width="900" height="560" rx="20" fill="#edf4fb"/>
+<rect x="35" y="33" width="830" height="494" rx="18" fill="#fff" stroke="#dce9f6"/>
+<rect x="35" y="33" width="830" height="66" rx="18" fill="#00285c"/><rect x="35" y="77" width="830" height="22" fill="#00285c"/>
+<circle cx="73" cy="65" r="13" fill="#e2f0fe"/><path d="M73 57v16M65 65h16" stroke="#00285c" stroke-width="4"/><text x="100" y="72" font-family="Arial" font-weight="bold" font-size="22" fill="#fff">Patient Portal</text><text x="700" y="71" font-family="Arial" font-size="12" fill="#d2e7ff">Sample interface</text>
+<text x="70" y="148" font-family="Arial" font-size="23" font-weight="bold" fill="#1d3b56">Welcome to your care portal</text><text x="70" y="174" font-family="Arial" font-size="13" fill="#798ea3">Manage information and appointments in one place.</text>
+<rect x="69" y="208" width="356" height="265" rx="14" fill="#f4f8fd" stroke="#e1eaf5"/><text x="92" y="245" font-family="Arial" font-size="17" font-weight="bold" fill="#254d72">Appointments</text>
+<rect x="91" y="270" width="312" height="65" rx="9" fill="#fff" stroke="#e0e9f3"/><circle cx="118" cy="301" r="16" fill="#dceaff"/><text x="111" y="307" font-family="Arial" font-size="18" fill="#235a91">▦</text><text x="144" y="295" font-family="Arial" font-weight="bold" font-size="13" fill="#2c4b6b">Appointment overview</text><text x="144" y="316" font-family="Arial" font-size="11" fill="#8799aa">Scheduling information</text>
+<rect x="91" y="350" width="312" height="65" rx="9" fill="#fff" stroke="#e0e9f3"/><circle cx="118" cy="381" r="16" fill="#e0f4ef"/><text x="111" y="386" font-family="Arial" font-size="15" fill="#288b76">✓</text><text x="144" y="375" font-family="Arial" font-weight="bold" font-size="13" fill="#2c4b6b">Booking requests</text><text x="144" y="395" font-family="Arial" font-size="11" fill="#8799aa">Requests and confirmations</text>
+<rect x="449" y="208" width="379" height="265" rx="14" fill="#f4f8fd" stroke="#e1eaf5"/><text x="472" y="245" font-family="Arial" font-size="17" font-weight="bold" fill="#254d72">My information</text>
+<g font-family="Arial" font-size="13" fill="#335775"><rect x="473" y="268" width="331" height="42" rx="8" fill="#fff"/><text x="490" y="294">Profile details</text><rect x="473" y="322" width="331" height="42" rx="8" fill="#fff"/><text x="490" y="348">Visit information</text><rect x="473" y="376" width="331" height="42" rx="8" fill="#fff"/><text x="490" y="402">Contact preferences</text></g>
+<text x="71" y="507" font-family="Arial" font-size="11" fill="#8a9bae">Fictional interface for design reference only</text>
+</svg>

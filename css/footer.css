@@ -1,89 +1,91 @@
 /* STREAMING_CHUNK: Defining fallback variables and styling the footer structural container */
 :root {
---color-bg-dark: #000000;
+  --color-bg-dark: #000000;
 }
 
 .site-footer {
-background-color: var(--color-bg-dark);
-color: #FFFFFF;
-padding-top: 60px;
+  background-color: var(--color-bg-dark);
+  color: #ffffff;
+  padding-top: 60px;
 }
 
 /* STREAMING_CHUNK: Configuring the grid layout for footer columns */
 .footer-top {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 40px;
-padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
 }
 
 /* STREAMING_CHUNK: Formatting footer branding and description */
 .footer-heading-text {
-font-family: var(--font-heading);
-font-size: var(--font-size-h4);
-font-weight: 800;
-color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h4);
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .footer-description {
-font-size: 15px;
-line-height: 1.6;
-margin-bottom: 0;
-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* STREAMING_CHUNK: Styling typography for footer headings */
 .footer-heading {
-font-size: var(--font-size-h5);
-color: #FFFFFF;
-margin-bottom: 25px;
-position: relative;
-padding-bottom: 10px;
+  font-size: var(--font-size-h5);
+  color: #ffffff;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
 }
 
 .footer-heading::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-width: 40px;
-height: 3px;
-background-color: var(--color-primary);
-border-radius: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
 }
 
 /* STREAMING_CHUNK: Designing footer navigation and link lists */
 .footer-nav,
 .footer-contact-info {
-list-style: none;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-nav li,
 .footer-contact-info li {
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-contact-info li {
-font-size: 15px;
-line-height: 1.6;
-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-contact-info strong {
-color: #FFFFFF;
-display: block;
-margin-bottom: 3px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 3px;
 }
 
 /* STREAMING_CHUNK: Applying interactive hover states for footer links */
 .footer-link {
-color: var(--color-bg-section-light);
-text-decoration: none;
-font-size: 15px;
-transition: color 0.3s ease, padding-left 0.3s ease;
-display: inline-block;
+  color: var(--color-bg-section-light);
+  text-decoration: none;
+  font-size: 15px;
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease;
+  display: inline-block;
 }
 
 .footer-nav .footer-link:hover,
@@ -94,74 +96,126 @@ display: inline-block;
 
 .footer-contact-info .footer-link:hover,
 .footer-contact-info .footer-link:focus {
-color: var(--color-bg-site);
-padding-left: 0;
+  color: var(--color-bg-site);
+  padding-left: 0;
 }
 
 /* STREAMING_CHUNK: Styling the bottom copyright bar */
 .footer-bottom {
-    background-color: #0a0a0a;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #FFFFFF;
-    padding: 20px 0;
-    font-size: 14px;
+  background-color: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 14px;
 }
 
 /* Flexbox setup for Big Screens (One Row) */
 .footer-flex-container {
-    display: flex;
-    justify-content: space-between; /* Pushes text to the left, links to the right */
-    align-items: center;
-    max-width: 1200px; /* Optional: adjusts to your site's container width */
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Pushes text to the left, links to the right */
+  align-items: center;
+  max-width: 1200px; /* Optional: adjusts to your site's container width */
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-bottom p.copyright-text {
-    margin: 0;
-    opacity: 0.7;
-    text-align: left;
+  margin: 0;
+  opacity: 0.7;
+  text-align: left;
 }
 
 /* Social Links Row Layout */
 .social-links {
-    display: flex;
-    align-items: center;
-    gap: 18px; /* Spacing between logos */
+  display: flex;
+  align-items: center;
+  gap: 18px; /* Spacing between logos */
 }
 
 /* Base Icon Styling & Hover Effects */
 .social-icon {
-    font-size: 22px; /* Scale of the logos */
-    text-decoration: none;
-    transition: transform 0.2s ease, filter 0.2s ease;
+  font-size: 22px; /* Scale of the logos */
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
 .social-icon:hover {
-    transform: translateY(-3px); /* Subtle hover lift */
-    filter: brightness(1.2); /* Makes the official color pop more on hover */
+  transform: translateY(-3px); /* Subtle hover lift */
+  filter: brightness(1.2); /* Makes the official color pop more on hover */
 }
 
 /* Official Brand Colors */
-.social-icon.facebook { color: #1877F2; }
-.social-icon.instagram { color: #E4405F; }
-.social-icon.youtube { color: #FF0000; }
-.social-icon.linkedin { color: #0077B5; }
-.social-icon.whatsapp { color: #25D366; }
+.social-icon.facebook {
+  color: #1877f2;
+}
+.social-icon.instagram {
+  color: #e4405f;
+}
+.social-icon.youtube {
+  color: #ff0000;
+}
+.social-icon.linkedin {
+  color: #0077b5;
+}
+.social-icon.whatsapp {
+  color: #25d366;
+}
 
 /* Official TikTok Neon Look */
-.social-icon.tiktok { 
-    color: #FFFFFF; 
-    filter: drop-shadow(1.5px 1.5px 0px #25F4EE) drop-shadow(-1.5px -1.5px 0px #FE0979);
+.social-icon.tiktok {
+  color: #ffffff;
+  filter: drop-shadow(1.5px 1.5px 0px #25f4ee)
+    drop-shadow(-1.5px -1.5px 0px #fe0979);
 }
 .social-icon.tiktok:hover {
-    filter: drop-shadow(1.5px 1.5px 0px #25F4EE) drop-shadow(-1.5px -1.5px 0px #FE0979) brightness(1.2);
+  filter: drop-shadow(1.5px 1.5px 0px #25f4ee)
+    drop-shadow(-1.5px -1.5px 0px #fe0979) brightness(1.2);
+}
+
+/* AstraMedic Solutions Back To Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9998;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid var(--color-bg-site, #ffffff);
+  background-color: var(--color-primary, #00285c);
+  color: var(--color-bg-site, #ffffff);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 40, 92, 0.25);
+
+  /* Hidden by default with smooth fade/slide transition */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+}
+
+/* Visible state when scrolled */
+#backToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover effect */
+#backToTopBtn:hover {
+  background-color: var(--color-secondary, #001d43);
+  transform: translateY(-3px);
 }
 
 /* AstraMedic Solutions WhatsApp Widget */
 .wa-widget-container {
-  --wa-green: #25D366;
-  --wa-dark-green: #128C7E;
+  --wa-green: #25d366;
+  --wa-dark-green: #128c7e;
 
   position: fixed !important;
   right: 24px !important;
@@ -174,8 +228,10 @@ padding-left: 0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(12px);
-  transition: opacity .3s ease, transform .3s ease,
-              visibility .3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .wa-widget-container.active {
@@ -203,8 +259,10 @@ padding-left: 0;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0,0,0,.22);
-  transition: transform .2s ease, background .2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .wa-widget-container .wa-floating-btn:hover {
@@ -231,8 +289,8 @@ padding-left: 0;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,.2);
-  transition: opacity .2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease;
 }
 
 .wa-widget-container .wa-popup-box {
@@ -243,17 +301,19 @@ padding-left: 0;
   max-width: calc(100vw - 32px);
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.18);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(12px) scale(.98);
+  transform: translateY(12px) scale(0.98);
   transform-origin: bottom right;
-  transition: opacity .25s ease, transform .25s ease,
-              visibility .25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
 }
 
 .wa-widget-container .wa-popup-box.show {
@@ -268,7 +328,7 @@ padding-left: 0;
   align-items: center;
   gap: 12px;
   padding: 16px;
-  background: #075E54;
+  background: #075e54;
   color: #fff;
 }
 
@@ -282,7 +342,7 @@ padding-left: 0;
   height: 44px;
   border-radius: 50%;
   background: #fff;
-  color: #128C7E;
+  color: #128c7e;
   font-size: 25px;
   cursor: pointer;
 }
@@ -293,7 +353,7 @@ padding-left: 0;
   bottom: 1px;
   width: 11px;
   height: 11px;
-  background: #25D366;
+  background: #25d366;
   border: 2px solid #fff;
   border-radius: 50%;
 }
@@ -315,7 +375,7 @@ padding-left: 0;
   min-height: 150px;
   padding: 18px 14px;
   background: #f7f8f5;
-  background-image: radial-gradient(#e4e8e3 .7px, transparent .7px);
+  background-image: radial-gradient(#e4e8e3 0.7px, transparent 0.7px);
   background-size: 12px 12px;
 }
 
@@ -325,12 +385,12 @@ padding-left: 0;
   padding: 12px;
   border-radius: 10px 10px 10px 2px;
   background: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .wa-widget-container .wa-bot-name {
   margin: 0 0 6px;
-  color: #128C7E;
+  color: #128c7e;
   font-size: 12px;
   font-weight: 700;
 }
@@ -375,7 +435,7 @@ padding-left: 0;
 }
 
 .wa-widget-container .wa-popup-footer input:focus {
-  border-color: #128C7E;
+  border-color: #128c7e;
 }
 
 .wa-widget-container .wa-popup-footer button {
@@ -389,13 +449,13 @@ padding-left: 0;
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: #128C7E;
+  background: #128c7e;
   color: #fff;
   cursor: pointer;
 }
 
 .wa-widget-container .wa-popup-footer button:hover {
-  background: #075E54;
+  background: #075e54;
 }
 
 .wa-widget-container .wa-send-fallback {
@@ -409,44 +469,43 @@ padding-left: 0;
   }
 }
 
-
 /* STREAMING_CHUNK: Responsive adjustments for mobile devices */
 @media (max-width: 767px) {
-.site-footer {
-padding-top: 40px;
-text-align: center;
-}
+  .site-footer {
+    padding-top: 40px;
+    text-align: center;
+  }
 
-.footer-logo {
+  .footer-logo {
     justify-content: center;
     width: 100%;
-}
+  }
 
-.footer-heading::after {
+  .footer-heading::after {
     left: 50%;
     transform: translateX(-50%);
-}
+  }
 
-.footer-top {
+  .footer-top {
     grid-template-columns: 1fr;
     gap: 30px;
     padding-bottom: 30px;
-}
+  }
 
-.footer-heading {
+  .footer-heading {
     margin-bottom: 15px;
-}
+  }
 
-.footer-flex-container {
-        flex-direction: column;
-        gap: 15px; 
-        text-align: center;
-    }
+  .footer-flex-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 
-.footer-bottom p.copyright-text {
-    text-align: center; 
-}
-.wa-widget-container {
+  .footer-bottom p.copyright-text {
+    text-align: center;
+  }
+  .wa-widget-container {
     right: 16px !important;
     bottom: 16px !important;
   }
@@ -458,5 +517,4 @@ text-align: center;
     width: 350px;
     max-width: calc(100vw - 32px);
   }
-
 }

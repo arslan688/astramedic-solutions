@@ -42,13 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentPath = window.location.pathname;
 
   // Loop through all nav links
-  document.querySelectorAll(".nav-link").forEach((link) => {
+  document.querySelectorAll(".nav-link, .dropdown-link").forEach((link) => {
     // Check if link href matches current URL path
     if (
       link.getAttribute("href") === currentPath ||
-      (currentPath === "/" && link.getAttribute("href") === "/index.php")
+      (currentPath === "/" && link.getAttribute("href") === "/")
     ) {
       link.classList.add("active-link");
+      if (link.classList.contains("dropdown-link")) {
+        link
+          .closest(".nav-item-dropdown")
+          ?.querySelector(".dropdown-toggle")
+          ?.classList.add("active-link");
+      }
     }
   });
 

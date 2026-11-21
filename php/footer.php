@@ -91,6 +91,14 @@
             </div>
         </div>
     </div>
+    <!-- AstraMedic Solutions Back To Top Button -->
+    <button id="backToTopBtn" title="Go to top" aria-label="Scroll back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
     <!-- AstraMedic Solutions WhatsApp Widget -->
     <div class="wa-widget-container" id="astra-wa-widget">
 
@@ -239,6 +247,24 @@
                 initAstraWhatsApp();
             }
         })();
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
     </script>
 </footer>
 

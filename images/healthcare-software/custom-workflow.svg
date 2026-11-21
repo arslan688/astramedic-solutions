@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" role="img" aria-labelledby="title desc">
+<title id="title">Custom healthcare workflow interface mockup</title><desc id="desc">Fictional software interface showing sample diagnostic laboratory task stages.</desc>
+<defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#e7f1f9"/><stop offset="1" stop-color="#f8faff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="11" stdDeviation="14" flood-color="#00285c" flood-opacity=".12"/></filter></defs>
+<rect width="900" height="720" rx="26" fill="url(#b)"/>
+<rect x="49" y="53" width="802" height="614" rx="18" fill="#fff" filter="url(#s)"/>
+<rect x="49" y="53" width="802" height="80" rx="18" fill="#00285c"/><rect x="49" y="112" width="802" height="21" fill="#00285c"/>
+<text x="79" y="101" font-family="Arial" font-size="24" font-weight="bold" fill="#fff">Laboratory workflow</text><text x="675" y="99" font-family="Arial" font-size="12" fill="#d4e9ff">Sample UI</text>
+<text x="79" y="181" font-family="Arial" font-size="18" font-weight="bold" fill="#193b5a">Test request journey</text><text x="79" y="205" font-family="Arial" font-size="13" fill="#7d90a5">Illustrative steps for a diagnostic center</text>
+<g font-family="Arial" text-anchor="middle" font-size="13" font-weight="bold">
+<rect x="80" y="250" width="166" height="106" rx="13" fill="#e7f1fc"/><circle cx="162" cy="279" r="13" fill="#2b71b6"/><path d="M156 279h12M162 273v12" stroke="#fff" stroke-width="3" stroke-linecap="round"/><text x="163" y="330" fill="#1c568d">Registration</text>
+<text x="261" y="310" font-size="23" fill="#87a6c4">→</text>
+<rect x="284" y="250" width="166" height="106" rx="13" fill="#e6f5f2"/><circle cx="366" cy="279" r="13" fill="#289785"/><path d="m359 279 5 5 9-11" fill="none" stroke="#fff" stroke-width="3"/><text x="366" y="330" fill="#257d6f">Sample handling</text>
+<text x="465" y="310" font-size="23" fill="#87a6c4">→</text>
+<rect x="488" y="250" width="166" height="106" rx="13" fill="#eee9fa"/><circle cx="570" cy="279" r="13" fill="#8b71bd"/><path d="M564 279h12" stroke="#fff" stroke-width="3"/><text x="570" y="330" fill="#6b579d">Result entry</text>
+<text x="670" y="310" font-size="23" fill="#87a6c4">→</text>
+<rect x="692" y="250" width="130" height="106" rx="13" fill="#f7f1e7"/><circle cx="757" cy="279" r="13" fill="#c8994d"/><path d="m751 279 5 5 9-11" fill="none" stroke="#fff" stroke-width="3"/><text x="757" y="330" fill="#956f36">Reports</text>
+</g>
+<rect x="80" y="396" width="742" height="214" rx="14" fill="#f9fbfd" stroke="#e4edf5"/><text x="106" y="434" font-family="Arial" font-size="19" font-weight="bold" fill="#183c58">System requirements overview</text>
+<g font-family="Arial" fill="#35556f" font-size="15"><circle cx="111" cy="475" r="7" fill="#3c8bb8"/><text x="133" y="481">User roles &amp; permissions</text><circle cx="111" cy="518" r="7" fill="#49a88b"/><text x="133" y="524">Workflow configuration</text><circle cx="111" cy="561" r="7" fill="#9780bd"/><text x="133" y="567">Reporting &amp; notifications</text></g>
+<rect x="535" y="451" width="256" height="122" rx="12" fill="#e8f1fa"/><text x="555" y="482" font-family="Arial" font-size="13" font-weight="bold" fill="#365d80">Scope &amp; integrations</text><path d="M557 506h203M557 528h159M557 550h183" stroke="#b6cfe4" stroke-width="9" stroke-linecap="round"/>
+</svg>

@@ -1,164 +1,980 @@
-/* Page Header & Global Utilities */
+/* AstraMedic Solutions — Healthcare Software & Portals page
+   Relies on existing /css/universal.css variables and utilities.
+   All styles are scoped to .page-healthcare-softwares. */
+
 .page-healthcare-softwares {
-    padding-bottom: 0;
+  --hs-shadow: 0 15px 42px rgba(0, 40, 92, 0.08);
+  overflow-x: clip;
+  color: var(--color-text-muted);
+}
+.page-healthcare-softwares .container {
+  margin-bottom: 0;
+}
+.page-healthcare-softwares section {
+  scroll-margin-top: 88px;
+}
+.page-healthcare-softwares .hs-section {
+  padding: 90px 0;
+}
+.page-healthcare-softwares h1,
+.page-healthcare-softwares h2,
+.page-healthcare-softwares h3 {
+  color: var(--color-primary);
+}
+.page-healthcare-softwares p {
+  line-height: 1.75;
+}
+.page-healthcare-softwares .hs-section-heading {
+  max-width: 770px;
+  margin: 0 0 42px;
+}
+.page-healthcare-softwares .hs-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.page-healthcare-softwares .hs-section-heading h2,
+.page-healthcare-softwares .hs-split-copy h2,
+.page-healthcare-softwares .hs-custom-copy h2,
+.page-healthcare-softwares .hs-faq-intro h2 {
+  font-size: clamp(1.85rem, 2.8vw, 2.65rem);
+  line-height: 1.19;
+  letter-spacing: -0.035em;
+  margin: 0 0 18px;
+}
+.page-healthcare-softwares .hs-section-heading p {
+  margin: 0;
+  font-size: 16px;
+}
+.page-healthcare-softwares .hs-lead {
+  font-size: clamp(15px, 1.3vw, 17px);
+  font-weight: 600;
+  color: #3b5066;
+}
+.page-healthcare-softwares .hs-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font: 800 13px/1.5 var(--font-heading, Manrope, sans-serif);
+  color: var(--color-primary);
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+.page-healthcare-softwares .hs-text-link:hover {
+  color: var(--color-accent);
+  gap: 13px;
+}
+.page-healthcare-softwares .hs-text-link i {
+  font-size: 11px;
+}
+.page-healthcare-softwares .hs-button,
+.page-healthcare-softwares .hs-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 52px;
+  padding: 15px 23px;
+  border-radius: 8px;
+  text-align: center;
+  font: 800 13px/1.4 var(--font-heading, Manrope, sans-serif);
+}
+.page-healthcare-softwares .hs-outline-button {
+  background: #fff;
+  border: 1px solid #bfd2e4;
+  color: var(--color-primary);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.page-healthcare-softwares .hs-outline-button:hover {
+  background: #f0f6fe;
+  border-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.page-healthcare-softwares .hs-button i,
+.page-healthcare-softwares .hs-outline-button i {
+  font-size: 12px;
+}
+.page-healthcare-softwares a:focus-visible,
+.page-healthcare-softwares summary:focus-visible {
+  outline: 3px solid #6c9fd6;
+  outline-offset: 4px;
 }
 
-.page-header {
-    padding: 80px 0;
+/* HERO */
+.page-healthcare-softwares .hs-hero {
+  position: relative;
+  padding: 105px 0 106px;
+  background:
+    radial-gradient(
+      ellipse at 92% 14%,
+      rgba(176, 213, 248, 0.57),
+      transparent 42%
+    ),
+    linear-gradient(128deg, #fff 10%, #f7fbff 61%, #edf5fc 100%);
+  isolation: isolate;
+}
+.page-healthcare-softwares .hs-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 65px;
+  width: min(40vw, 590px);
+  height: 425px;
+  background: rgba(219, 234, 249, 0.42);
+  border-radius: 52% 0 0 52%;
+}
+.page-healthcare-softwares .hs-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 68px);
+}
+.page-healthcare-softwares .hs-hero-content {
+  min-width: 0;
+}
+.page-healthcare-softwares .hs-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-primary);
+  font: 800 11px/1.5 var(--font-heading, Manrope, sans-serif);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  margin-bottom: 20px;
+}
+.page-healthcare-softwares .hs-eyebrow-dot {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 5px rgba(216, 0, 0, 0.08);
+}
+.page-healthcare-softwares .hs-hero h1 {
+  color: var(--color-secondary);
+  font-size: clamp(2.45rem, 4.05vw, 4.1rem);
+  line-height: 1.11;
+  letter-spacing: -0.05em;
+  margin-bottom: 19px;
+}
+.page-healthcare-softwares .hs-hero h1 span {
+  color: var(--color-primary);
+  display: block;
+}
+.page-healthcare-softwares .hs-hero-subtitle {
+  font: 800 clamp(14px, 1.25vw, 17px)/1.5
+    var(--font-heading, Manrope, sans-serif);
+  color: #254e78;
+  margin-bottom: 16px;
+}
+.page-healthcare-softwares .hs-hero-lead {
+  max-width: 600px;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.85;
+  margin-bottom: 25px;
+}
+.page-healthcare-softwares .hs-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.page-healthcare-softwares .hs-hero-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin: 27px 0 0;
+  padding: 0;
+}
+.page-healthcare-softwares .hs-hero-tags li {
+  color: #425c73;
+  font-size: 12px;
+  font-weight: 700;
+}
+.page-healthcare-softwares .hs-hero-tags i {
+  color: #138563;
+  margin-right: 5px;
+}
+.page-healthcare-softwares .hs-hero-visual {
+  position: relative;
+  min-width: 0;
+}
+.page-healthcare-softwares .hs-hero-frame {
+  padding: 14px;
+  border-radius: 22px;
+  border: 1px solid #d6e3f0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 26px 65px rgba(0, 40, 92, 0.16);
+  transform: rotate(1deg);
+}
+.page-healthcare-softwares .hs-hero-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #edf3fa;
+}
+.page-healthcare-softwares .hs-hero-float {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  left: -30px;
+  bottom: -24px;
+  padding: 14px 19px;
+  border: 1px solid #e5ecf5;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 15px 38px rgba(0, 40, 92, 0.11);
+}
+.page-healthcare-softwares .hs-float-icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  color: var(--color-primary);
+  background: #edf5ff;
+}
+.page-healthcare-softwares .hs-hero-float strong,
+.page-healthcare-softwares .hs-hero-float small {
+  display: block;
+}
+.page-healthcare-softwares .hs-hero-float strong {
+  font: 800 12px/1.4 var(--font-heading, Manrope, sans-serif);
+  color: #203955;
+}
+.page-healthcare-softwares .hs-hero-float small {
+  font-size: 11px;
+  color: var(--color-text-muted);
 }
 
-.intro-text {
-    max-width: 850px;
-    margin: 0 auto;
-    font-size: 18px;
-    opacity: 0.9;
+/* SOLUTION CARDS */
+.page-healthcare-softwares .hs-solutions-section {
+  background: #fff;
+}
+.page-healthcare-softwares .hs-solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.page-healthcare-softwares .hs-solution-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 32px 28px;
+  border: 1px solid var(--color-bg-section-blue);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 40, 92, 0.035);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+.page-healthcare-softwares .hs-solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hs-shadow);
+  border-color: #bdcee1;
+}
+.page-healthcare-softwares .hs-card-icon {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 23px;
+  border-radius: 14px;
+  color: var(--color-primary);
+  background: #edf4fc;
+  font-size: 22px;
+}
+.page-healthcare-softwares .hs-solution-card:nth-child(3n + 2) .hs-card-icon {
+  background: #f0f7f9;
+}
+.page-healthcare-softwares .hs-solution-card h3 {
+  font-size: 18px;
+  line-height: 1.37;
+  min-height: 49px;
+  margin-bottom: 12px;
+}
+.page-healthcare-softwares .hs-solution-card p {
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+.page-healthcare-softwares .hs-solution-card .hs-text-link {
+  margin-top: auto;
 }
 
-.section-header {
-    margin-bottom: 50px;
+/* FEATURE LIST */
+.page-healthcare-softwares .hs-features-section {
+  background: var(--color-bg-section-blue);
+}
+.page-healthcare-softwares .hs-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.page-healthcare-softwares .hs-feature-item {
+  min-width: 0;
+  display: flex;
+  gap: 18px;
+  padding: 24px 26px;
+  background: #fff;
+  border: 1px solid #e4ecf5;
+  border-radius: 13px;
+}
+.page-healthcare-softwares .hs-feature-icon {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #eaf3fc;
+  border-radius: 11px;
+  color: var(--color-primary);
+  font-size: 18px;
+}
+.page-healthcare-softwares .hs-feature-item h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.page-healthcare-softwares .hs-feature-item p {
+  margin: 0;
+  font-size: 13px;
 }
 
-.text-primary {
-    color: var(--color-primary);
+/* BENEFITS */
+.page-healthcare-softwares .hs-benefits-section {
+  background: #fff;
+}
+.page-healthcare-softwares .hs-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.page-healthcare-softwares .hs-benefit-card {
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 32px 24px 28px;
+  border: 1px solid #dfe9f4;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 7px 26px rgba(0, 40, 92, 0.035);
+}
+.page-healthcare-softwares .hs-benefit-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+.page-healthcare-softwares .hs-benefit-card:hover::after {
+  transform: scaleX(1);
+}
+.page-healthcare-softwares .hs-benefit-index {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  font: 800 13px/1 var(--font-heading, Manrope, sans-serif);
+  color: #d2dfed;
+}
+.page-healthcare-softwares .hs-benefit-icon {
+  width: 56px;
+  height: 56px;
+  background: #eef4fc;
+  color: var(--color-primary);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+.page-healthcare-softwares .hs-benefit-card h3 {
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 11px;
+}
+.page-healthcare-softwares .hs-benefit-card p {
+  font-size: 13px;
+  margin: 0;
 }
 
-/* Modern Benefits Grid - Strict Explicit Columns */
-.hs-benefits-section {
-    padding: 80px 0;
+/* HIMS SPLIT */
+.page-healthcare-softwares .hs-hims-section {
+  background: var(--color-bg-section-blue);
+}
+.page-healthcare-softwares .hs-split-grid,
+.page-healthcare-softwares .hs-custom-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: clamp(32px, 5vw, 70px);
+  align-items: center;
+}
+.page-healthcare-softwares .hs-split-copy,
+.page-healthcare-softwares .hs-custom-copy {
+  min-width: 0;
+}
+.page-healthcare-softwares .hs-split-copy > p,
+.page-healthcare-softwares .hs-custom-copy > p {
+  margin-bottom: 17px;
+}
+.page-healthcare-softwares .hs-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 27px 0 29px;
+}
+.page-healthcare-softwares .hs-modules-grid > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 700 12px/1.4 var(--font-heading, Manrope, sans-serif);
+  color: #294765;
+}
+.page-healthcare-softwares .hs-modules-grid i {
+  flex: 0 0 32px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: #e3eef9;
+  border-radius: 8px;
+  color: var(--color-primary);
+}
+.page-healthcare-softwares .hs-split-visual,
+.page-healthcare-softwares .hs-custom-visual {
+  min-width: 0;
+}
+.page-healthcare-softwares .hs-visual-frame {
+  padding: 13px;
+  border: 1px solid #d8e5f1;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 22px 56px rgba(0, 40, 92, 0.09);
+}
+.page-healthcare-softwares .hs-visual-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #edf3fa;
+}
+.page-healthcare-softwares .hs-visual-caption {
+  font-size: 11px;
+  text-align: center;
+  margin: 13px 0 0;
+  color: #64758a;
 }
 
-.hs-benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+/* CUSTOM SOFTWARE */
+.page-healthcare-softwares .hs-custom-section {
+  background: #fff;
+}
+.page-healthcare-softwares .hs-custom-grid {
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+}
+.page-healthcare-softwares .hs-checklist {
+  list-style: none;
+  margin: 25px 0 22px;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.page-healthcare-softwares .hs-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.page-healthcare-softwares .hs-checklist i {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #157d60;
+  background: #e5f7f1;
+  margin-top: 1px;
+}
+.page-healthcare-softwares .hs-checklist strong {
+  color: #213b56;
 }
 
-.benefit-card {
-    border-radius: 12px;
-    padding: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    background-color: #ffffff;
-    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+/* PROCESS */
+.page-healthcare-softwares .hs-process-section {
+  background: linear-gradient(148deg, #062f62 0%, #001d43 98%);
+}
+.page-healthcare-softwares .hs-process-section .hs-section-heading h2 {
+  color: #fff;
+}
+.page-healthcare-softwares .hs-process-section .hs-section-heading p {
+  color: #bdd1e6;
+}
+.page-healthcare-softwares .hs-process-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+}
+.page-healthcare-softwares .hs-process-card {
+  position: relative;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 15px;
+  padding: 27px 19px 24px;
+  background: rgba(255, 255, 255, 0.055);
+}
+.page-healthcare-softwares .hs-process-number {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  font: 800 13px/1.2 var(--font-heading, Manrope, sans-serif);
+  color: rgba(255, 255, 255, 0.32);
+}
+.page-healthcare-softwares .hs-process-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  color: #d9eeff;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 19px;
+  margin-bottom: 23px;
+}
+.page-healthcare-softwares .hs-process-card h3 {
+  font-size: 15px;
+  line-height: 1.4;
+  min-height: 43px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.page-healthcare-softwares .hs-process-card p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #c4d3e4;
+  margin: 0;
 }
 
-.benefit-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+/* INDUSTRIES */
+.page-healthcare-softwares .hs-industries-section {
+  background: #fff;
+}
+.page-healthcare-softwares .hs-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.page-healthcare-softwares .hs-industry-card {
+  min-width: 0;
+  padding: 27px 27px;
+  border-radius: 13px;
+  background: #f7fafd;
+  border: 1px solid #e7eef6;
+}
+.page-healthcare-softwares .hs-industry-card > i {
+  font-size: 23px;
+  color: var(--color-primary);
+  margin-bottom: 19px;
+}
+.page-healthcare-softwares .hs-industry-card h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 9px;
+}
+.page-healthcare-softwares .hs-industry-card p {
+  font-size: 13px;
+  margin: 0;
 }
 
-.benefit-icon {
-    font-size: 40px;
-    color: var(--color-primary);
-    flex-shrink: 0;
-    background: rgba(2, 116, 190, 0.05);
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* PORTFOLIO */
+.page-healthcare-softwares .hs-implementations-section {
+  background: var(--color-bg-section-blue);
+}
+.page-healthcare-softwares .hs-portfolio-feature {
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+  min-width: 0;
+  gap: 35px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dce7f2;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  padding: 20px 38px 20px 20px;
+  box-shadow: 0 10px 35px rgba(0, 40, 92, 0.045);
+}
+.page-healthcare-softwares .hs-portfolio-screen {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #eff4fa;
+}
+.page-healthcare-softwares .hs-portfolio-screen img {
+  width: 100%;
+  height: auto;
+}
+.page-healthcare-softwares .hs-portfolio-feature-copy h3 {
+  font-size: clamp(21px, 2.1vw, 29px);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+.page-healthcare-softwares .hs-portfolio-feature-copy p {
+  font-size: 14px;
+}
+.page-healthcare-softwares .hs-implementations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+.page-healthcare-softwares .hs-implementation-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding: 22px 20px;
+  border: 1px solid #e1eaf4;
+  border-radius: 12px;
+  background: #fff;
+}
+.page-healthcare-softwares .hs-implementation-card i {
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  color: var(--color-primary);
+  background: #eff5fc;
+}
+.page-healthcare-softwares .hs-implementation-card h3 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-.benefit-card:hover .benefit-icon {
-    background: var(--color-primary);
-    color: #ffffff;
+/* FAQ */
+.page-healthcare-softwares .hs-faq-section {
+  background: #fff;
+}
+.page-healthcare-softwares .hs-faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.39fr) minmax(0, 0.61fr);
+  gap: clamp(28px, 5vw, 68px);
+  align-items: start;
+}
+.page-healthcare-softwares .hs-faq-intro {
+  position: sticky;
+  top: 110px;
+}
+.page-healthcare-softwares .hs-faq-intro > p {
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+.page-healthcare-softwares .hs-faq-contact {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 22px;
+  background: #f2f7fc;
+  border: 1px solid #e4edf6;
+  border-radius: 13px;
+}
+.page-healthcare-softwares .hs-faq-contact > i {
+  font-size: 24px;
+  color: var(--color-primary);
+}
+.page-healthcare-softwares .hs-faq-contact strong {
+  font-size: 14px;
+  color: #18334e;
+}
+.page-healthcare-softwares .hs-faq-contact p {
+  font-size: 13px;
+  margin: 5px 0 11px;
+}
+.page-healthcare-softwares .hs-faq-items {
+  display: grid;
+  gap: 12px;
+}
+.page-healthcare-softwares .hs-faq-item {
+  border: 1px solid var(--color-bg-section-blue);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.page-healthcare-softwares .hs-faq-item[open] {
+  border-color: #bfd3e7;
+  box-shadow: 0 9px 23px rgba(0, 40, 92, 0.04);
+}
+.page-healthcare-softwares .hs-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 22px;
+  font: 800 14px/1.5 var(--font-heading, Manrope, sans-serif);
+  color: #19344f;
+}
+.page-healthcare-softwares .hs-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.page-healthcare-softwares .hs-faq-chevron {
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  background: #eaf2fb;
+  border-radius: 50%;
+  position: relative;
+}
+.page-healthcare-softwares .hs-faq-chevron::before,
+.page-healthcare-softwares .hs-faq-chevron::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color-primary);
+}
+.page-healthcare-softwares .hs-faq-chevron::after {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+.page-healthcare-softwares .hs-faq-item[open] .hs-faq-chevron::after {
+  transform: rotate(0);
+}
+.page-healthcare-softwares .hs-faq-answer {
+  padding: 0 22px 21px;
+}
+.page-healthcare-softwares .hs-faq-answer p {
+  font-size: 14px;
+  margin: 0;
 }
 
-.benefit-content h3 {
-    margin-bottom: 12px;
+/* CONTACT */
+.page-healthcare-softwares .hs-contact-section {
+  padding: 90px 0 96px;
+  background: linear-gradient(180deg, #f0f6fc 0%, #fff 100%);
+}
+.page-healthcare-softwares .hs-contact-heading {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto 37px;
+}
+.page-healthcare-softwares .hs-contact-heading h2 {
+  font-size: clamp(1.85rem, 2.8vw, 2.65rem);
+  margin-bottom: 15px;
+}
+.page-healthcare-softwares .hs-contact-heading p {
+  font-size: 15px;
+  margin: 0;
+}
+.page-healthcare-softwares .hs-contact-section .contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.benefit-content p {
-    margin-bottom: 0;
-    color: var(--color-text-dark);
-    opacity: 0.8;
+/* TABLETS */
+@media (max-width: 1100px) {
+  .page-healthcare-softwares .hs-hero {
+    padding: 85px 0 92px;
+  }
+  .page-healthcare-softwares .hs-hero-grid {
+    gap: 28px;
+  }
+  .page-healthcare-softwares .hs-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
+  }
+  .page-healthcare-softwares .hs-process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .page-healthcare-softwares .hs-process-card h3 {
+    min-height: 0;
+  }
+  .page-healthcare-softwares .hs-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
-
-/* Modern Implementations Grid - Strict Explicit Columns */
-.hs-implementations-section {
-    padding: 80px 0;
-}
-
-.hs-implementations-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.implementation-card {
-    background-color: var(--color-bg-section-light);
-    border-radius: 12px;
-    padding: 40px 20px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.implementation-card:hover {
-    background-color: var(--color-primary);
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(2, 116, 190, 0.2);
-}
-
-.implementation-icon {
-    font-size: 36px;
-    color: var(--color-primary);
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
-
-.implementation-card:hover .implementation-icon,
-.implementation-card:hover h3 {
-    color: #FFFFFF;
-}
-
-.implementation-card h3 {
-    margin: 0;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.hs-contact-section {
-    padding: 80px 0;
-}
-
-/* Responsive Architecture with Explicit Column Overrides */
 @media (max-width: 991px) {
-    .hs-implementations-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .page-healthcare-softwares .hs-section {
+    padding: 72px 0;
+  }
+  .page-healthcare-softwares .hs-hero-grid,
+  .page-healthcare-softwares .hs-split-grid,
+  .page-healthcare-softwares .hs-custom-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-healthcare-softwares .hs-hero-content {
+    max-width: 700px;
+  }
+  .page-healthcare-softwares .hs-hero-visual {
+    max-width: 710px;
+    margin: 20px auto 0;
+  }
+  .page-healthcare-softwares .hs-solution-card h3 {
+    min-height: 0;
+  }
+  .page-healthcare-softwares .hs-solutions-grid,
+  .page-healthcare-softwares .hs-industries-grid,
+  .page-healthcare-softwares .hs-implementations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .page-healthcare-softwares .hs-split-visual,
+  .page-healthcare-softwares .hs-custom-visual {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-healthcare-softwares .hs-custom-copy {
+    order: -1;
+  }
+  .page-healthcare-softwares .hs-portfolio-feature {
+    gap: 22px;
+    padding: 18px;
+  }
+  .page-healthcare-softwares .hs-faq-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .page-healthcare-softwares .hs-faq-intro {
+    position: static;
+  }
+  .page-healthcare-softwares .hs-faq-contact {
+    max-width: 500px;
+  }
 }
-
 @media (max-width: 767px) {
-    .page-header,
-    .hs-benefits-section,
-    .hs-implementations-section,
-    .hs-contact-section {
-        padding: 50px 0;
-    }
-
-    .hs-benefits-grid,
-    .hs-implementations-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .benefit-card {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        padding: 30px 20px;
-    }
-    
-    .benefit-icon {
-        margin-bottom: 15px;
-    }
+  .page-healthcare-softwares .hs-section {
+    padding: 56px 0;
+  }
+  .page-healthcare-softwares .hs-hero {
+    padding: 64px 0 72px;
+  }
+  .page-healthcare-softwares .hs-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+  .page-healthcare-softwares .hs-hero-lead {
+    font-size: 15px;
+  }
+  .page-healthcare-softwares .hs-hero-visual {
+    width: 100%;
+    padding-bottom: 18px;
+  }
+  .page-healthcare-softwares .hs-hero-frame {
+    padding: 8px;
+    border-radius: 15px;
+    transform: none;
+  }
+  .page-healthcare-softwares .hs-hero-float {
+    left: 8px;
+    bottom: 0;
+    padding: 10px 13px;
+  }
+  .page-healthcare-softwares .hs-float-icon {
+    width: 31px;
+    height: 31px;
+  }
+  .page-healthcare-softwares .hs-section-heading {
+    margin-bottom: 29px;
+  }
+  .page-healthcare-softwares .hs-section-heading h2,
+  .page-healthcare-softwares .hs-split-copy h2,
+  .page-healthcare-softwares .hs-custom-copy h2,
+  .page-healthcare-softwares .hs-faq-intro h2 {
+    font-size: clamp(1.72rem, 6vw, 2.05rem);
+  }
+  .page-healthcare-softwares .hs-section-heading p {
+    font-size: 14px;
+  }
+  .page-healthcare-softwares .hs-solutions-grid,
+  .page-healthcare-softwares .hs-feature-grid,
+  .page-healthcare-softwares .hs-benefits-grid,
+  .page-healthcare-softwares .hs-industries-grid,
+  .page-healthcare-softwares .hs-implementations-grid,
+  .page-healthcare-softwares .hs-process-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-healthcare-softwares .hs-solution-card {
+    padding: 27px 23px;
+  }
+  .page-healthcare-softwares .hs-solution-card h3 {
+    min-height: 0;
+  }
+  .page-healthcare-softwares .hs-feature-item {
+    padding: 20px;
+  }
+  .page-healthcare-softwares .hs-benefit-card {
+    padding: 27px 23px;
+  }
+  .page-healthcare-softwares .hs-process-card {
+    padding: 24px;
+  }
+  .page-healthcare-softwares .hs-process-icon {
+    margin-bottom: 17px;
+  }
+  .page-healthcare-softwares .hs-process-card h3 {
+    min-height: 0;
+  }
+  .page-healthcare-softwares .hs-portfolio-feature {
+    grid-template-columns: 1fr;
+    padding: 15px 15px 25px;
+  }
+  .page-healthcare-softwares .hs-portfolio-feature-copy {
+    padding: 0 8px;
+  }
+  .page-healthcare-softwares .hs-implementation-card {
+    padding: 19px;
+  }
+  .page-healthcare-softwares .hs-contact-section {
+    padding: 58px 0 68px;
+  }
+}
+@media (max-width: 460px) {
+  .page-healthcare-softwares .hs-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .page-healthcare-softwares .hs-button,
+  .page-healthcare-softwares .hs-outline-button {
+    width: 100%;
+  }
+  .page-healthcare-softwares .hs-hero-tags {
+    gap: 9px 18px;
+  }
+  .page-healthcare-softwares .hs-modules-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-healthcare-softwares .hs-hero-float small {
+    display: none;
+  }
+  .page-healthcare-softwares .hs-faq-item summary {
+    padding: 18px 16px;
+    font-size: 13px;
+  }
+  .page-healthcare-softwares .hs-faq-answer {
+    padding: 0 16px 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-healthcare-softwares .hs-solution-card,
+  .page-healthcare-softwares .hs-benefit-card::after,
+  .page-healthcare-softwares .hs-text-link,
+  .page-healthcare-softwares .hs-faq-chevron::after {
+    transition: none;
+  }
 }
